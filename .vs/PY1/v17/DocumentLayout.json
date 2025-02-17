@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{45CC3A1E-7EF2-4987-A670-BFFE6EF2B3B5}|Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\capa_acceso_datos\\datosvideojuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45CC3A1E-7EF2-4987-A670-BFFE6EF2B3B5}|Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj|solutionrelative:capa_acceso_datos\\datosvideojuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1FD6284-B31F-4082-8CEC-D8E677428663}|WinFormsApp\\WinFormsApp.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\winformsapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1FD6284-B31F-4082-8CEC-D8E677428663}|WinFormsApp\\WinFormsApp.csproj|solutionrelative:winformsapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45CC3A1E-7EF2-4987-A670-BFFE6EF2B3B5}|Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\capa_acceso_datos\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45CC3A1E-7EF2-4987-A670-BFFE6EF2B3B5}|Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj|solutionrelative:capa_acceso_datos\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ConexionBD.cs",
+              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Capa_Acceso_Datos\\ConexionBD.cs",
+              "RelativeDocumentMoniker": "Capa_Acceso_Datos\\ConexionBD.cs",
+              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Capa_Acceso_Datos\\ConexionBD.cs",
+              "RelativeToolTip": "Capa_Acceso_Datos\\ConexionBD.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T13:35:38.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DatosVideojuego.cs",
+              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Capa_Acceso_Datos\\DatosVideojuego.cs",
+              "RelativeDocumentMoniker": "Capa_Acceso_Datos\\DatosVideojuego.cs",
+              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Capa_Acceso_Datos\\DatosVideojuego.cs",
+              "RelativeToolTip": "Capa_Acceso_Datos\\DatosVideojuego.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T13:22:37.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\WinFormsApp\\Program.cs",
+              "RelativeDocumentMoniker": "WinFormsApp\\Program.cs",
+              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\WinFormsApp\\Program.cs",
+              "RelativeToolTip": "WinFormsApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T13:48:37.766Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 610,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+C:\Users\Javier\Desktop\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Log_Negocio\obj\Debug\net8.0-windows\Capa_Log_Negocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Javier\Desktop\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Log_Negocio\obj\Debug\net8.0-windows\Capa_Log_Negocio.AssemblyInfoInputs.cache
+C:\Users\Javier\Desktop\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Log_Negocio\obj\Debug\net8.0-windows\Capa_Log_Negocio.AssemblyInfo.cs
+C:\Users\Javier\Desktop\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Log_Negocio\obj\Debug\net8.0-windows\Capa_Log_Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Javier\Desktop\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Log_Negocio\obj\Debug\net8.0-windows\Capa_Log_Negocio.csproj.AssemblyReference.cache
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Log_Negocio\obj\Debug\net8.0-windows\Capa_Log_Negocio.csproj.AssemblyReference.cache
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Log_Negocio\obj\Debug\net8.0-windows\Capa_Log_Negocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Log_Negocio\obj\Debug\net8.0-windows\Capa_Log_Negocio.AssemblyInfoInputs.cache
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Log_Negocio\obj\Debug\net8.0-windows\Capa_Log_Negocio.AssemblyInfo.cs
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Log_Negocio\obj\Debug\net8.0-windows\Capa_Log_Negocio.csproj.CoreCompileInputs.cache
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Log_Negocio\bin\Debug\net8.0-windows\Capa_Log_Negocio.deps.json
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Log_Negocio\bin\Debug\net8.0-windows\Capa_Log_Negocio.dll
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Log_Negocio\bin\Debug\net8.0-windows\Capa_Log_Negocio.pdb
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Log_Negocio\bin\Debug\net8.0-windows\Capa_Entidades.dll
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Log_Negocio\bin\Debug\net8.0-windows\Capa_Entidades.pdb
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Log_Negocio\obj\Debug\net8.0-windows\Capa_Log.65315905.Up2Date
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Log_Negocio\obj\Debug\net8.0-windows\Capa_Log_Negocio.dll
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Log_Negocio\obj\Debug\net8.0-windows\refint\Capa_Log_Negocio.dll
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Log_Negocio\obj\Debug\net8.0-windows\Capa_Log_Negocio.pdb
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Log_Negocio\obj\Debug\net8.0-windows\ref\Capa_Log_Negocio.dll
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Capa_Log_Negocio\bin\Debug\net8.0-windows\Capa_Log_Negocio.deps.json
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Capa_Log_Negocio\bin\Debug\net8.0-windows\Capa_Log_Negocio.dll
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Capa_Log_Negocio\bin\Debug\net8.0-windows\Capa_Log_Negocio.pdb
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Capa_Log_Negocio\bin\Debug\net8.0-windows\Capa_Entidades.dll
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Capa_Log_Negocio\bin\Debug\net8.0-windows\Capa_Entidades.pdb
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Capa_Log_Negocio\obj\Debug\net8.0-windows\Capa_Log_Negocio.csproj.AssemblyReference.cache
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Capa_Log_Negocio\obj\Debug\net8.0-windows\Capa_Log_Negocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Capa_Log_Negocio\obj\Debug\net8.0-windows\Capa_Log_Negocio.AssemblyInfoInputs.cache
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Capa_Log_Negocio\obj\Debug\net8.0-windows\Capa_Log_Negocio.AssemblyInfo.cs
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Capa_Log_Negocio\obj\Debug\net8.0-windows\Capa_Log_Negocio.csproj.CoreCompileInputs.cache
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Capa_Log_Negocio\obj\Debug\net8.0-windows\Capa_Log.65315905.Up2Date
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Capa_Log_Negocio\obj\Debug\net8.0-windows\Capa_Log_Negocio.dll
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Capa_Log_Negocio\obj\Debug\net8.0-windows\refint\Capa_Log_Negocio.dll
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Capa_Log_Negocio\obj\Debug\net8.0-windows\Capa_Log_Negocio.pdb
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Capa_Log_Negocio\obj\Debug\net8.0-windows\ref\Capa_Log_Negocio.dll

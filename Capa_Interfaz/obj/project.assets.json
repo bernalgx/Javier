@@ -1,0 +1,150 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0-windows7.0": {
+      "Capa_Acceso_Datos/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Capa_Entidades": "1.0.0",
+          "Capa_Log_Negocio": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Capa_Acceso_Datos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Capa_Acceso_Datos.dll": {}
+        }
+      },
+      "Capa_Entidades/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Capa_Entidades.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Capa_Entidades.dll": {}
+        }
+      },
+      "Capa_Log_Negocio/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Capa_Entidades": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Capa_Log_Negocio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Capa_Log_Negocio.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Capa_Acceso_Datos/1.0.0": {
+      "type": "project",
+      "path": "../Capa_Acceso_Datos/Capa_Acceso_Datos.csproj",
+      "msbuildProject": "../Capa_Acceso_Datos/Capa_Acceso_Datos.csproj"
+    },
+    "Capa_Entidades/1.0.0": {
+      "type": "project",
+      "path": "../Capa_Entidades/Capa_Entidades.csproj",
+      "msbuildProject": "../Capa_Entidades/Capa_Entidades.csproj"
+    },
+    "Capa_Log_Negocio/1.0.0": {
+      "type": "project",
+      "path": "../Capa_Log_Negocio/Capa_Log_Negocio.csproj",
+      "msbuildProject": "../Capa_Log_Negocio/Capa_Log_Negocio.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0-windows7.0": [
+      "Capa_Acceso_Datos >= 1.0.0",
+      "Capa_Entidades >= 1.0.0",
+      "Capa_Log_Negocio >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\mau\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Interfaz\\Capa_Interfaz.csproj",
+      "projectName": "Capa_Interfaz",
+      "projectPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Interfaz\\Capa_Interfaz.csproj",
+      "packagesPath": "C:\\Users\\mau\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Interfaz\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\mau\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "projectReferences": {
+            "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj": {
+              "projectPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj"
+            },
+            "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Entidades\\Capa_Entidades.csproj": {
+              "projectPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Entidades\\Capa_Entidades.csproj"
+            },
+            "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Log_Negocio\\Capa_Log_Negocio.csproj": {
+              "projectPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Log_Negocio\\Capa_Log_Negocio.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.100"
+    },
+    "frameworks": {
+      "net8.0-windows7.0": {
+        "targetAlias": "net8.0-windows",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

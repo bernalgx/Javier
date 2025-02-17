@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Capa_Log_Negocio/1.0.0": {
+        "dependencies": {
+          "Capa_Entidades": "1.0.0"
+        },
+        "runtime": {
+          "Capa_Log_Negocio.dll": {}
+        }
+      },
+      "Capa_Entidades/1.0.0": {
+        "runtime": {
+          "Capa_Entidades.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Capa_Log_Negocio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Capa_Entidades/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
