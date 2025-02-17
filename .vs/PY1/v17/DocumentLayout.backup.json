@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{A1FD6284-B31F-4082-8CEC-D8E677428663}|WinFormsApp\\WinFormsApp.csproj|solutionrelative:winformsapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1FD6284-B31F-4082-8CEC-D8E677428663}|WinFormsApp\\WinFormsApp.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\winformsapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A1FD6284-B31F-4082-8CEC-D8E677428663}|WinFormsApp\\WinFormsApp.csproj|C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\winformsapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A1FD6284-B31F-4082-8CEC-D8E677428663}|WinFormsApp\\WinFormsApp.csproj|solutionrelative:winformsapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -70,21 +70,19 @@
               "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\WinFormsApp\\Form1.cs [Design]",
               "RelativeToolTip": "WinFormsApp\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:42:31.523Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-02-17T14:42:31.523Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "WinFormsApp",
+              "Title": "WinFormsApp.csproj",
               "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\WinFormsApp\\WinFormsApp.csproj",
               "RelativeDocumentMoniker": "WinFormsApp\\WinFormsApp.csproj",
               "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\WinFormsApp\\WinFormsApp.csproj",
               "RelativeToolTip": "WinFormsApp\\WinFormsApp.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-17T14:39:23.877Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:39:23.877Z"
             },
             {
               "$type": "Document",
@@ -96,8 +94,7 @@
               "RelativeToolTip": "WinFormsApp\\Form1.Designer.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwCkAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:39:12.543Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:39:12.543Z"
             },
             {
               "$type": "Document",
@@ -109,8 +106,7 @@
               "RelativeToolTip": "Capa_Acceso_Datos\\ConexionBD.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T13:35:38.553Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T13:35:38.553Z"
             },
             {
               "$type": "Document",
@@ -122,8 +118,7 @@
               "RelativeToolTip": "Capa_Acceso_Datos\\DatosVideojuego.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T13:22:37.489Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T13:22:37.489Z"
             },
             {
               "$type": "Document",
@@ -133,7 +128,7 @@
               "RelativeDocumentMoniker": "WinFormsApp\\Program.cs",
               "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\WinFormsApp\\Program.cs",
               "RelativeToolTip": "WinFormsApp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAawA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-17T13:48:37.766Z",
               "EditorCaption": ""
