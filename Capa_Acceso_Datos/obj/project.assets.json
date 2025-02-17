@@ -1707,11 +1707,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj",
+      "projectUniqueName": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj",
       "projectName": "Capa_Acceso_Datos",
-      "projectPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj",
+      "projectPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj",
       "packagesPath": "C:\\Users\\mau\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Capa_Acceso_Datos\\obj\\",
+      "outputPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1732,11 +1732,11 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Capa_Entidades\\Capa_Entidades.csproj": {
-              "projectPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Capa_Entidades\\Capa_Entidades.csproj"
+            "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Entidades\\Capa_Entidades.csproj": {
+              "projectPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Entidades\\Capa_Entidades.csproj"
             },
-            "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Capa_Log_Negocio\\Capa_Log_Negocio.csproj": {
-              "projectPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Capa_Log_Negocio\\Capa_Log_Negocio.csproj"
+            "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Log_Negocio\\Capa_Log_Negocio.csproj": {
+              "projectPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Log_Negocio\\Capa_Log_Negocio.csproj"
             }
           }
         }

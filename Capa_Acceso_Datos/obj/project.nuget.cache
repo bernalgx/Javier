@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+fbu+Q3UrZs=",
+  "dgSpecHash": "askia+cyoaM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj",
+  "projectFilePath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mau\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\mau\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

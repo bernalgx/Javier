@@ -9,7 +9,7 @@ namespace Capa_Acceso_Datos // Espacio para organizar clases que tienen relacion
 {
 	public class DatosVideojuego // Clase que gestiona las operaciones de base de datos para los videojuegos
 	{
-		private ConexionBD conexion = new ConexionBD(); // Instancia de la clase ConexionBD para manejar la conexion a la BD
+		//private ConexionBD conexion = new ConexionBD(); // Instancia de la clase ConexionBD para manejar la conexion a la BD
 
 		public ConexionBD GetCon() // Metodo para tener una conexion a la base de datos
 		{
@@ -26,7 +26,7 @@ namespace Capa_Acceso_Datos // Espacio para organizar clases que tienen relacion
 		}
 
 
-		//	//using (ConexionBD con = conexion.ObtenerConexion()) // Esto no existe en C#
+		//	//using (ConexionBD con = conexion.ObtenerConexion()) 
 		//	{
 		//		string query = "SELECT V.Id, V.Nombre, T.Id AS TipoId, T.Nombre AS TipoNombre, V.Desarrollador, V.Lanzamiento, V.Fisico " +
 		//					   "FROM Videojuego V INNER JOIN TipoVideojuego T ON V.TipoVideojuegoId = T.Id"; // Query SQL para insertar los videojuegos con su tipo
