@@ -1,6 +1,7 @@
 
 
 using Capa_Acceso_Datos;
+using Capa_Entidades;
 
 
 //Github test  
@@ -9,19 +10,33 @@ namespace WinFormsApp
 {
 	internal static class Program
 	{
-		/// <summary>
-		///  The main entry point for the application.
-		/// </summary>
+		/// Punto de entrada principal para la aplicación.
 		[STAThread]
 		static void Main()
 		{
-
-			// To customize application configuration such as set high DPI settings or default font,
-			// see https://aka.ms/applicationconfiguration.
+			// Para personalizar la configuración de la aplicación, como establecer configuraciones de DPI alto o fuente predeterminada,
+			// ver https://aka.ms/applicationconfiguration.
 			ApplicationConfiguration.Initialize();
-			Application.Run(new Form1());
-		}
 
-		private static ConexionBD conexion = new ConexionBD(); // Instancia de la clase ConexionBD para manejar la conexion a la BD
+			// Crear una instancia de la clase DatosVideojuego para gestionar operaciones de base de datos
+			Capa_Acceso_Datos.DatosVideojuego datos = new Capa_Acceso_Datos.DatosVideojuego();
+
+			// Crear una nueva instancia de VideojuegoEntidad con los datos del nuevo videojuego
+			VideojuegoEntidad nuevoJuego = new VideojuegoEntidad
+			{
+				Id = 2,
+				Nombre = "The Witcher 3",
+				Desarrollador = "CD Projekt Red",
+				Lanzamiento = 2015,
+				Fisico = true,
+				TipoVideojuego = 2
+			};
+
+			// Agregar el nuevo videojuego a la base de datos
+			datos.AgregarVideojuego(nuevoJuego);
+
+			// Obtener la lista de todos los videojuegos de la base de datos
+			List<VideojuegoEntidad> listaJuegos = datos.TenerVideojuegos();
+		}
 	}
 }

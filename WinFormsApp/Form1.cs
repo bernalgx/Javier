@@ -11,6 +11,5 @@ namespace WinFormsApp
 		{
 			label1.Text = "Hello World!";
 		}
-
 	}
 }
