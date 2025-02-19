@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace Capa_Interfaz
 {
     // Formulario para registrar administradores
-    public partial class FrmRegistrarAdministrador : Form
+    public partial class FrmRegistroAdministrador : Form
     {
         private LogAdministrador logica = new LogicaAdministrador();
 
