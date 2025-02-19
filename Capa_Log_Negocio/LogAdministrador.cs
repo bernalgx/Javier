@@ -5,47 +5,48 @@
 
 //namespace Capa_Log_Negocio // Define el espacio de nombres para la logica de negocio
 //{
-//    // Clase para manejar la logica de negocio relacionada con los administradores
+    // Clase para manejar la logica de negocio relacionada con los administradores
 //    public class LogicaAdministrador
 //    {
-//        private DatosAdministrador datos = new DatosAdministrador(); // Instancia de la capa de acceso a datos
+//        private DatosAdministrador datos = new DatosAdministrador();
 
-//        // Metodo para registrar un administrador en el sistema
+        // Metodo para registrar un administrador en el sistema
 //        public string RegistrarAdministrador(int identificacion, string nombre, string primerApellido, string segundoApellido, DateTime fechaNacimiento, DateTime fechaContratacion)
 //        {
-//            // Validacion de datos obligatorios
+            // Validacion de datos obligatorios
 //            if (string.IsNullOrWhiteSpace(nombre) || string.IsNullOrWhiteSpace(primerApellido) || string.IsNullOrWhiteSpace(segundoApellido))
 //            {
-//                return "Todos los campos son obligatorios."; // Retorna mensaje de error si hay campos vacios
+//                return "Todos los campos son obligatorios.";
 //            }
 
-//            // Validacion de edad (debe ser mayor de 18 años)
-//            if ((DateTime.Today.Year - fechaNacimiento.Year) < 18)
+            // Validacion de edad (debe ser mayor de 18 años)
+//            int edad = DateTime.Today.Year - fechaNacimiento.Year;
+//           if (edad < 18)
 //            {
-//                return "El administrador debe ser mayor de edad."; // Retorna mensaje de error si es menor de edad
+//                return "El administrador debe ser mayor de edad (mínimo 18 años).";
 //            }
 
-//            // Validacion de fecha de contratacion (no puede ser futura)
+            // Validacion de fecha de contratacion (no puede ser futura)
 //            if (fechaContratacion > DateTime.Today)
 //            {
-//                return "La fecha de contratacion no puede ser mayor a la fecha actual."; // Retorna mensaje de error si la fecha es futura
+//                return "La fecha de contratacion no puede ser mayor a la fecha actual.";
 //            }
 
-//            // Creacion del objeto AdministradorEntidad
+            // Creacion del objeto AdministradorEntidad
 //            var administrador = new AdministradorEntidad
 //            {
-//                Identificacion = identificacion, // Asigna identificacion
-//                Nombre = nombre, // Asigna nombre
-//                PrimerApellido = primerApellido, // Asigna primer apellido
-//                SegundoApellido = segundoApellido, // Asigna segundo apellido
-//                FechaNacimiento = fechaNacimiento, // Asigna fecha de nacimiento
-//                FechaContratacion = fechaContratacion // Asigna fecha de contratacion
+//                Identificacion = identificacion,
+//                Nombre = nombre,
+//                PrimerApellido = primerApellido,
+//                SegundoApellido = segundoApellido,
+//                FechaNacimiento = fechaNacimiento,
+//                FechaContratacion = fechaContratacion
 //            };
 
-//            // Llamada a la capa de acceso a datos
-//            bool resultado = datos.AgregarAdministrador(administrador); // Intenta agregar el administrador
+            // Llamada a la capa de acceso a datos
+//            bool resultado = datos.AgregarAdministrador(administrador);
 
-//            return resultado ? "Administrador registrado correctamente." : "Error al registrar administrador."; // Retorna mensaje de exito o error
+//            return resultado ? "Administrador registrado correctamente." : "Error al registrar administrador.";
 //        }
 //    }
 //}
