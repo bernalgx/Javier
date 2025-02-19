@@ -4,46 +4,46 @@
 
 //namespace Capa_Log_Negocio // Define el espacio de nombres para la logica de negocio
 //{
-//    // Clase para manejar la logica de negocio relacionada con los videojuegos
+    // Clase para manejar la logica de negocio relacionada con los videojuegos
 //    public class LogicaVideojuego
 //    {
-//        private DatosVideojuego datos = new DatosVideojuego(); // Instancia de la capa de acceso a datos
+//        private DatosVideojuego datos = new DatosVideojuego();
 
-//        // Metodo para registrar un videojuego en el sistema
+        // Metodo para registrar un videojuego en el sistema
 //        public string RegistrarVideojuego(string nombre, TipoVideojuegoEntidad tipo, string desarrollador, int lanzamiento, bool fisico)
-//        {
-//            // Validacion de datos obligatorios
-//            if (string.IsNullOrWhiteSpace(nombre) || string.IsNullOrWhiteSpace(desarrollador))
+//       {
+            // Validacion de datos obligatorios
+ //           if (string.IsNullOrWhiteSpace(nombre) || string.IsNullOrWhiteSpace(desarrollador))
 //            {
-//                return "Todos los campos son obligatorios."; // Retorna mensaje de error si hay campos vacios
+//                return "Todos los campos son obligatorios.";
 //            }
 
-//            // Validacion del año de lanzamiento (no puede ser mayor al actual)
+            // Validacion del año de lanzamiento (no puede ser mayor al actual)
 //            if (lanzamiento > DateTime.Today.Year)
 //            {
-//                return "El año de lanzamiento no puede ser mayor al actual."; // Retorna mensaje de error si el año es invalido
+//                return "El año de lanzamiento no puede ser mayor al actual.";
 //            }
 
-//            // Validacion del tipo de videojuego (debe ser proporcionado)
+            // Validacion del tipo de videojuego (debe ser proporcionado)
 //            if (tipo == null)
 //            {
-//                return "Debe seleccionar un tipo de videojuego."; // Retorna mensaje de error si no hay tipo de videojuego
+//                return "Debe seleccionar un tipo de videojuego.";
 //            }
 
-//            // Creacion del objeto VideojuegoEntidad
-//            var videojuego = new VideojuegoEntidad
-//            {
-//                Nombre = nombre, // Asigna el nombre del videojuego
-//                TipoVideojuego = tipo, // Asigna el tipo de videojuego
-//                Desarrollador = desarrollador, // Asigna el desarrollador
-//                Lanzamiento = lanzamiento, // Asigna el año de lanzamiento
-//                Fisico = fisico // Asigna si es fisico o no
-//            };
+            // Creacion del objeto VideojuegoEntidad
+ //           var videojuego = new VideojuegoEntidad
+ //           {
+ //               Nombre = nombre,
+ //               TipoVideojuego = tipo,
+//                Desarrollador = desarrollador,
+ //               Lanzamiento = lanzamiento,
+ //               Fisico = fisico
+ //           };
 
-//            // Llamada a la capa de acceso a datos
-//            bool resultado = datos.AgregarVideojuego(videojuego); // Intenta agregar el videojuego
+            // Llamada a la capa de acceso a datos
+ //           bool resultado = datos.AgregarVideojuego(videojuego);
 
-//            return resultado ? "Videojuego registrado correctamente." : "Error al registrar videojuego."; // Retorna mensaje de exito o error
+ //           return resultado ? "Videojuego registrado correctamente." : "Error al registrar videojuego.";
 //        }
 //    }
 //}
