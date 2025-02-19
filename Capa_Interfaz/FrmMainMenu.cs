@@ -21,35 +21,35 @@ namespace Capa_Interfaz
         // Evento para abrir el formulario de administradores
         private void btnAdministradores_Click(object sender, EventArgs e)
         {
-            FrmRegistrarAdministrador form = new FrmRegistrarAdministrador();
+            FrmRegistroAdministrador form = new FrmRegistroAdministrador();
             form.ShowDialog();
         }
 
         // Evento para abrir el formulario de clientes
         private void btnClientes_Click(object sender, EventArgs e)
         {
-            FrmRegistrarCliente form = new FrmRegistrarCliente();
+            FrmRegistroCliente form = new FrmRegistroCliente();
             form.ShowDialog();
         }
 
         // Evento para abrir el formulario de tiendas
         private void btnTiendas_Click(object sender, EventArgs e)
         {
-            FrmRegistrarTienda form = new FrmRegistrarTienda();
+            FrmRegistroTienda form = new FrmRegistroTienda();
             form.ShowDialog();
         }
 
         // Evento para abrir el formulario de videojuegos
         private void btnVideojuegos_Click(object sender, EventArgs e)
         {
-            FrmRegistrarVideojuego form = new FrmRegistrarVideojuego();
+            FrmRegistroVideojuego form = new FrmRegistroVideojuego();
             form.ShowDialog();
         }
 
         // Evento para abrir el formulario de inventario
         private void btnInventario_Click(object sender, EventArgs e)
         {
-            FrmConsultarInventario form = new FrmConsultarInventario();
+            FrmConsultaInventario form = new FrmConsultaInventario();
             form.ShowDialog();
         }
     }
