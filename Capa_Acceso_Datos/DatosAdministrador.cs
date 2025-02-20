@@ -7,68 +7,52 @@
 
 //namespace Capa_Acceso_Datos // Espacio para organizar clases que tienen relacion con acceso a datos
 //{
-    // Clase para realizar operaciones con los administradores en la base de datos
-//    public class DatosAdministrador
+//    public static class DatosAdministrador
 //    {
-//        private ConexionBD conexion = new ConexionBD();
+//        private static AdministradorEntidad[] administradores = new AdministradorEntidad[20];
+//        private static int contador = 0;
 
-        // Metodo para verificar si un administrador ya existe en la base de datos
-//        private bool AdministradorExiste(int identificacion)
+//        public static bool Crear(AdministradorEntidad admin)
 //        {
-//            using (SqlConnection con = conexion.ObtenerConexion())
-//            {
-//                string query = "SELECT COUNT(*) FROM Administrador WHERE Identificacion = @Identificacion";
-//                SqlCommand cmd = new SqlCommand(query, con);
-//                cmd.Parameters.AddWithValue("@Identificacion", identificacion);
+//            if (contador >= 20) return false;
 
-//                try
-//               {
-//                   con.Open();
-//                    int count = (int)cmd.ExecuteScalar();
-//                    return count > 0;
-//                }
-//                catch (Exception ex)
-//                {
-//                   Console.WriteLine("Error al verificar administrador: " + ex.Message);
-//                   return true; // Si hay error, asumimos que ya existe para evitar problemas
-//                }
+//            foreach (var a in administradores)
+//            {
+//                if (a != null && a.Identificacion == admin.Identificacion)
+//                    throw new Exception("La identificación ya existe.");
 //            }
+
+//            administradores[contador] = admin;
+//            contador++;
+//            return true;
 //        }
 
-        // Metodo para insertar un nuevo administrador en la base de datos
-//        public bool AgregarAdministrador(AdministradorEntidad administrador)
+ //       public static AdministradorEntidad[] ObtenerTodos() => administradores;
+
+//        public static bool Actualizar(AdministradorEntidad admin)
 //        {
-//            if (AdministradorExiste(administrador.Identificacion))
+//            for (int i = 0; i < contador; i++)
 //            {
-//                Console.WriteLine("El administrador con esta identificación ya existe.");
-//                return false;
-//            }
-
-//           using (SqlConnection con = conexion.ObtenerConexion())
-//            {
-//                string query = "INSERT INTO Administrador (Identificacion, Nombre, PrimerApellido, SegundoApellido, FechaNacimiento, FechaContratacion) " +
-//                               "VALUES (@Identificacion, @Nombre, @PrimerApellido, @SegundoApellido, @FechaNacimiento, @FechaContratacion)";
-
-//                SqlCommand cmd = new SqlCommand(query, con);
-//                cmd.Parameters.AddWithValue("@Identificacion", administrador.Identificacion);
-//                cmd.Parameters.AddWithValue("@Nombre", administrador.Nombre);
-//                cmd.Parameters.AddWithValue("@PrimerApellido", administrador.PrimerApellido);
-//                cmd.Parameters.AddWithValue("@SegundoApellido", administrador.SegundoApellido);
-//                cmd.Parameters.AddWithValue("@FechaNacimiento", administrador.FechaNacimiento);
-//                cmd.Parameters.AddWithValue("@FechaContratacion", administrador.FechaContratacion);
-
-//               try
+//                if (administradores[i] != null && administradores[i].Identificacion == admin.Identificacion)
 //                {
-//                    con.Open();
-//                    int filasAfectadas = cmd.ExecuteNonQuery();
-//                    return filasAfectadas > 0;
+//                    administradores[i] = admin;
+//                    return true;
 //                }
-//                catch (Exception ex)
+//            }
+//            return false;
+//        }
+
+//        public static bool Eliminar(int id)
+//        {
+//            for (int i = 0; i < contador; i++)
+//            {
+//                if (administradores[i] != null && administradores[i].Identificacion == id)
 //                {
-//                    Console.WriteLine("Error al agregar administrador: " + ex.Message);
- //                   return false;
- //               }
- //           }
+//                    administradores[i] = null;
+//                    return true;
+//                }
+//            }
+//            return false;
 //        }
 //    }
 //}
