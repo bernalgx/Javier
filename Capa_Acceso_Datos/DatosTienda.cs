@@ -7,38 +7,52 @@
 
 //namespace Capa_Acceso_Datos // Espacio para organizar clases que tienen relacion con acceso a datos
 //{
-//    // Clase para gestionar la informacion de las tiendas en la base de datos
-//    public class DatosTienda
+//    public static class DatosTienda
 //    {
-//        private ConexionBD conexion = new ConexionBD();
+//        private static TiendaEntidad[] tiendas = new TiendaEntidad[5];
+//        private static int contador = 0;
 
-//        // Metodo para insertar una tienda en la base de datos
-//        public bool AgregarTienda(TiendaEntidad tienda)
+//        public static bool Crear(TiendaEntidad tienda)
 //        {
-//            using (SqlConnection con = conexion.ObtenerConexion())
+//            if (contador >= 5) return false;
+
+//            foreach (var t in tiendas)
 //            {
-//                string query = "INSERT INTO Tienda (Nombre, AdministradorId, Direccion, Telefono, Activa) " +
-//                               "VALUES (@Nombre, @AdministradorId, @Direccion, @Telefono, @Activa)";
+//                if (t != null && t.Id == tienda.Id)
+//                    throw new Exception("El ID ya existe.");
+//            }
 
-//                SqlCommand cmd = new SqlCommand(query, con);
-//                cmd.Parameters.AddWithValue("@Nombre", tienda.Nombre);
-//                cmd.Parameters.AddWithValue("@AdministradorId", tienda.Administrador.Identificacion);
-//                cmd.Parameters.AddWithValue("@Direccion", tienda.Direccion);
-//                cmd.Parameters.AddWithValue("@Telefono", tienda.Telefono);
-//                cmd.Parameters.AddWithValue("@Activa", tienda.Activa);
+//            tiendas[contador] = tienda;
+//            contador++;
+//            return true;
+//        }
 
-//                try
+//        public static TiendaEntidad[] ObtenerTodos() => tiendas;
+
+//        public static bool Actualizar(TiendaEntidad tienda)
+//        {
+//            for (int i = 0; i < contador; i++)
+//            {
+//                if (tiendas[i] != null && tiendas[i].Id == tienda.Id)
 //                {
-//                    con.Open();
-//                    int filasAfectadas = cmd.ExecuteNonQuery();
-//                    return filasAfectadas > 0;
-//                }
-//                catch (Exception ex)
-//                {
-//                    Console.WriteLine("Error al agregar tienda: " + ex.Message);
-//                    return false;
+//                    tiendas[i] = tienda;
+//                    return true;
 //                }
 //            }
+//            return false;
+//        }
+
+//        public static bool Eliminar(int id)
+//        {
+//            for (int i = 0; i < contador; i++)
+//            {
+//                if (tiendas[i] != null && tiendas[i].Id == id)
+//                {
+//                    tiendas[i] = null;
+//                    return true;
+//                }
+//            }
+//            return false;
 //        }
 //    }
 //}
