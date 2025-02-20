@@ -1,5 +1,6 @@
 
-
+using System;
+using System.Windows.Forms;
 using Capa_Acceso_Datos;
 using Capa_Entidades;
 
@@ -8,35 +9,70 @@ using Capa_Entidades;
 
 namespace WinFormsApp
 {
-	internal static class Program
-	{
-		/// Punto de entrada principal para la aplicación.
-		[STAThread]
-		static void Main()
-		{
-			// Para personalizar la configuración de la aplicación, como establecer configuraciones de DPI alto o fuente predeterminada,
-			// ver https://aka.ms/applicationconfiguration.
-			ApplicationConfiguration.Initialize();
+    public partial class FormMenuPrincipal : Form
+    {
+        public FormMenuPrincipal()
+        {
+            InitializeComponent();
+            CrearMenu(); // Genera el menu dinamicamente
+        }
 
-			// Crear una instancia de la clase DatosVideojuego para gestionar operaciones de base de datos
-			Capa_Acceso_Datos.DatosVideojuego datos = new Capa_Acceso_Datos.DatosVideojuego();
+        private void CrearMenu()
+        {
+            // Crear el menu principal
+            MenuStrip menuStrip = new MenuStrip();
+            
+            // Secciones del menu
+            ToolStripMenuItem menuRegistro = new ToolStripMenuItem("Registrar");
+            ToolStripMenuItem menuConsulta = new ToolStripMenuItem("Consultar");
+            ToolStripMenuItem menuSalir = new ToolStripMenuItem("Salir", null, Salir_Click);
 
-			// Crear una nueva instancia de VideojuegoEntidad con los datos del nuevo videojuego
-			VideojuegoEntidad nuevoJuego = new VideojuegoEntidad
-			{
-				Id = 2,
-				Nombre = "The Witcher 3",
-				Desarrollador = "CD Projekt Red",
-				Lanzamiento = 2015,
-				Fisico = true,
-				TipoVideojuego = 2
-			};
+            // Opciones de Registro
+            menuRegistro.DropDownItems.Add("Tipos de Videojuegos", null, AbrirRegistroTipos);
+            menuRegistro.DropDownItems.Add("Videojuegos", null, AbrirRegistroVideojuegos);
+            menuRegistro.DropDownItems.Add("Administradores", null, AbrirRegistroAdministradores);
+            menuRegistro.DropDownItems.Add("Tiendas", null, AbrirRegistroTiendas);
+            menuRegistro.DropDownItems.Add("Clientes", null, AbrirRegistroClientes);
+            menuRegistro.DropDownItems.Add("Inventario", null, AbrirRegistroInventario);
 
-			// Agregar el nuevo videojuego a la base de datos
-			datos.AgregarVideojuego(nuevoJuego);
+            // Opciones de Consulta
+            menuConsulta.DropDownItems.Add("Tipos de Videojuegos", null, AbrirConsultaTipos);
+            menuConsulta.DropDownItems.Add("Videojuegos", null, AbrirConsultaVideojuegos);
+            menuConsulta.DropDownItems.Add("Administradores", null, AbrirConsultaAdministradores);
+            menuConsulta.DropDownItems.Add("Tiendas", null, AbrirConsultaTiendas);
+            menuConsulta.DropDownItems.Add("Clientes", null, AbrirConsultaClientes);
+            menuConsulta.DropDownItems.Add("Inventario", null, AbrirConsultaInventario);
 
-			// Obtener la lista de todos los videojuegos de la base de datos
-			List<VideojuegoEntidad> listaJuegos = datos.TenerVideojuegos();
-		}
-	}
+            // Agrega los menus al MenuStrip
+            menuStrip.Items.Add(menuRegistro);
+            menuStrip.Items.Add(menuConsulta);
+            menuStrip.Items.Add(menuSalir);
+
+            // Agrega el menu al formulario
+            this.MainMenuStrip = menuStrip;
+            Controls.Add(menuStrip);
+        }
+
+        // Metodos para abrir los formularios de registro
+        private void AbrirRegistroTipos(object sender, EventArgs e) => new FormRegistrarTipoVideojuego().ShowDialog();
+        private void AbrirRegistroVideojuegos(object sender, EventArgs e) => new FormRegistroVideojuego().ShowDialog();
+        private void AbrirRegistroAdministradores(object sender, EventArgs e) => new FormRegistroAdministrador().ShowDialog();
+        private void AbrirRegistroTiendas(object sender, EventArgs e) => new FormRegistroTienda().ShowDialog();
+        private void AbrirRegistroClientes(object sender, EventArgs e) => new FormRegistroCliente().ShowDialog();
+        private void AbrirRegistroInventario(object sender, EventArgs e) => new FormRegistroInventario().ShowDialog();
+
+        // Metodos para abrir los formularios de consulta
+        private void AbrirConsultaTipos(object sender, EventArgs e) => new FormConsultaTipoVideojuego().ShowDialog();
+        private void AbrirConsultaVideojuegos(object sender, EventArgs e) => new FormConsultaVideojuego().ShowDialog();
+        private void AbrirConsultaAdministradores(object sender, EventArgs e) => new FormConsultaAdministrador().ShowDialog();
+        private void AbrirConsultaTiendas(object sender, EventArgs e) => new FormConsultaTienda().ShowDialog();
+        private void AbrirConsultaClientes(object sender, EventArgs e) => new FormConsultaCliente().ShowDialog();
+        private void AbrirConsultaInventario(object sender, EventArgs e) => new FormConsultaInventario().ShowDialog();
+
+        // Metodo para salir de la aplicacion
+        private void Salir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+    }
 }
