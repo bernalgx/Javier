@@ -1,10 +1,28 @@
 ﻿namespace Capa_Entidades // Espacio para organizar clases que se relacionan con entidades del sistema
 {
-    // Clase que representa la asociacion entre videojuegos y tiendas
-    public class VideojuegosXTiendaEntidad
+    public static class DatosInventario
     {
-        public required TiendaEntidad Tienda { get; set; } // Tienda donde se encuentra el videojuego
-        public required VideojuegoEntidad Videojuego { get; set; } // Videojuego disponible en la tienda
-        public int Existencias { get; set; } // Cantidad de copias disponibles en la tienda
+        private static VideojuegosXTiendaEntidad[] inventario = new VideojuegosXTiendaEntidad[100];
+        private static int contador = 0;
+
+        public static bool Crear(VideojuegosXTiendaEntidad item)
+        {
+            if (contador >= 100) return false;
+            inventario[contador] = item;
+            contador++;
+            return true;
+        }
+
+        public static VideojuegosXTiendaEntidad[] ObtenerTodos() => inventario;
+
+        public static bool Eliminar(int index)
+        {
+            if (index >= 0 && index < contador)
+            {
+                inventario[index] = null;
+                return true;
+            }
+            return false;
+        }
     }
 }
