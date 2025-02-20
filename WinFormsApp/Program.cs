@@ -54,7 +54,7 @@ namespace WinFormsApp
         }
 
         // Metodos para abrir los formularios de registro
-        private void AbrirRegistroTipos(object sender, EventArgs e) => new FormRegistrarTipoVideojuego().ShowDialog();
+        private void AbrirRegistroTipos(object sender, EventArgs e) => new FormRegistroTipoVideojuego().ShowDialog();
         private void AbrirRegistroVideojuegos(object sender, EventArgs e) => new FormRegistroVideojuego().ShowDialog();
         private void AbrirRegistroAdministradores(object sender, EventArgs e) => new FormRegistroAdministrador().ShowDialog();
         private void AbrirRegistroTiendas(object sender, EventArgs e) => new FormRegistroTienda().ShowDialog();
