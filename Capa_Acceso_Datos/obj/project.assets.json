@@ -674,6 +674,16 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "Capa_Entidades/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Capa_Entidades.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Capa_Entidades.dll": {}
+        }
       }
     }
   },
@@ -1732,10 +1742,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Capa_Entidades/1.0.0": {
+      "type": "project",
+      "path": "../Capa_Entidades/Capa_Entidades.csproj",
+      "msbuildProject": "../Capa_Entidades/Capa_Entidades.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
+      "Capa_Entidades >= 1.0.0",
       "Microsoft.Data.SqlClient >= 6.0.1",
       "NSubstitute >= 5.3.0"
     ]
@@ -1771,7 +1787,11 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Entidades\\Capa_Entidades.csproj": {
+              "projectPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Entidades\\Capa_Entidades.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

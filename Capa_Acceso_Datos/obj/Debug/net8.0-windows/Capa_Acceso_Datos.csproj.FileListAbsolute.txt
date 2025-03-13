@@ -38,3 +38,6 @@ C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Acceso_Datos\obj\Debu
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Acceso_Datos\obj\Debug\net8.0-windows\refint\Capa_Acceso_Datos.dll
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Acceso_Datos\obj\Debug\net8.0-windows\Capa_Acceso_Datos.pdb
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Acceso_Datos\obj\Debug\net8.0-windows\ref\Capa_Acceso_Datos.dll
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Acceso_Datos\bin\Debug\net8.0-windows\Capa_Entidades.dll
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Acceso_Datos\bin\Debug\net8.0-windows\Capa_Entidades.pdb
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Acceso_Datos\obj\Debug\net8.0-windows\Capa_Acc.D879E994.Up2Date

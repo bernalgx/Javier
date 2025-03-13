@@ -436,6 +436,7 @@
       "System.Threading.Tasks.Extensions/4.5.4": {},
       "Capa_Acceso_Datos/1.0.0": {
         "dependencies": {
+          "Capa_Entidades": "1.0.0",
           "Microsoft.Data.SqlClient": "6.0.1",
           "NSubstitute": "5.3.0"
         },

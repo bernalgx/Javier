@@ -19,9 +19,6 @@ namespace Capa_Interfaz
 			InitializeComponent();
 		}
 
-
-
-
 		//private void Administradores_Click(object sender, EventArgs e)
 		//{
 		//	FrmRegistroAdministrador form = new FrmRegistroAdministrador();

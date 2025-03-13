@@ -7,10 +7,10 @@ namespace Capa_Log_Negocio
 		private VideojuegoEntidad[] videojuegos = new VideojuegoEntidad[20];
 		private int indice = 0;
 
-		public string RegistrarVideojuego(int id, string nombre, TipoVideojuegoEntidad tipo, string desarrollador, int lanzamiento, bool fisico)
+		public string RegistrarVideojuego(int id, string nombre, int tipo, string desarrollador, int lanzamiento, bool fisico)
 		{
 			// Validación de campos requeridos
-			if (string.IsNullOrWhiteSpace(nombre) || tipo == null || string.IsNullOrWhiteSpace(desarrollador))
+			if (string.IsNullOrWhiteSpace(nombre) || string.IsNullOrWhiteSpace(desarrollador))
 				return "Todos los campos son requeridos.";
 
 			// Validar que el Id sea único
@@ -29,7 +29,7 @@ namespace Capa_Log_Negocio
 			{
 				Id = id,
 				Nombre = nombre,
-				TipoVideojuego = tipo,
+				TipoVideojuegoId = tipo,
 				Desarrollador = desarrollador,
 				Lanzamiento = lanzamiento,
 				Fisico = fisico

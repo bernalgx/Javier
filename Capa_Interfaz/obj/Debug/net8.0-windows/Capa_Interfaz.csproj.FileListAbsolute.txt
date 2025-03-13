@@ -91,4 +91,3 @@ C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\obj\Debug\ne
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\obj\Debug\net8.0-windows\ref\Capa_Interfaz.dll
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\obj\Debug\net8.0-windows\Capa_Interfaz.FrmRegistroTipoVideojuego.resources
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\obj\Debug\net8.0-windows\Capa_Interfaz.FrmVideoJuegos.resources
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\obj\Debug\net8.0-windows\Capa_Interfaz.FrmMainMenu.resources

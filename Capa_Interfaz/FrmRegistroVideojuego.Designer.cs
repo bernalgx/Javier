@@ -160,10 +160,9 @@ namespace Capa_Interfaz
 			Controls.Add(nombre);
 			Name = "FrmRegistroVideojuego";
 			Text = "FrmRegistroVideojuego";
+			Load += FrmRegistroVideojuego_Load;
 			ResumeLayout(false);
 			PerformLayout();
-			this.Load += new System.EventHandler(this.FrmRegistroVideojuego_Load);
-
 		}
 
 		#endregion

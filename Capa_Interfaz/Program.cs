@@ -13,7 +13,8 @@ namespace Capa_Interfaz
 			// To customize application configuration such as set high DPI settings or default font,
 			// see https://aka.ms/applicationconfiguration.
 			ApplicationConfiguration.Initialize();
-			Application.Run(new FrmVideoJuegos());
+			Application.Run(new MenuPrincipal());
+			//Application.Run(new FrmVideoJuegos());
 		}
 	}
 }

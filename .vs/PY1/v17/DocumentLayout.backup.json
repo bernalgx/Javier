@@ -3,24 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_interfaz\\frmmainmenu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|solutionrelative:capa_interfaz\\frmmainmenu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_interfaz\\frmregistroadministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|solutionrelative:capa_interfaz\\frmregistroadministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_interfaz\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|solutionrelative:capa_interfaz\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_interfaz\\frmregistrovideojuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|solutionrelative:capa_interfaz\\frmregistrovideojuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{45CC3A1E-7EF2-4987-A670-BFFE6EF2B3B5}|Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_acceso_datos\\datosvideojuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45CC3A1E-7EF2-4987-A670-BFFE6EF2B3B5}|Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj|solutionrelative:capa_acceso_datos\\datosvideojuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_interfaz\\frmregistrovideojuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|solutionrelative:capa_interfaz\\frmregistrovideojuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3F822436-D666-4C75-AD3C-CBEB1F5BD9F0}|Capa_Entidades\\Capa_Entidades.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_entidades\\videojuegoentidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F822436-D666-4C75-AD3C-CBEB1F5BD9F0}|Capa_Entidades\\Capa_Entidades.csproj|solutionrelative:capa_entidades\\videojuegoentidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45CC3A1E-7EF2-4987-A670-BFFE6EF2B3B5}|Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_acceso_datos\\datostipovideojuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45CC3A1E-7EF2-4987-A670-BFFE6EF2B3B5}|Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj|solutionrelative:capa_acceso_datos\\datostipovideojuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F822436-D666-4C75-AD3C-CBEB1F5BD9F0}|Capa_Entidades\\Capa_Entidades.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_entidades\\tipovideojuegoentidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F822436-D666-4C75-AD3C-CBEB1F5BD9F0}|Capa_Entidades\\Capa_Entidades.csproj|solutionrelative:capa_entidades\\tipovideojuegoentidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7CD2FFE-BB49-46FA-88D2-E161035B2ADB}|Capa_Log_Negocio\\Capa_Log_Negocio.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_log_negocio\\logvideojuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7CD2FFE-BB49-46FA-88D2-E161035B2ADB}|Capa_Log_Negocio\\Capa_Log_Negocio.csproj|solutionrelative:capa_log_negocio\\logvideojuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_interfaz\\frmvideojuegos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|solutionrelative:capa_interfaz\\frmvideojuegos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_interfaz\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|solutionrelative:capa_interfaz\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_interfaz\\frmvideojuegos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|solutionrelative:capa_interfaz\\frmvideojuegos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\capa_interfaz\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|solutionrelative:capa_interfaz\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_interfaz\\frmregistroadministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|solutionrelative:capa_interfaz\\frmregistroadministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3F822436-D666-4C75-AD3C-CBEB1F5BD9F0}|Capa_Entidades\\Capa_Entidades.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_entidades\\videojuegosxtiendaentidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,10 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3F822436-D666-4C75-AD3C-CBEB1F5BD9F0}|Capa_Entidades\\Capa_Entidades.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_entidades\\clienteentidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F822436-D666-4C75-AD3C-CBEB1F5BD9F0}|Capa_Entidades\\Capa_Entidades.csproj|solutionrelative:capa_entidades\\clienteentidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45CC3A1E-7EF2-4987-A670-BFFE6EF2B3B5}|Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_acceso_datos\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45CC3A1E-7EF2-4987-A670-BFFE6EF2B3B5}|Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj|solutionrelative:capa_acceso_datos\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\winformsapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -54,19 +78,139 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TipoVideojuegoEntidad.cs",
+              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Entidades\\TipoVideojuegoEntidad.cs",
+              "RelativeDocumentMoniker": "Capa_Entidades\\TipoVideojuegoEntidad.cs",
+              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Entidades\\TipoVideojuegoEntidad.cs",
+              "RelativeToolTip": "Capa_Entidades\\TipoVideojuegoEntidad.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T09:23:20.553Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DatosTipoVideojuego.cs",
+              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\DatosTipoVideojuego.cs",
+              "RelativeDocumentMoniker": "Capa_Acceso_Datos\\DatosTipoVideojuego.cs",
+              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\DatosTipoVideojuego.cs",
+              "RelativeToolTip": "Capa_Acceso_Datos\\DatosTipoVideojuego.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T09:22:16.12Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "DatosVideojuego.cs",
+              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\DatosVideojuego.cs",
+              "RelativeDocumentMoniker": "Capa_Acceso_Datos\\DatosVideojuego.cs",
+              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\DatosVideojuego.cs",
+              "RelativeToolTip": "Capa_Acceso_Datos\\DatosVideojuego.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAA4wEMAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T13:22:37.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VideojuegoEntidad.cs",
+              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Entidades\\VideojuegoEntidad.cs",
+              "RelativeDocumentMoniker": "Capa_Entidades\\VideojuegoEntidad.cs",
+              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Entidades\\VideojuegoEntidad.cs",
+              "RelativeToolTip": "Capa_Entidades\\VideojuegoEntidad.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T05:21:43.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmRegistroVideojuego.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\FrmRegistroVideojuego.cs",
+              "RelativeDocumentMoniker": "Capa_Interfaz\\FrmRegistroVideojuego.cs",
+              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\FrmRegistroVideojuego.cs [Design]",
+              "RelativeToolTip": "Capa_Interfaz\\FrmRegistroVideojuego.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T05:35:22.873Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmRegistroVideojuego.cs",
+              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\FrmRegistroVideojuego.cs",
+              "RelativeDocumentMoniker": "Capa_Interfaz\\FrmRegistroVideojuego.cs",
+              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\FrmRegistroVideojuego.cs",
+              "RelativeToolTip": "Capa_Interfaz\\FrmRegistroVideojuego.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAAwFwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T05:35:58.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LogVideojuego.cs",
+              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Log_Negocio\\LogVideojuego.cs",
+              "RelativeDocumentMoniker": "Capa_Log_Negocio\\LogVideojuego.cs",
+              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Log_Negocio\\LogVideojuego.cs",
+              "RelativeToolTip": "Capa_Log_Negocio\\LogVideojuego.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T09:25:09.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\Program.cs",
+              "RelativeDocumentMoniker": "Capa_Interfaz\\Program.cs",
+              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\Program.cs",
+              "RelativeToolTip": "Capa_Interfaz\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T05:22:16.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FrmVideoJuegos.cs",
+              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\FrmVideoJuegos.cs",
+              "RelativeDocumentMoniker": "Capa_Interfaz\\FrmVideoJuegos.cs",
+              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\FrmVideoJuegos.cs",
+              "RelativeToolTip": "Capa_Interfaz\\FrmVideoJuegos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T05:24:24.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FrmVideoJuegos.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\FrmVideoJuegos.cs",
+              "RelativeDocumentMoniker": "Capa_Interfaz\\FrmVideoJuegos.cs",
+              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\FrmVideoJuegos.cs [Design]",
+              "RelativeToolTip": "Capa_Interfaz\\FrmVideoJuegos.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T05:23:37.331Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "FrmRegistroAdministrador.cs",
               "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\FrmRegistroAdministrador.cs",
               "RelativeDocumentMoniker": "Capa_Interfaz\\FrmRegistroAdministrador.cs",
@@ -74,25 +218,11 @@
               "RelativeToolTip": "Capa_Interfaz\\FrmRegistroAdministrador.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T05:05:54.952Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-13T05:05:54.952Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FrmMainMenu.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\FrmMainMenu.Designer.cs",
-              "RelativeDocumentMoniker": "Capa_Interfaz\\FrmMainMenu.Designer.cs",
-              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\FrmMainMenu.Designer.cs",
-              "RelativeToolTip": "Capa_Interfaz\\FrmMainMenu.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T05:02:55.327Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "MenuPrincipal.cs [Design]",
               "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\MenuPrincipal.cs",
               "RelativeDocumentMoniker": "Capa_Interfaz\\MenuPrincipal.cs",
@@ -104,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "VideojuegosXTiendaEntidad.cs",
               "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Entidades\\VideojuegosXTiendaEntidad.cs",
               "RelativeDocumentMoniker": "Capa_Entidades\\VideojuegosXTiendaEntidad.cs",
@@ -116,7 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "Program.cs [Design]",
               "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\WinFormsApp\\Program.cs",
               "RelativeDocumentMoniker": "WinFormsApp\\Program.cs",
@@ -127,7 +257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "ClienteEntidad.cs",
               "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Entidades\\ClienteEntidad.cs",
               "RelativeDocumentMoniker": "Capa_Entidades\\ClienteEntidad.cs",
@@ -139,19 +269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "VideojuegoEntidad.cs",
-              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Entidades\\VideojuegoEntidad.cs",
-              "RelativeDocumentMoniker": "Capa_Entidades\\VideojuegoEntidad.cs",
-              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Entidades\\VideojuegoEntidad.cs",
-              "RelativeToolTip": "Capa_Entidades\\VideojuegoEntidad.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T05:21:43.207Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "WinFormsApp.csproj",
               "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\WinFormsApp\\WinFormsApp.csproj",
               "RelativeDocumentMoniker": "WinFormsApp\\WinFormsApp.csproj",
@@ -163,32 +281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ConexionBD.cs",
-              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\ConexionBD.cs",
-              "RelativeDocumentMoniker": "Capa_Acceso_Datos\\ConexionBD.cs",
-              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\ConexionBD.cs",
-              "RelativeToolTip": "Capa_Acceso_Datos\\ConexionBD.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T13:35:38.553Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DatosVideojuego.cs",
-              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\DatosVideojuego.cs",
-              "RelativeDocumentMoniker": "Capa_Acceso_Datos\\DatosVideojuego.cs",
-              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\DatosVideojuego.cs",
-              "RelativeToolTip": "Capa_Acceso_Datos\\DatosVideojuego.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T13:22:37.489Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\WinFormsApp\\Program.cs",
               "RelativeDocumentMoniker": "WinFormsApp\\Program.cs",
@@ -197,16 +290,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-17T13:48:37.766Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 610,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }
