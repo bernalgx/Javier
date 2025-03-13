@@ -9,10 +9,5 @@
         public string Telefono { get; set; } = string.Empty; // Numero de telefono de la tienda
         public bool Activa { get; set; }  // Muestra si la tienda esta activa (true) o cerrada (false)
 
-
-
-
-
-
     }
 }

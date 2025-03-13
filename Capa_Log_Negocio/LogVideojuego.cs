@@ -1,49 +1,48 @@
-﻿//using System; // Importa el espacio de nombres System
-//using Capa_Acceso_Datos; // Importa la capa de acceso a datos
-//using Capa_Entidades; // Importa la capa de entidades
+﻿using Capa_Entidades;
 
-//namespace Capa_Log_Negocio // Define el espacio de nombres para la logica de negocio
-//{
-    // Clase para manejar la logica de negocio relacionada con los videojuegos
-//    public class LogicaVideojuego
-//    {
-//        private DatosVideojuego datos = new DatosVideojuego();
+namespace Capa_Log_Negocio
+{
+	public class LogVideojuego
+	{
+		private VideojuegoEntidad[] videojuegos = new VideojuegoEntidad[20];
+		private int indice = 0;
 
-        // Metodo para registrar un videojuego en el sistema
-//        public string RegistrarVideojuego(string nombre, TipoVideojuegoEntidad tipo, string desarrollador, int lanzamiento, bool fisico)
-//       {
-            // Validacion de datos obligatorios
- //           if (string.IsNullOrWhiteSpace(nombre) || string.IsNullOrWhiteSpace(desarrollador))
-//            {
-//                return "Todos los campos son obligatorios.";
-//            }
+		public string RegistrarVideojuego(int id, string nombre, TipoVideojuegoEntidad tipo, string desarrollador, int lanzamiento, bool fisico)
+		{
+			// Validación de campos requeridos
+			if (string.IsNullOrWhiteSpace(nombre) || tipo == null || string.IsNullOrWhiteSpace(desarrollador))
+				return "Todos los campos son requeridos.";
 
-            // Validacion del año de lanzamiento (no puede ser mayor al actual)
-//            if (lanzamiento > DateTime.Today.Year)
-//            {
-//                return "El año de lanzamiento no puede ser mayor al actual.";
-//            }
+			// Validar que el Id sea único
+			for (int i = 0; i < indice; i++)
+			{
+				if (videojuegos[i].Id == id)
+					return "El ID ya existe.";
+			}
 
-            // Validacion del tipo de videojuego (debe ser proporcionado)
-//            if (tipo == null)
-//            {
-//                return "Debe seleccionar un tipo de videojuego.";
-//            }
+			// Validar espacio en el arreglo
+			if (indice >= videojuegos.Length)
+				return "No se pueden agregar más videojuegos.";
 
-            // Creacion del objeto VideojuegoEntidad
- //           var videojuego = new VideojuegoEntidad
- //           {
- //               Nombre = nombre,
- //               TipoVideojuego = tipo,
-//                Desarrollador = desarrollador,
- //               Lanzamiento = lanzamiento,
- //               Fisico = fisico
- //           };
+			// Registrar el videojuego
+			videojuegos[indice] = new VideojuegoEntidad
+			{
+				Id = id,
+				Nombre = nombre,
+				TipoVideojuego = tipo,
+				Desarrollador = desarrollador,
+				Lanzamiento = lanzamiento,
+				Fisico = fisico
+			};
+			indice++;
 
-            // Llamada a la capa de acceso a datos
- //           bool resultado = datos.AgregarVideojuego(videojuego);
+			return "Videojuego registrado correctamente.";
+		}
 
- //           return resultado ? "Videojuego registrado correctamente." : "Error al registrar videojuego.";
-//        }
-//    }
-//}
+		// Método para obtener la lista de videojuegos registrados, si fuera necesario
+		public VideojuegoEntidad[] ObtenerVideojuegos()
+		{
+			return videojuegos.Take(indice).ToArray();
+		}
+	}
+}

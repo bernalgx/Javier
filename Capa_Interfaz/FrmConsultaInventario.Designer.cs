@@ -1,43 +1,123 @@
-﻿using System; // Importa funcionalidades básicas del sistema
-using System.Linq; // Permite el uso de consultas LINQ
-using System.Windows.Forms; // Importa componentes de Windows Forms
-using Capa_Entidades; // Importa las entidades del sistema
+﻿//namespace Capa_Interfaz
+//{
+//    partial class FrmConsultaInventario
+//    {
+//        /// <summary>
+//        /// Required designer variable.
+//        /// </summary>
+//        private System.ComponentModel.IContainer components = null;
 
+//        /// <summary>
+//        /// Clean up any resources being used.
+//        /// </summary>
+//        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+//        protected override void Dispose(bool disposing)
+//        {
+//            if (disposing && (components != null))
+//            {
+//                components.Dispose();
+//            }
+//            base.Dispose(disposing);
+//        }
 
-namespace Capa_Interfaz // Espacio de nombres para la capa de interfaz
-{
-    public partial class FrmConsultaInventario : Form  // Define un formulario para consultar el inventario
-    {
-        public VideojuegosXTiendaEntidad[] inventario; // Arreglo que almacena los videojuegos en inventario
+//        #region Windows Form Designer generated code
 
-        public FrmConsultaInventario(VideojuegosXTiendaEntidad[] inventario) // Constructor que recibe el inventario
-        {
-            InitializeComponent(); // Inicializa los componentes gráficos del formulario
-            this.Inventario1 = inventario; // Asigna el inventario recibido a la propiedad
-            CargarDatos(); // Llama al metodo para cargar los datos en la interfaz
-        }
+//        /// <summary>
+//        /// Required method for Designer support - do not modify
+//        /// the contents of this method with the code editor.
+//        /// </summary>
+//        private void InitializeComponent()
+//        {
+//            dataGridView1 = new DataGridView();
+//            btnCargarDatos = new Button();
+//            TiendaID = new DataGridViewTextBoxColumn();
+//            TiendaNombre = new DataGridViewTextBoxColumn();
+//            TiendaDireccion = new DataGridViewTextBoxColumn();
+//            VideojuegoID = new DataGridViewTextBoxColumn();
+//            VideojuegoNombre = new DataGridViewTextBoxColumn();
+//            TipoVideojuego = new DataGridViewTextBoxColumn();
+//            Existencias = new DataGridViewTextBoxColumn();
+//            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+//            SuspendLayout();
+//            // 
+//            // dataGridView1
+//            // 
+//            dataGridView1.AllowUserToOrderColumns = true;
+//            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+//            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { TiendaID, TiendaNombre, TiendaDireccion, VideojuegoID, VideojuegoNombre, TipoVideojuego, Existencias });
+//            dataGridView1.Location = new Point(12, 12);
+//            dataGridView1.Name = "dataGridView1";
+//            dataGridView1.Size = new Size(753, 150);
+//            dataGridView1.TabIndex = 0;
+//            // 
+//            // btnCargarDatos
+//            // 
+//            btnCargarDatos.Location = new Point(288, 231);
+//            btnCargarDatos.Name = "btnCargarDatos";
+//            btnCargarDatos.Size = new Size(159, 60);
+//            btnCargarDatos.TabIndex = 1;
+//            btnCargarDatos.Text = "Cargar Datos";
+//            btnCargarDatos.UseVisualStyleBackColor = true;
+//            btnCargarDatos.Click += btnCargarDatos_Click;
+//            // 
+//            // TiendaID
+//            // 
+//            TiendaID.HeaderText = "TiendaID";
+//            TiendaID.Name = "TiendaID";
+//            // 
+//            // TiendaNombre
+//            // 
+//            TiendaNombre.HeaderText = "TiendaNombre";
+//            TiendaNombre.Name = "TiendaNombre";
+//            // 
+//            // TiendaDireccion
+//            // 
+//            TiendaDireccion.HeaderText = "TiendaDireccion";
+//            TiendaDireccion.Name = "TiendaDireccion";
+//            // 
+//            // VideojuegoID
+//            // 
+//            VideojuegoID.HeaderText = "VideojuegoID";
+//            VideojuegoID.Name = "VideojuegoID";
+//            // 
+//            // VideojuegoNombre
+//            // 
+//            VideojuegoNombre.HeaderText = "VideojuegoNombre";
+//            VideojuegoNombre.Name = "VideojuegoNombre";
+//            // 
+//            // TipoVideojuego
+//            // 
+//            TipoVideojuego.HeaderText = "TipoVideojuego";
+//            TipoVideojuego.Name = "TipoVideojuego";
+//            // 
+//            // Existencias
+//            // 
+//            Existencias.HeaderText = "Existencias";
+//            Existencias.Name = "Existencias";
+//            // 
+//            // FrmConsultaInventario
+//            // 
+//            AutoScaleDimensions = new SizeF(7F, 15F);
+//            AutoScaleMode = AutoScaleMode.Font;
+//            ClientSize = new Size(767, 365);
+//            Controls.Add(btnCargarDatos);
+//            Controls.Add(dataGridView1);
+//            Name = "FrmConsultaInventario";
+//            Text = "Form1";
+//            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+//            ResumeLayout(false);
+//        }
 
-        public VideojuegosXTiendaEntidad[] Inventario1 { get => inventario; set => inventario = value; } // Propiedad para acceder al inventario
+//        #endregion
 
-        private void CargarDatos() // Metodo para cargar los datos en la tabla
-        {
-            try
-            {
-                dgvDatos.DataSource = Inventario1.Where(i => i != null).Select(i => new // Filtra elementos no nulos
-                {
-                    TiendaID = i.Tienda.Id, // ID de la tienda
-                    TiendaNombre = i.Tienda.Nombre, // Nombre de la tienda
-                    TiendaDireccion = i.Tienda.Direccion, // Direccion de la tienda
-                    VideojuegoID = i.Videojuego.Id,  // ID del videojuego
-                    VideojuegoNombre = i.Videojuego.Nombre, // Nombre del videojuego
-                    TipoVideojuego = i.Videojuego.TipoVideojuego.Nombre,// Tipo de videojuego
-                    Existencias = i.Existencias // Cantidad disponible en inventario
-                }).ToList(); // Convierte el resultado en una lista para asignarlo al DataGridView
-            }
-            catch (Exception ex) // Captura errores en la carga de datos
-            {
-                MessageBox.Show("Error al cargar los datos: " + ex.Message); // Muestra un mensaje en caso de error
-            }
-        }
-    }
-}
+//        private DataGridView dataGridView1;
+//        private Button btnCargarDatos;
+//        private DataGridViewTextBoxColumn TiendaID;
+//        private DataGridViewTextBoxColumn TiendaNombre;
+//        private DataGridViewTextBoxColumn TiendaDireccion;
+//        private DataGridViewTextBoxColumn VideojuegoID;
+//        private DataGridViewTextBoxColumn VideojuegoNombre;
+//        private DataGridViewTextBoxColumn TipoVideojuego;
+//        private DataGridViewTextBoxColumn Existencias;
+//    }
+//}

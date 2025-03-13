@@ -1,9 +1,21 @@
-﻿namespace Capa_Entidades // Espacio para organizar clases que se relacionan con entidades del sistema
+﻿
+
+
+namespace Capa_Entidades
 {
-    public class TipoVideojuegoEntidad // Clase que representa un tipo de videojuego
-    {
-        public int Id { get; set; } // Identificador unico del tipo de videojuego
-        public required string Nombre { get; set; } // Nombre del tipo de videojuego (Accion, Aventura, etc.)
-        public required string Descripcion { get; set; } // Breve descripcion
-    }
+	/// <summary>
+	/// Representa el tipo o categoría de un videojuego (por ejemplo: Acción, Aventura, RPG, etc.).
+	/// </summary>
+	public class TipoVideojuegoEntidad
+	{
+		public int Id { get; set; }
+		public string Nombre { get; set; }
+		public string Descripcion { get; set; }
+
+		// Para que el ComboBox muestre el Nombre en lugar del nombre de la clase
+		public override string ToString()
+		{
+			return Nombre;
+		}
+	}
 }

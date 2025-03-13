@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Interfaz\\Capa_Interfaz.csproj": {}
+    "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\Capa_Interfaz.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj": {
+    "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj",
+        "projectUniqueName": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj",
         "projectName": "Capa_Acceso_Datos",
-        "projectPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj",
+        "projectPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj",
         "packagesPath": "C:\\Users\\mau\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Acceso_Datos\\obj\\",
+        "outputPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -31,14 +31,7 @@
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
-            "projectReferences": {
-              "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Entidades\\Capa_Entidades.csproj": {
-                "projectPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Entidades\\Capa_Entidades.csproj"
-              },
-              "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Log_Negocio\\Capa_Log_Negocio.csproj": {
-                "projectPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Log_Negocio\\Capa_Log_Negocio.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -56,6 +49,16 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "NSubstitute": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -72,18 +75,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.104/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Entidades\\Capa_Entidades.csproj": {
+    "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Entidades\\Capa_Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Entidades\\Capa_Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Entidades\\Capa_Entidades.csproj",
         "projectName": "Capa_Entidades",
-        "projectPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Entidades\\Capa_Entidades.csproj",
+        "projectPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Entidades\\Capa_Entidades.csproj",
         "packagesPath": "C:\\Users\\mau\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Entidades\\obj\\",
+        "outputPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -137,18 +140,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.104/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Interfaz\\Capa_Interfaz.csproj": {
+    "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\Capa_Interfaz.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Interfaz\\Capa_Interfaz.csproj",
+        "projectUniqueName": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\Capa_Interfaz.csproj",
         "projectName": "Capa_Interfaz",
-        "projectPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Interfaz\\Capa_Interfaz.csproj",
+        "projectPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\Capa_Interfaz.csproj",
         "packagesPath": "C:\\Users\\mau\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Interfaz\\obj\\",
+        "outputPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -169,14 +172,11 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj": {
-                "projectPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj"
+              "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Entidades\\Capa_Entidades.csproj": {
+                "projectPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Entidades\\Capa_Entidades.csproj"
               },
-              "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Entidades\\Capa_Entidades.csproj": {
-                "projectPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Entidades\\Capa_Entidades.csproj"
-              },
-              "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Log_Negocio\\Capa_Log_Negocio.csproj": {
-                "projectPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Log_Negocio\\Capa_Log_Negocio.csproj"
+              "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Log_Negocio\\Capa_Log_Negocio.csproj": {
+                "projectPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Log_Negocio\\Capa_Log_Negocio.csproj"
               }
             }
           }
@@ -215,18 +215,18 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.104/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Log_Negocio\\Capa_Log_Negocio.csproj": {
+    "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Log_Negocio\\Capa_Log_Negocio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Log_Negocio\\Capa_Log_Negocio.csproj",
+        "projectUniqueName": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Log_Negocio\\Capa_Log_Negocio.csproj",
         "projectName": "Capa_Log_Negocio",
-        "projectPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Log_Negocio\\Capa_Log_Negocio.csproj",
+        "projectPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Log_Negocio\\Capa_Log_Negocio.csproj",
         "packagesPath": "C:\\Users\\mau\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Log_Negocio\\obj\\",
+        "outputPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Log_Negocio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -247,8 +247,11 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Entidades\\Capa_Entidades.csproj": {
-                "projectPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier_Rojas_Cordero_PY1_Progra_Avanzada\\Capa_Entidades\\Capa_Entidades.csproj"
+              "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj": {
+                "projectPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj"
+              },
+              "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Entidades\\Capa_Entidades.csproj": {
+                "projectPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Entidades\\Capa_Entidades.csproj"
               }
             }
           }
@@ -284,7 +287,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.104/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

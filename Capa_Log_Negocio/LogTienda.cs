@@ -5,12 +5,12 @@
 //namespace Capa_Log_Negocio // Define el espacio de nombres para la logica de negocio
 //{
     // Clase para manejar la logica de negocio relacionada con las tiendas
-//    public class LogicaTienda
+//    public class LogTienda
 //    {
 //        private DatosTienda datos = new DatosTienda();
 
         // Metodo para registrar una tienda en el sistema
-//        public string RegistrarTienda(int id, string nombre, AdministradorEntidad administrador, string direccion, string telefono, bool activa)
+//        public string RegistroTienda(int id, string nombre, AdministradorEntidad administrador, string direccion, string telefono, bool activa)
 //        {
             // Validacion de datos obligatorios
 //            if (string.IsNullOrWhiteSpace(nombre) || string.IsNullOrWhiteSpace(direccion) || string.IsNullOrWhiteSpace(telefono))

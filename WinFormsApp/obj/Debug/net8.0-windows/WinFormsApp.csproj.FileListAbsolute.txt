@@ -153,3 +153,5 @@ C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\WinFormsApp\obj\Debug\net8
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\WinFormsApp\obj\Debug\net8.0-windows\WinFormsApp.csproj.GenerateResource.cache
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\WinFormsApp\bin\Debug\net8.0-windows\Castle.Core.dll
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\WinFormsApp\bin\Debug\net8.0-windows\NSubstitute.dll
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\WinFormsApp\obj\Debug\net8.0-windows\WinFormsApp.FormMenuPrincipal.resources
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\WinFormsApp\obj\Debug\net8.0-windows\WinFormsApp.Program.resources

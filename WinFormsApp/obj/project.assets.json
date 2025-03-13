@@ -679,8 +679,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Capa_Entidades": "1.0.0",
-          "Capa_Log_Negocio": "1.0.0",
           "Microsoft.Data.SqlClient": "6.0.1",
           "NSubstitute": "5.3.0"
         },
@@ -689,29 +687,6 @@
         },
         "runtime": {
           "bin/placeholder/Capa_Acceso_Datos.dll": {}
-        }
-      },
-      "Capa_Entidades/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "compile": {
-          "bin/placeholder/Capa_Entidades.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Capa_Entidades.dll": {}
-        }
-      },
-      "Capa_Log_Negocio/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "Capa_Entidades": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Capa_Log_Negocio.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Capa_Log_Negocio.dll": {}
         }
       }
     }
@@ -1776,16 +1751,6 @@
       "type": "project",
       "path": "../Capa_Acceso_Datos/Capa_Acceso_Datos.csproj",
       "msbuildProject": "../Capa_Acceso_Datos/Capa_Acceso_Datos.csproj"
-    },
-    "Capa_Entidades/1.0.0": {
-      "type": "project",
-      "path": "../Capa_Entidades/Capa_Entidades.csproj",
-      "msbuildProject": "../Capa_Entidades/Capa_Entidades.csproj"
-    },
-    "Capa_Log_Negocio/1.0.0": {
-      "type": "project",
-      "path": "../Capa_Log_Negocio/Capa_Log_Negocio.csproj",
-      "msbuildProject": "../Capa_Log_Negocio/Capa_Log_Negocio.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1865,7 +1830,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.104/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
