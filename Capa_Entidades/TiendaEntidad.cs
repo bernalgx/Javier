@@ -1,4 +1,5 @@
-﻿namespace Capa_Entidades // Espacio para organizar clases que se relacionan con entidades del sistema
+﻿
+namespace Capa_Entidades // Espacio para organizar clases que se relacionan con entidades del sistema
 {
     public class TiendaEntidad // Clase que representa una tienda en el sistema, con acceso interno
     {
@@ -9,5 +10,9 @@
         public string Telefono { get; set; } = string.Empty; // Numero de telefono de la tienda
         public bool Activa { get; set; }  // Muestra si la tienda esta activa (true) o cerrada (false)
 
+        public static void AgregarTienda(TiendaEntidad nuevaTienda)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -1,58 +1,54 @@
-﻿//using System;
-//using System.Collections.Generic;
-//using System.Data;
-//using System.Data.SqlClient;
+﻿// AQUI TODO ES NUEVO/////////////////////////////////
+
+
+//using System;
+//using Microsoft.Data.SqlClient;
+//using Capa_Acceso_Datos;
 //using Capa_Entidades;
 
-
-//namespace Capa_Acceso_Datos // Espacio para organizar clases que tienen relacion con acceso a datos
+//namespace Capa_Acceso_Datos
 //{
-//    public static class DatosAdministrador
+//    public class DatosAdministrador
 //    {
-//        private static AdministradorEntidad[] administradores = new AdministradorEntidad[20];
-//        private static int contador = 0;
+//        private readonly ConexionBD _conexion;
 
-//        public static bool Crear(AdministradorEntidad admin)
+//        public DatosAdministrador()
 //        {
-//            if (contador >= 20) return false;
-
-//            foreach (var a in administradores)
-//            {
-//                if (a != null && a.Identificacion == admin.Identificacion)
-//                    throw new Exception("La identificación ya existe.");
-//            }
-
-//            administradores[contador] = admin;
-//            contador++;
-//            return true;
+//            _conexion = new ConexionBD();
 //        }
 
- //       public static AdministradorEntidad[] ObtenerTodos() => administradores;
-
-//        public static bool Actualizar(AdministradorEntidad admin)
+//        public string Crear(AdministradorEntidad administrador)
 //        {
-//            for (int i = 0; i < contador; i++)
+//            try
 //            {
-//                if (administradores[i] != null && administradores[i].Identificacion == admin.Identificacion)
+//                using (var conn = _conexion.ObtenerConexion())
 //                {
-//                    administradores[i] = admin;
-//                    return true;
-//                }
-//            }
-//            return false;
-//        }
+//                    conn.Open();
 
-//        public static bool Eliminar(int id)
-//        {
-//            for (int i = 0; i < contador; i++)
-//            {
-//                if (administradores[i] != null && administradores[i].Identificacion == id)
-//                {
-//                    administradores[i] = null;
-//                    return true;
+//                    string sql = @"
+//                    INSERT INTO Administrador 
+//                    (Identificacion, Nombre, PrimerApellido, SegundoApellido, FechaNacimiento, FechaContratacion)
+//                    VALUES 
+//                    (@Identificacion, @Nombre, @PrimerApellido, @SegundoApellido, @FechaNacimiento, @FechaContratacion)";
+
+//                    using (var cmd = new SqlCommand(sql, conn))
+//                    {
+//                        cmd.Parameters.AddWithValue("@Identificacion", administrador.Identificacion);
+//                        cmd.Parameters.AddWithValue("@Nombre", administrador.Nombre);
+//                        cmd.Parameters.AddWithValue("@PrimerApellido", administrador.PrimerApellido);
+//                        cmd.Parameters.AddWithValue("@SegundoApellido", administrador.SegundoApellido);
+//                       cmd.Parameters.AddWithValue("@FechaNacimiento", administrador.FechaNacimiento);
+//                        cmd.Parameters.AddWithValue("@FechaContratacion", administrador.FechaContratacion);
+
+//                        cmd.ExecuteNonQuery();
+//                    }
 //                }
+//                return "Administrador insertado correctamente.";
 //            }
-//            return false;
+//           catch (Exception ex)
+//            {
+//                return "Error al insertar administrador: " + ex.Message;
+//            }
 //        }
-//    }
+//   }
 //}

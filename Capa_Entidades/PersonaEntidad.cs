@@ -17,5 +17,15 @@
 
         // Fecha de nacimiento
         public DateTime FechaNacimiento { get; set; }
+
+        // Constructor que obliga a inicializar los valores requeridos
+        public PersonaEntidad(int identificacion, string nombre, string primerApellido, string segundoApellido, DateTime fechaNacimiento)
+        {
+            Identificacion = identificacion;
+            Nombre = nombre;
+            PrimerApellido = primerApellido;
+            SegundoApellido = segundoApellido;
+            FechaNacimiento = fechaNacimiento;
+        }
     }
 }

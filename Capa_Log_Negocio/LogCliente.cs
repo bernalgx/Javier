@@ -1,35 +1,34 @@
-﻿//using System; // Importa el espacio de nombres System
-//using Capa_Acceso_Datos; // Importa la capa de acceso a datos
-//using Capa_Entidades; // Importa la capa de entidades
-//using Interfaz;
-//using Capa_Logica_Negocio;
+﻿//TODO NUEVO/////////////////
 
-//namespace Capa_Log_Negocio // Define el espacio de nombres para la logica de negocio
+//using Capa_Entidades;
+
+
+//namespace Capa_Log_Negocio
 //{
-// Clase para manejar la logica de negocio relacionada con los clientes
 //    public class LogCliente
 //    {
-//        private DatosCliente datos = new DatosCliente();
+//        private ClienteEntidad[] clientes = new ClienteEntidad[20]; // Arreglo con 20 espacios
+//        private int indice = 0;
 
-// Metodo para registrar un cliente en el sistema
 //        public string RegistroCliente(int identificacion, string nombre, string primerApellido, string segundoApellido, DateTime fechaNacimiento, bool jugadorEnLinea)
 //        {
-// Validacion de datos obligatorios
 //            if (string.IsNullOrWhiteSpace(nombre) || string.IsNullOrWhiteSpace(primerApellido) || string.IsNullOrWhiteSpace(segundoApellido))
+//                return "Todos los campos son requeridos.";
+
+//            if (DateTime.Today.Year - fechaNacimiento.Year < 10)
+//                return "El cliente debe tener al menos 10 años.";
+
+//            for (int i = 0; i < indice; i++)
 //            {
-//                return "Todos los campos son obligatorios.";
+//                if (clientes[i].Identificacion == identificacion)
+//                    return "El ID ya existe.";
 //            }
 
-// Validacion de edad (debe ser mayor de 10 años para registrarse)
-//            int edad = DateTime.Today.Year - fechaNacimiento.Year;
-//            if (edad < 10)
-//            {
-//                return "El cliente debe minimo 10 años.";
-//            }
+//            if (indice >= clientes.Length)
+//                return "No se pueden agregar más clientes.";
 
-// Creacion del objeto ClienteEntidad
-//            var cliente = new ClienteEntidad
-//           {
+//            clientes[indice] = new ClienteEntidad
+//            {
 //                Identificacion = identificacion,
 //                Nombre = nombre,
 //                PrimerApellido = primerApellido,
@@ -37,11 +36,14 @@
 //                FechaNacimiento = fechaNacimiento,
 //                JugadorEnLinea = jugadorEnLinea
 //            };
+//            indice++;
 
-// Llamada a la capa de acceso a datos
-//            bool resultado = datos.AgregarCliente(cliente);
+//            return "Cliente registrado correctamente.";
+//        }
 
-//            return resultado ? "Cliente registrado correctamente." : "Error al registrar cliente.";
+//        public ClienteEntidad[] ObtenerClientes()
+//        {
+//            return clientes.Take(indice).ToArray();
 //        }
 //    }
 //}

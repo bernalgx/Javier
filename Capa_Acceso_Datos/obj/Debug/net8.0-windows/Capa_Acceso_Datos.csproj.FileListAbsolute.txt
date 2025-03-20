@@ -25,19 +25,34 @@ C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Capa_Acceso_Datos\obj\Debug\net8.
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Capa_Acceso_Datos\obj\Debug\net8.0-windows\refint\Capa_Acceso_Datos.dll
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Capa_Acceso_Datos\obj\Debug\net8.0-windows\Capa_Acceso_Datos.pdb
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Capa_Acceso_Datos\obj\Debug\net8.0-windows\ref\Capa_Acceso_Datos.dll
+C:\Users\Javier\Downloads\Javier-main\Capa_Acceso_Datos\obj\Debug\net8.0-windows\Capa_Acceso_Datos.csproj.AssemblyReference.cache
+C:\Users\Javier\Downloads\Javier-main\Capa_Acceso_Datos\obj\Debug\net8.0-windows\Capa_Acceso_Datos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Javier\Downloads\Javier-main\Capa_Acceso_Datos\obj\Debug\net8.0-windows\Capa_Acceso_Datos.AssemblyInfoInputs.cache
+C:\Users\Javier\Downloads\Javier-main\Capa_Acceso_Datos\obj\Debug\net8.0-windows\Capa_Acceso_Datos.AssemblyInfo.cs
+C:\Users\Javier\Downloads\Javier-main\Capa_Acceso_Datos\obj\Debug\net8.0-windows\Capa_Acceso_Datos.csproj.CoreCompileInputs.cache
+C:\Users\Javier\Downloads\Javier-main\Capa_Acceso_Datos\obj\Debug\net8.0-windows\Capa_Acceso_Datos.dll
+C:\Users\Javier\Downloads\Javier-main\Capa_Acceso_Datos\obj\Debug\net8.0-windows\refint\Capa_Acceso_Datos.dll
+C:\Users\Javier\Downloads\Javier-main\Capa_Acceso_Datos\obj\Debug\net8.0-windows\Capa_Acceso_Datos.pdb
+C:\Users\Javier\Downloads\Javier-main\Capa_Acceso_Datos\bin\Debug\net8.0-windows\Capa_Acceso_Datos.deps.json
+C:\Users\Javier\Downloads\Javier-main\Capa_Acceso_Datos\bin\Debug\net8.0-windows\Capa_Acceso_Datos.dll
+C:\Users\Javier\Downloads\Javier-main\Capa_Acceso_Datos\bin\Debug\net8.0-windows\Capa_Acceso_Datos.pdb
+C:\Users\Javier\Downloads\Javier-main\Capa_Acceso_Datos\bin\Debug\net8.0-windows\Capa_Entidades.dll
+C:\Users\Javier\Downloads\Javier-main\Capa_Acceso_Datos\bin\Debug\net8.0-windows\Capa_Entidades.pdb
+C:\Users\Javier\Downloads\Javier-main\Capa_Acceso_Datos\obj\Debug\net8.0-windows\Capa_Acc.D879E994.Up2Date
+C:\Users\Javier\Downloads\Javier-main\Capa_Acceso_Datos\obj\Debug\net8.0-windows\ref\Capa_Acceso_Datos.dll
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Acceso_Datos\bin\Debug\net8.0-windows\Capa_Acceso_Datos.deps.json
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Acceso_Datos\bin\Debug\net8.0-windows\Capa_Acceso_Datos.dll
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Acceso_Datos\bin\Debug\net8.0-windows\Capa_Acceso_Datos.pdb
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Acceso_Datos\bin\Debug\net8.0-windows\Capa_Entidades.dll
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Acceso_Datos\bin\Debug\net8.0-windows\Capa_Entidades.pdb
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Acceso_Datos\obj\Debug\net8.0-windows\Capa_Acceso_Datos.csproj.AssemblyReference.cache
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Acceso_Datos\obj\Debug\net8.0-windows\Capa_Acceso_Datos.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Acceso_Datos\obj\Debug\net8.0-windows\Capa_Acceso_Datos.AssemblyInfoInputs.cache
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Acceso_Datos\obj\Debug\net8.0-windows\Capa_Acceso_Datos.AssemblyInfo.cs
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Acceso_Datos\obj\Debug\net8.0-windows\Capa_Acceso_Datos.csproj.CoreCompileInputs.cache
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Acceso_Datos\obj\Debug\net8.0-windows\Capa_Acceso_Datos.sourcelink.json
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Acceso_Datos\bin\Debug\net8.0-windows\Capa_Acceso_Datos.deps.json
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Acceso_Datos\bin\Debug\net8.0-windows\Capa_Acceso_Datos.dll
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Acceso_Datos\bin\Debug\net8.0-windows\Capa_Acceso_Datos.pdb
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Acceso_Datos\obj\Debug\net8.0-windows\Capa_Acc.D879E994.Up2Date
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Acceso_Datos\obj\Debug\net8.0-windows\Capa_Acceso_Datos.dll
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Acceso_Datos\obj\Debug\net8.0-windows\refint\Capa_Acceso_Datos.dll
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Acceso_Datos\obj\Debug\net8.0-windows\Capa_Acceso_Datos.pdb
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Acceso_Datos\obj\Debug\net8.0-windows\ref\Capa_Acceso_Datos.dll
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Acceso_Datos\bin\Debug\net8.0-windows\Capa_Entidades.dll
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Acceso_Datos\bin\Debug\net8.0-windows\Capa_Entidades.pdb
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Acceso_Datos\obj\Debug\net8.0-windows\Capa_Acc.D879E994.Up2Date

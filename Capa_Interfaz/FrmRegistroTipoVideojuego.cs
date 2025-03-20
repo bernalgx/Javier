@@ -29,7 +29,7 @@ namespace Capa_Interfaz
 				string descripcion = txtDescripcion.Text;
 
 				// Llama al método RegistrarTipo para registrar el nuevo tipo de videojuego
-				string mensaje = TipoVideoJuego.RegistrarTipo(id, nombre, descripcion);
+				string mensaje = TipoVideoJuego.RegistroTipo(id, nombre, descripcion);
 
 				// Muestra un mensaje con el resultado de la operación
 				MessageBox.Show(mensaje);

@@ -1,44 +1,49 @@
-﻿//using System; // Importa el espacio de nombres System
-//using Capa_Acceso_Datos; // Importa la capa de acceso a datos
-//using Capa_Entidades; // Importa la capa de entidades
+﻿//TODO NUEVO/////////////
 
-//namespace Capa_Log_Negocio // Define el espacio de nombres para la logica de negocio
+//using Capa_Entidades;
+
+
+//namespace Capa_Log_Negocio
 //{
-    // Clase para manejar la logica de negocio relacionada con las tiendas
 //    public class LogTienda
 //    {
-//        private DatosTienda datos = new DatosTienda();
+//        private TiendaEntidad[] tiendas = new TiendaEntidad[5]; // Arreglo con 5 espacios
+//        private int indice = 0;
 
-        // Metodo para registrar una tienda en el sistema
 //        public string RegistroTienda(int id, string nombre, AdministradorEntidad administrador, string direccion, string telefono, bool activa)
 //        {
-            // Validacion de datos obligatorios
 //            if (string.IsNullOrWhiteSpace(nombre) || string.IsNullOrWhiteSpace(direccion) || string.IsNullOrWhiteSpace(telefono))
-//            {
-//                return "Todos los campos son obligatorios.";
-//            }
+//                return "Todos los campos son requeridos.";
 
-            // Validacion del administrador (debe ser proporcionado)
 //            if (administrador == null)
+//                return "Debe seleccionar un administrador.";
+
+//            for (int i = 0; i < indice; i++)
 //            {
-//                return "Debe seleccionar un administrador para la tienda.";
+//                if (tiendas[i].Id == id)
+//                    return "El ID ya existe.";
 //            }
 
-            // Creacion del objeto TiendaEntidad
- //           var tienda = new TiendaEntidad
- //           {
- //               Id = id,
- //               Nombre = nombre,
- //               Administrador = administrador,
- //               Direccion = direccion,
- //               Telefono = telefono,
- //               Activa = activa
- //           };
+//            if (indice >= tiendas.Length)
+//                return "No se pueden agregar más tiendas.";
 
-            // Llamada a la capa de acceso a datos
- //           bool resultado = datos.AgregarTienda(tienda);
+//            tiendas[indice] = new TiendaEntidad
+//            {
+//                Id = id,
+//                Nombre = nombre,
+//                Administrador = administrador,
+//                Direccion = direccion,
+//                Telefono = telefono,
+//                Activa = activa
+//            };
+//            indice++;
 
- //           return resultado ? "Tienda registrada correctamente." : "Error al registrar tienda.";
- //       }
+//            return "Tienda registrada correctamente.";
+//        }
+
+//        public TiendaEntidad[] ObtenerTiendas()
+//        {
+//            return tiendas.Take(indice).ToArray();
+//        }
 //    }
 //}

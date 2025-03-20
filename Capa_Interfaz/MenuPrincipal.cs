@@ -49,11 +49,19 @@ namespace Capa_Interfaz
 			form.ShowDialog();
 		}
 
+		private void button1_Click(object sender, EventArgs e)
+		{
 
-		//private void Inventario_Click(object sender, EventArgs e)
-		//{
-		//	FrmConsultaInventario form = new FrmConsultaInventario();
-		//	form.ShowDialog();
-		//}
+			FrmConsultaVideoJuegos form = new FrmConsultaVideoJuegos();
+			form.ShowDialog();
+		}
+
 	}
+
+
+	//private void Inventario_Click(object sender, EventArgs e)
+	//{
+	//	FrmConsultaInventario form = new FrmConsultaInventario();
+	//	form.ShowDialog();
+	//}
 }

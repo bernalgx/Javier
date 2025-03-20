@@ -9,8 +9,8 @@ namespace Capa_Acceso_Datos // Espacio para organizar clases que tienen relacion
 	public class ConexionBD
 	{
 		// Cadena de conexión a SQL Server (modificar segun configuración local)
+		//private readonly string connectionString = "Server=GOSVE\\SQLEXPRESS;Database=BD_45GAMES4UJAVIERRC;Trusted_Connection=True;TrustServerCertificate=True;";
 		private readonly string connectionString = "Server=MAU;Database=BD_45GAMES4UJAVIERRC;Trusted_Connection=True;TrustServerCertificate=True;";
-
 		// Método para obtener una conexion a la base de datos
 		public SqlConnection ObtenerConexion()
 		{

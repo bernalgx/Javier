@@ -1,57 +1,51 @@
-﻿//using System; // Importa el espacio de nombres System
-////using Capa_Entidades; // Importa la capa de entidades
-//using System.Collections.Generic; // Importa el espacio de nombres para listas
+﻿//TODO NUEVO///////////////////
 
-//namespace Capa_Log_Negocio // Define el espacio de nombres para la logica de negocio
+
+//using Capa_Entidades;
+//namespace Capa_Log_Negocio
 //{
-//	// Clase para manejar la logica de negocio relacionada con los administradores
-//	public class LogAdministrador
-//	{
-//		private DatosAdministrador datos = new DatosAdministrador();
+//    public class LogAdministrador
+//    {
+//        private AdministradorEntidad[] administradores = new AdministradorEntidad[20]; // Arreglo con 20 espacios
+//        private int indice = 0;
 
-//		//Metodo para registrar un administrador en el sistema
+//       public string RegistroAdministrador(int identificacion, string nombre, string primerApellido, string segundoApellido, DateTime fechaNacimiento, DateTime fechaContratacion)
+//       {
+//            if (string.IsNullOrWhiteSpace(nombre) || string.IsNullOrWhiteSpace(primerApellido) || string.IsNullOrWhiteSpace(segundoApellido))
+//                return "Todos los campos son requeridos.";
 
-//				public string RegistroAdministrador(int identificacion, string nombre, string primerApellido, string segundoApellido, DateTime fechaNacimiento, DateTime fechaContratacion)
-//		{
-//			//Validacion de datos obligatorios
+//           if (DateTime.Today.Year - fechaNacimiento.Year < 18)
+//                return "El administrador debe ser mayor de edad.";
 
-//					if (string.IsNullOrWhiteSpace(nombre) || string.IsNullOrWhiteSpace(primerApellido) || string.IsNullOrWhiteSpace(segundoApellido))
-//			{
-//				return "Todos los campos son obligatorios.";
-//			}
+//            if (fechaContratacion > DateTime.Today)
+//                return "La fecha de contratación no puede ser futura.";
 
-//			//Validacion de edad(debe ser mayor de 18 años)
+//            for (int i = 0; i < indice; i++)
+//            {
+//                if (administradores[i].Identificacion == identificacion)
+//                   return "El ID ya existe.";
+//            }
 
-//					int edad = DateTime.Today.Year - fechaNacimiento.Year;
-//			if (edad < 18)
-//			{
-//				return "El administrador debe ser mayor de edad (mínimo 18 años).";
-//			}
+//            if (indice >= administradores.Length)
+//                return "No se pueden agregar más administradores.";
 
-//			//Validacion de fecha de contratacion(no puede ser futura)
+//            administradores[indice] = new AdministradorEntidad
+//            {
+//                Identificacion = identificacion,
+//                Nombre = nombre,
+//                PrimerApellido = primerApellido,
+//                SegundoApellido = segundoApellido,
+//                FechaNacimiento = fechaNacimiento,
+//                FechaContratacion = fechaContratacion
+//            };
+//            indice++;
 
-//					if (fechaContratacion > DateTime.Today)
-//			{
-//				return "La fecha de contratacion no puede ser mayor a la fecha actual.";
-//			}
+//            return "Administrador registrado correctamente.";
+//        }
 
-//			//Creacion del objeto AdministradorEntidad
-
-//					var administrador = new AdministradorEntidad
-//					{
-//						Identificacion = identificacion,
-//						Nombre = nombre,
-//						PrimerApellido = primerApellido,
-//						SegundoApellido = segundoApellido,
-//						FechaNacimiento = fechaNacimiento,
-//						FechaContratacion = fechaContratacion
-//					};
-
-//			//Llamada a la capa de acceso a datos
-
-//					bool resultado = datos.AgregarAdministrador(administrador);
-
-//			return resultado ? "Administrador registrado correctamente." : "Error al registrar administrador.";
-//		}
-//	}
+//        public AdministradorEntidad[] ObtenerAdministradores()
+//        {
+//            return administradores.Take(indice).ToArray();
+//        }
+//    }
 //}

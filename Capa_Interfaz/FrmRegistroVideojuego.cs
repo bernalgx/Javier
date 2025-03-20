@@ -23,9 +23,6 @@ namespace Capa_Interfaz
 		// Evento que se ejecuta al cargar el formulario
 		private void FrmRegistroVideojuego_Load(object sender, EventArgs e)
 		{
-
-
-
 			var datos = new DatosTipoVideojuego();
 			var lista = datos.ObtenerTodos();
 

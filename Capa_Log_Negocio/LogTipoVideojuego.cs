@@ -11,13 +11,13 @@ namespace Capa_Log_Negocio
 		private int indice = 0;
 
 		// Método para registrar un nuevo tipo de videojuego
-		public string RegistrarTipo(int id, string nombre, string descripcion)
+		public string RegistroTipo(int id, string nombre, string descripcion)
 		{
-			// Validación: Todos los datos son requeridos
+			// Validacion: Todos los datos son requeridos
 			if (string.IsNullOrWhiteSpace(nombre) || string.IsNullOrWhiteSpace(descripcion))
 				return "Todos los campos son requeridos.";
 
-			// Validar que el Id sea único
+			// Validar que el Id sea unico
 			for (int i = 0; i < indice; i++)
 			{
 				if (tipos[i].Id == id)
@@ -38,7 +38,7 @@ namespace Capa_Log_Negocio
 		// Método para retornar el arreglo de tipos de videojuegos (o convertirlo a List) y poder cargarlo en un ComboBox
 		public TipoVideojuegoEntidad[] ObtenerTipos()
 		{
-			// Retorna solo los elementos válidos del arreglo
+			// Retorna solo los elementos validos del arreglo
 			return tipos.Take(indice).ToArray();
 		}
 	}

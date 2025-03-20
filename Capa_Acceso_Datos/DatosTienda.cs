@@ -1,58 +1,133 @@
-﻿//using System;
-//using System.Collections.Generic;
-//using System.Data;
-//using System.Data.SqlClient;
+﻿//AQUI TODO ES NUEVO////////////////
+
+
+//using System;
+//using Microsoft.Data.SqlClient;
+//using Capa_Acceso_Datos;
 //using Capa_Entidades;
 
-
-//namespace Capa_Acceso_Datos // Espacio para organizar clases que tienen relacion con acceso a datos
+//namespace Capa_Acceso_Datos
 //{
-//    public static class DatosTienda
+//    public class DatosTienda
 //    {
-//        private static TiendaEntidad[] tiendas = new TiendaEntidad[5];
-//        private static int contador = 0;
+//        private readonly ConexionBD _conexion;
 
-//        public static bool Crear(TiendaEntidad tienda)
+//        public DatosTienda()
 //        {
-//            if (contador >= 5) return false;
-
-//            foreach (var t in tiendas)
-//            {
-//                if (t != null && t.Id == tienda.Id)
-//                    throw new Exception("El ID ya existe.");
-//            }
-
-//            tiendas[contador] = tienda;
-//            contador++;
-//            return true;
+//            _conexion = new ConexionBD();
 //        }
 
-//        public static TiendaEntidad[] ObtenerTodos() => tiendas;
-
-//        public static bool Actualizar(TiendaEntidad tienda)
+//        public string Crear(TiendaEntidad tienda)
 //        {
-//            for (int i = 0; i < contador; i++)
+//            try
 //            {
-//                if (tiendas[i] != null && tiendas[i].Id == tienda.Id)
+//                using (var conn = _conexion.ObtenerConexion())
 //                {
-//                    tiendas[i] = tienda;
-//                    return true;
+//                    conn.Open();
+
+//                    string sql = @"
+//                    INSERT INTO Tienda 
+//                    (Id, Nombre, AdministradorId, Direccion, Telefono, Activa)
+//                    VALUES 
+//                    (@Id, @Nombre, @AdministradorId, @Direccion, @Telefono, @Activa)";
+
+//                    using (var cmd = new SqlCommand(sql, conn))
+//                    {
+//                        cmd.Parameters.AddWithValue("@Id", tienda.Id);
+//                        cmd.Parameters.AddWithValue("@Nombre", tienda.Nombre);
+//                        cmd.Parameters.AddWithValue("@AdministradorId", tienda.Administrador.Identificacion);
+//                        cmd.Parameters.AddWithValue("@Direccion", tienda.Direccion);
+//                        cmd.Parameters.AddWithValue("@Telefono", tienda.Telefono);
+//                        cmd.Parameters.AddWithValue("@Activa", tienda.Activa);
+
+//                        cmd.ExecuteNonQuery();
+//                    }
 //                }
+//                return "Tienda registrada correctamente.";
 //            }
-//            return false;
+//            catch (Exception ex)
+//            {
+//                return "Error al insertar tienda: " + ex.Message;
+//            }
 //        }
 
-//        public static bool Eliminar(int id)
+//        public TiendaEntidad ObtenerPorId(int id)
 //        {
-//            for (int i = 0; i < contador; i++)
+//            try
 //            {
-//                if (tiendas[i] != null && tiendas[i].Id == id)
+//                using (var conn = _conexion.ObtenerConexion())
 //                {
-//                    tiendas[i] = null;
-//                    return true;
+//                   conn.Open();
+
+//                    string sql = "SELECT Id, Nombre, AdministradorId, Direccion, Telefono, Activa FROM Tienda WHERE Id = @Id";
+
+//                    using (var cmd = new SqlCommand(sql, conn))
+//                    {
+//                        cmd.Parameters.AddWithValue("@Id", id);
+
+//                        using (SqlDataReader reader = cmd.ExecuteReader())
+//                        {
+//                            if (reader.Read())
+//                            {
+//                                return new TiendaEntidad
+//                                {
+//                                    Id = reader.GetInt32(0),
+//                                    Nombre = reader.GetString(1),
+//                                    Administrador = new AdministradorEntidad { Identificacion = reader.GetInt32(2) },
+//                                    Direccion = reader.GetString(3),
+//                                    Telefono = reader.GetString(4),
+//                                    Activa = reader.GetBoolean(5)
+//                                };
+//                           }
+//                        }
+//                    }
 //                }
 //            }
-//            return false;
+//            catch (Exception ex)
+//            {
+//                Console.WriteLine("Error al obtener tienda: " + ex.Message);
+//            }
+//            return null;
+//        }
+
+//        public List<TiendaEntidad> ObtenerTodas()
+ //       {
+//            List<TiendaEntidad> tiendas = new List<TiendaEntidad>();
+
+//            try
+//            {
+//                using (var conn = _conexion.ObtenerConexion())
+//                {
+//                    conn.Open();
+
+//                    string sql = "SELECT Id, Nombre, AdministradorId, Direccion, Telefono, Activa FROM Tienda";
+
+//                    using (var cmd = new SqlCommand(sql, conn))
+//                    {
+//                        using (SqlDataReader reader = cmd.ExecuteReader())
+//                        {
+//                            while (reader.Read())
+//                            {
+//                                tiendas.Add(new TiendaEntidad
+//                                {
+//                                    Id = reader.GetInt32(0),
+//                                    Nombre = reader.GetString(1),
+//                                    Administrador = new AdministradorEntidad { Identificacion = reader.GetInt32(2) },
+//                                    Direccion = reader.GetString(3),
+//                                    Telefono = reader.GetString(4),
+//                                    Activa = reader.GetBoolean(5)
+//                                });
+//                            }
+//                        }
+//                    }
+//                }
+//            }
+//            catch (Exception ex)
+//            {
+//                Console.WriteLine("Error al obtener tiendas: " + ex.Message);
+//            }
+
+//            return tiendas;
 //        }
 //    }
 //}
