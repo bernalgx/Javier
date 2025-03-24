@@ -56,6 +56,17 @@ namespace Capa_Interfaz
 			form.ShowDialog();
 		}
 
+		private void button3_Click(object sender, EventArgs e)
+		{
+			FrmRegistroTipoVideojuego form = new FrmRegistroTipoVideojuego(logicaTipo);
+			form.ShowDialog();
+		}
+
+		private void button2_Click(object sender, EventArgs e)
+		{
+			FrmConsultaTipoVideoJuegos form = new FrmConsultaTipoVideoJuegos();
+			form.ShowDialog();
+		}
 	}
 
 

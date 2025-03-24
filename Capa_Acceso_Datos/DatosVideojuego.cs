@@ -36,13 +36,6 @@ namespace Capa_Acceso_Datos
 
 					using (var cmd = new SqlCommand(sql, conn))
 					{
-
-						//cmd.Parameters.AddWithValue("@Nombre", "metalgear");
-						//cmd.Parameters.AddWithValue("@Desarrollador", "Konami");
-						//cmd.Parameters.AddWithValue("@Lanzamiento", 1995);
-						//cmd.Parameters.AddWithValue("@Fisico", 1);
-						//cmd.Parameters.AddWithValue("@TipoVideojuegoId", 1);
-
 						cmd.Parameters.AddWithValue("@Nombre", videojuego.Nombre);
 						cmd.Parameters.AddWithValue("@Desarrollador", videojuego.Desarrollador);
 						cmd.Parameters.AddWithValue("@Lanzamiento", videojuego.Lanzamiento);

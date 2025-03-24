@@ -89,10 +89,10 @@ C:\Users\Javier\Downloads\Javier-main\Capa_Interfaz\obj\Debug\net8.0-windows\Cap
 C:\Users\Javier\Downloads\Javier-main\Capa_Interfaz\obj\Debug\net8.0-windows\ref\Capa_Interfaz.dll
 C:\Users\Javier\Downloads\Javier-main\Capa_Interfaz\obj\Debug\net8.0-windows\Capa_Interfaz.FrmRegistroTienda.resources
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\bin\Debug\net8.0-windows\Capa_Interfaz.exe
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\bin\Debug\net8.0-windows\Capa_Interfaz.deps.json
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\bin\Debug\net8.0-windows\Capa_Interfaz.runtimeconfig.json
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\bin\Debug\net8.0-windows\Capa_Interfaz.dll
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\bin\Debug\net8.0-windows\Capa_Interfaz.pdb
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\bin\Debug\net8.0-windows\Capa_Acceso_Datos.dll
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\bin\Debug\net8.0-windows\Capa_Entidades.dll
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\bin\Debug\net8.0-windows\Capa_Log_Negocio.dll
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\bin\Debug\net8.0-windows\Azure.Core.dll
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\bin\Debug\net8.0-windows\Azure.Identity.dll
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\bin\Debug\net8.0-windows\Castle.Core.dll
@@ -141,9 +141,6 @@ C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\bin\Debug\ne
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\bin\Debug\net8.0-windows\Capa_Acceso_Datos.dll
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\bin\Debug\net8.0-windows\Capa_Entidades.dll
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\bin\Debug\net8.0-windows\Capa_Log_Negocio.dll
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\bin\Debug\net8.0-windows\Capa_Entidades.pdb
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\bin\Debug\net8.0-windows\Capa_Log_Negocio.pdb
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\bin\Debug\net8.0-windows\Capa_Acceso_Datos.pdb
@@ -151,6 +148,7 @@ C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\obj\Debug\ne
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\obj\Debug\net8.0-windows\Capa_Interfaz.FrmConsultaClientes.resources
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\obj\Debug\net8.0-windows\Capa_Interfaz.FrmConsultaInventario.resources
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\obj\Debug\net8.0-windows\Capa_Interfaz.FrmConsultaVideoJuegos.resources
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\obj\Debug\net8.0-windows\Capa_Interfaz.FrmEditarVideojuego.resources
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\obj\Debug\net8.0-windows\Capa_Interfaz.FrmRegistroAdministrador.resources
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\obj\Debug\net8.0-windows\Capa_Interfaz.FrmRegistroCliente.resources
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\obj\Debug\net8.0-windows\Capa_Interfaz.FrmRegistroTienda.resources
@@ -164,10 +162,13 @@ C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\obj\Debug\ne
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\obj\Debug\net8.0-windows\Capa_Interfaz.AssemblyInfo.cs
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\obj\Debug\net8.0-windows\Capa_Interfaz.csproj.CoreCompileInputs.cache
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\obj\Debug\net8.0-windows\Capa_Interfaz.sourcelink.json
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\obj\Debug\net8.0-windows\Capa_Int.B4EBF86F.Up2Date
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\obj\Debug\net8.0-windows\Capa_Interfaz.dll
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\obj\Debug\net8.0-windows\refint\Capa_Interfaz.dll
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\obj\Debug\net8.0-windows\Capa_Interfaz.pdb
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\bin\Debug\net8.0-windows\Capa_Interfaz.deps.json
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\bin\Debug\net8.0-windows\Capa_Interfaz.runtimeconfig.json
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\bin\Debug\net8.0-windows\Capa_Interfaz.pdb
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\obj\Debug\net8.0-windows\Capa_Int.B4EBF86F.Up2Date
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\obj\Debug\net8.0-windows\Capa_Interfaz.genruntimeconfig.cache
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\obj\Debug\net8.0-windows\ref\Capa_Interfaz.dll
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\obj\Debug\net8.0-windows\Capa_Interfaz.FrmEditarVideojuego.resources
+C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Interfaz\obj\Debug\net8.0-windows\Capa_Interfaz.FrmConsultaTipoVideoJuegos.resources

@@ -1,12 +1,8 @@
-﻿using Capa_Entidades;
-using Capa_Log_Negocio;
-using System.Windows.Forms;
-using System.Linq;
-
+﻿using Capa_Log_Negocio;
 
 namespace Capa_Interfaz
 {
-	partial class FrmConsultaVideoJuegos
+	partial class FrmConsultaTipoVideoJuegos
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -26,26 +22,26 @@ namespace Capa_Interfaz
 			base.Dispose(disposing);
 		}
 
-		
-
-		private void FrmConsultaVideoJuegos_Load(object sender, EventArgs e)
+		private void FrmConsultaTipoVideoJuegos_Load(object sender, EventArgs e)
 		{
-			CargarVideojuegos();
+			CargarTipoVideojuegos();
 		}
 
-		private void CargarVideojuegos()
+		private void CargarTipoVideojuegos()
 		{
 			try
 			{
-				LogVideojuego log = new LogVideojuego();
+				LogTipoVideojuego log = new LogTipoVideojuego();
 				// Usamos el método que consulta la BD
-				dataGridView1.DataSource = log.ObtenerVideojuegosDesdeBD();
+				dataGridView1.DataSource = log.ObtenerTipos();
 			}
 			catch (Exception ex)
 			{
 				MessageBox.Show("Error al cargar videojuegos: " + ex.Message);
 			}
 		}
+
+
 
 		#region Windows Form Designer generated code
 
@@ -55,62 +51,59 @@ namespace Capa_Interfaz
 		/// </summary>
 		private void InitializeComponent()
 		{
-			dataGridView1 = new DataGridView();
 			button1 = new Button();
 			button2 = new Button();
+			dataGridView1 = new DataGridView();
 			((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
 			SuspendLayout();
 			// 
-			// dataGridView1
-			// 
-			dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			dataGridView1.Location = new Point(14, 15);
-			dataGridView1.Margin = new Padding(3, 4, 3, 4);
-			dataGridView1.Name = "dataGridView1";
-			dataGridView1.Size = new Size(1077, 382);
-			dataGridView1.TabIndex = 0;
-			// 
 			// button1
 			// 
-			button1.Location = new Point(198, 458);
+			button1.Location = new Point(85, 350);
 			button1.Name = "button1";
-			button1.Size = new Size(75, 23);
-			button1.TabIndex = 1;
-			button1.Text = "Editar";
+			button1.Size = new Size(98, 41);
+			button1.TabIndex = 0;
+			button1.Text = "Actualizar";
 			button1.UseVisualStyleBackColor = true;
 			button1.Click += button1_Click;
 			// 
 			// button2
 			// 
-			button2.Location = new Point(342, 458);
+			button2.Location = new Point(527, 368);
 			button2.Name = "button2";
 			button2.Size = new Size(75, 23);
-			button2.TabIndex = 2;
+			button2.TabIndex = 1;
 			button2.Text = "Eliminar";
 			button2.UseVisualStyleBackColor = true;
 			button2.Click += button2_Click;
 			// 
-			// FrmConsultaVideoJuegos
+			// dataGridView1
+			// 
+			dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			dataGridView1.Location = new Point(12, 12);
+			dataGridView1.Name = "dataGridView1";
+			dataGridView1.Size = new Size(776, 289);
+			dataGridView1.TabIndex = 2;
+			// 
+			// FrmConsultaTipoVideoJuegos
 			// 
 			AutoScaleDimensions = new SizeF(8F, 19F);
 			AutoScaleMode = AutoScaleMode.Font;
-			ClientSize = new Size(1113, 532);
+			ClientSize = new Size(800, 450);
+			Controls.Add(dataGridView1);
 			Controls.Add(button2);
 			Controls.Add(button1);
-			Controls.Add(dataGridView1);
-			Margin = new Padding(3, 4, 3, 4);
-			Name = "FrmConsultaVideoJuegos";
-			Text = "Consulta de Video Juegos";
-			Load += FrmConsultaVideoJuegos_Load;
+			Name = "FrmConsultaTipoVideoJuegos";
+			Text = "Form1";
+			Load += FrmConsultaTipoVideoJuegos_Load;
 			((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
 			ResumeLayout(false);
 		}
 
-
 		#endregion
 
-		private DataGridView dataGridView1;
 		private Button button1;
 		private Button button2;
+		private DataGridView dataGridView1;
 	}
 }

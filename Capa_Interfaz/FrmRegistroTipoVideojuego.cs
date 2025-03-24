@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using Capa_Acceso_Datos;
+using Capa_Entidades;
 using Capa_Log_Negocio;
 
 namespace Capa_Interfaz
@@ -24,18 +26,25 @@ namespace Capa_Interfaz
 			try
 			{
 				// Obtiene los valores ingresados por el usuario
-				int id = int.Parse(txtId.Text);
 				string nombre = txtNombre.Text;
 				string descripcion = txtDescripcion.Text;
 
-				// Llama al método RegistrarTipo para registrar el nuevo tipo de videojuego
-				string mensaje = TipoVideoJuego.RegistroTipo(id, nombre, descripcion);
+				// Crea el objeto de tipo de videojuego
+				TipoVideojuegoEntidad nuevoTipo = new TipoVideojuegoEntidad
+				{
+
+					Nombre = nombre,
+					Descripcion = descripcion
+				};
+
+				// Llama al método Crear de la clase de acceso a datos
+				DatosTipoVideojuego datosTipo = new DatosTipoVideojuego();
+				string mensaje = datosTipo.Crear(nuevoTipo);
 
 				// Muestra un mensaje con el resultado de la operación
 				MessageBox.Show(mensaje);
 
 				// Limpia los campos del formulario
-				txtId.Clear();
 				txtNombre.Clear();
 				txtDescripcion.Clear();
 			}

@@ -1,4 +1,6 @@
-﻿using Capa_Entidades;
+﻿using Capa_Acceso_Datos;
+using Capa_Entidades;
+using Microsoft.Data.SqlClient;
 
 namespace Capa_Log_Negocio
 {
@@ -38,8 +40,41 @@ namespace Capa_Log_Negocio
 		// Método para retornar el arreglo de tipos de videojuegos (o convertirlo a List) y poder cargarlo en un ComboBox
 		public TipoVideojuegoEntidad[] ObtenerTipos()
 		{
-			// Retorna solo los elementos validos del arreglo
-			return tipos.Take(indice).ToArray();
+			DatosTipoVideojuego datos = new DatosTipoVideojuego();
+			List<TipoVideojuegoEntidad> lista = datos.ObtenerTodos();
+			return lista.ToArray();
+		}
+
+		public string EliminarTipoVideojuego(int id)
+		{
+			try
+			{
+				DatosTipoVideojuego datos = new DatosTipoVideojuego();
+				bool resultado = datos.Eliminar(id);
+				return resultado ? "Tipo Videojuego eliminado correctamente." : "No se pudo eliminar el Tipo de videojuego.";
+			}
+			catch (Exception ex)
+			{
+				return ex.Message;
+			}
+		}
+
+
+		public string EditarTipoVideojuego(TipoVideojuegoEntidad Tipovideojuego)
+		{
+			try
+			{
+				DatosTipoVideojuego datos = new DatosTipoVideojuego();
+				bool resultado = datos.Actualizar(Tipovideojuego);
+				return resultado ? "Tipo de Videojuego actualizado correctamente." : "No se pudo actualizar el videojuego.";
+			}
+			catch (Exception ex)
+			{
+				return ex.Message;
+			}
 		}
 	}
 }
+
+
+
