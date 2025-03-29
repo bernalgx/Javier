@@ -46,8 +46,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -121,7 +129,7 @@
               "RelativeDocumentMoniker": "Capa_Interfaz\\FrmConsultaTipoVideoJuegos.cs",
               "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\FrmConsultaTipoVideoJuegos.cs",
               "RelativeToolTip": "Capa_Interfaz\\FrmConsultaTipoVideoJuegos.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAASwA0AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAASwBUAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T19:49:05.009Z",
               "EditorCaption": ""
@@ -162,6 +170,16 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T19:57:32.83Z",
               "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 610,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }

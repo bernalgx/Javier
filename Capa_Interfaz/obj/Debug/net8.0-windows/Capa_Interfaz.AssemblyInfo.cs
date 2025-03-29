@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Capa_Interfaz")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b355329c14b041a589cb101336ac5641325d3488")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ebe3ef593fdd603daed9e95fa943839da80e73e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Capa_Interfaz")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Capa_Interfaz")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
