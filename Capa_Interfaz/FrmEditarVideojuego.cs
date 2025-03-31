@@ -47,11 +47,6 @@ namespace Capa_Interfaz
 		}
 
 
-
-
-
-
-
 		private void button1_Click(object sender, EventArgs e)
 		{
 			// Validación básica de campos requeridos
@@ -104,6 +99,11 @@ namespace Capa_Interfaz
 		{
 			DialogResult = DialogResult.Cancel;
 			Close();
+		}
+
+		private void FrmEditarVideojuego_Load(object sender, EventArgs e)
+		{
+
 		}
 	}
 }

@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Capa_Entidades;
-using Capa_Log_Negocio;
+﻿using Capa_Log_Negocio;
 
 namespace Capa_Interfaz
 {
@@ -19,26 +9,6 @@ namespace Capa_Interfaz
 			InitializeComponent();
 		}
 
-		//private void Administradores_Click(object sender, EventArgs e)
-		//{
-		//	FrmRegistroAdministrador form = new FrmRegistroAdministrador();
-		//	form.ShowDialog();
-		//}
-
-		//private void Clientes_Click(object sender, EventArgs e)
-		//{
-		//	FrmRegistroCliente form = new FrmRegistroCliente();
-		//	form.ShowDialog();
-		//}
-
-		//private void Tienda_Click(object sender, EventArgs e)
-		//{
-		//	FrmRegistroTienda form = new FrmRegistroTienda();
-		//	form.ShowDialog();
-
-		//}
-
-
 		// Instancia compartida de LogTipoVideojuego
 		private LogTipoVideojuego logicaTipo = new LogTipoVideojuego();
 
@@ -47,6 +17,7 @@ namespace Capa_Interfaz
 		{
 			FrmRegistroVideojuego form = new FrmRegistroVideojuego(logicaTipo);
 			form.ShowDialog();
+
 		}
 
 		private void button1_Click(object sender, EventArgs e)
@@ -56,23 +27,75 @@ namespace Capa_Interfaz
 			form.ShowDialog();
 		}
 
-		private void button3_Click(object sender, EventArgs e)
+
+		private void btnRegistroAdministradores_Click(object sender, EventArgs e)
 		{
-			FrmRegistroTipoVideojuego form = new FrmRegistroTipoVideojuego(logicaTipo);
+			FrmRegistroAdministrador form = new FrmRegistroAdministrador();
 			form.ShowDialog();
 		}
 
-		private void button2_Click(object sender, EventArgs e)
+		private void btnConsultaAdministradores_Click(object sender, EventArgs e)
 		{
-			FrmConsultaTipoVideoJuegos form = new FrmConsultaTipoVideoJuegos();
+			FrmConsultaAdministrador form = new FrmConsultaAdministrador();
+			form.ShowDialog();
+		}
+
+
+		private void btnRegistroTiendas_Click(object sender, EventArgs e)
+		{
+			FrmRegistroTienda form = new FrmRegistroTienda();
+			form.ShowDialog();
+		}
+
+		private void btnConsultaTienda_Click(object sender, EventArgs e)
+		{
+			FrmConsultaTiendas form = new FrmConsultaTiendas();
+			form.ShowDialog();
+		}
+
+		private void btnRegistroClientes_Click(object sender, EventArgs e)
+		{
+			FrmRegistroCliente form = new FrmRegistroCliente();
+			form.ShowDialog();
+		}
+
+		private void btnConsultaClientes_Click(object sender, EventArgs e)
+		{
+			FrmConsultaClientes form = new FrmConsultaClientes();
+			form.ShowDialog();
+		}
+
+		private void btnRegistroTipoVideojuego_Click(object sender, EventArgs e)
+		{
+			FrmRegistroTipoVideojuego form = new FrmRegistroTipoVideojuego();
+			form.ShowDialog();
+		}
+
+		private void btnConsultaTipoVideojuego_Click(object sender, EventArgs e)
+		{
+			FrmConsultaVideoJuegos form = new FrmConsultaVideoJuegos();
+			form.ShowDialog();
+		}
+
+		private void btnCosultaInventario(object sender, EventArgs e)
+		{
+			FrmConsultaVideoJuegos form = new FrmConsultaVideoJuegos();
+			form.ShowDialog();
+		}
+
+		private void btnConsultaInventario_Click(object sender, EventArgs e)
+		{
+			FrmConsultaInventario form = new FrmConsultaInventario();
+			form.ShowDialog();
+
+		}
+
+		private void btnRegistroInventario_Click(object sender, EventArgs e)
+		{
+			FrmRegistroInventario form = new FrmRegistroInventario();
 			form.ShowDialog();
 		}
 	}
 
-
-	//private void Inventario_Click(object sender, EventArgs e)
-	//{
-	//	FrmConsultaInventario form = new FrmConsultaInventario();
-	//	form.ShowDialog();
-	//}
 }
+

@@ -1,58 +1,50 @@
 ﻿using System;
-using System.Drawing;
 using System.Windows.Forms;
-using Capa_Acceso_Datos;
-using Capa_Entidades;
 using Capa_Log_Negocio;
 
 namespace Capa_Interfaz
 {
-	public partial class FrmRegistroTipoVideojuego : Form
-	{
-		// Instancia para gestionar la lógica de negocio de los tipos de videojuegos
-		private LogTipoVideojuego TipoVideoJuego;
+    public partial class FrmRegistroTipoVideojuego : Form
+    {
+        private readonly LogTipoVideojuego _logica;
 
-		// Constructor que recibe la instancia compartida de LogTipoVideojuego
-		public FrmRegistroTipoVideojuego(LogTipoVideojuego TipoVideoJuegoCompartida)
-		{
-			InitializeComponent();
-			TipoVideoJuego = TipoVideoJuegoCompartida;
-			// Puedes agregar botones u otros controles aquí
-		}
+        // Constructor con parámetro requerido
+        public FrmRegistroTipoVideojuego(LogTipoVideojuego logica)
+        {
+            InitializeComponent();
+            _logica = logica;
+        }
 
-		// Evento que se ejecuta al hacer clic en el botón de registrar
-		private void btnRegistrar_Click(object sender, EventArgs e)
-		{
-			try
-			{
-				// Obtiene los valores ingresados por el usuario
-				string nombre = txtNombre.Text;
-				string descripcion = txtDescripcion.Text;
+        // Constructor sin parámetros (opcional)
+        public FrmRegistroTipoVideojuego() : this(new LogTipoVideojuego())
+        {
+        }
 
-				// Crea el objeto de tipo de videojuego
-				TipoVideojuegoEntidad nuevoTipo = new TipoVideojuegoEntidad
-				{
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+            string nombre = txtNombre.Text;
+            string descripcion = txtDescripcion.Text;
 
-					Nombre = nombre,
-					Descripcion = descripcion
-				};
+            if (string.IsNullOrWhiteSpace(nombre) || string.IsNullOrWhiteSpace(descripcion))
+            {
+                MessageBox.Show("Todos los campos son requeridos.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
-				// Llama al método Crear de la clase de acceso a datos
-				DatosTipoVideojuego datosTipo = new DatosTipoVideojuego();
-				string mensaje = datosTipo.Crear(nuevoTipo);
+            string resultado = _logica.RegistrarTipoVideojuego(nombre, descripcion);
+            MessageBox.Show(resultado);
 
-				// Muestra un mensaje con el resultado de la operación
-				MessageBox.Show(mensaje);
+            if (resultado.Contains("correctamente"))
+            {
+                txtNombre.Clear();
+                txtDescripcion.Clear();
+                txtNombre.Focus();
+            }
+        }
 
-				// Limpia los campos del formulario
-				txtNombre.Clear();
-				txtDescripcion.Clear();
-			}
-			catch (Exception ex)
-			{
-				// Muestra un mensaje de error en caso de excepción
-				MessageBox.Show("Error: " + ex.Message);
-			}
-		}
-	}
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+    }
 }

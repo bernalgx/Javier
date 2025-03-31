@@ -176,6 +176,9 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
+              "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj": {
+                "projectPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj"
+              },
               "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Entidades\\Capa_Entidades.csproj": {
                 "projectPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Entidades\\Capa_Entidades.csproj"
               },

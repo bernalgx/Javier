@@ -32,7 +32,7 @@ namespace Capa_Interfaz
 					TipoVideojuegoId = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["TipoVideojuegoId"].Value)
 				};
 
-				// Abrir un formulario de edición, pasándole el objeto
+				// Abrir un formulario de edicion, pasandole el objeto
 				FrmEditarVideojuego frmEditar = new FrmEditarVideojuego(videojuego);
 				if (frmEditar.ShowDialog() == DialogResult.OK)
 				{

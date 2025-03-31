@@ -46,98 +46,94 @@
 			// 
 			cmbFisico.FormattingEnabled = true;
 			cmbFisico.Items.AddRange(new object[] { "\"Físico\"", "", " \"Digital\"" });
-			cmbFisico.Location = new Point(303, 464);
-			cmbFisico.Margin = new Padding(3, 4, 3, 4);
+			cmbFisico.Location = new Point(265, 366);
 			cmbFisico.Name = "cmbFisico";
-			cmbFisico.Size = new Size(195, 27);
+			cmbFisico.Size = new Size(171, 23);
 			cmbFisico.TabIndex = 20;
 			// 
 			// formato
 			// 
 			formato.AutoSize = true;
-			formato.Location = new Point(373, 409);
+			formato.Location = new Point(326, 323);
 			formato.Name = "formato";
-			formato.Size = new Size(64, 19);
+			formato.Size = new Size(55, 15);
 			formato.TabIndex = 19;
 			formato.Text = "Formato:";
 			// 
 			// txtLanzamiento
 			// 
-			txtLanzamiento.Location = new Point(303, 334);
-			txtLanzamiento.Margin = new Padding(3, 4, 3, 4);
+			txtLanzamiento.Location = new Point(265, 264);
 			txtLanzamiento.Name = "txtLanzamiento";
 			txtLanzamiento.PlaceholderText = "lanzamiento";
-			txtLanzamiento.Size = new Size(195, 26);
+			txtLanzamiento.Size = new Size(171, 23);
 			txtLanzamiento.TabIndex = 18;
 			// 
 			// lanzamiento
 			// 
 			lanzamiento.AutoSize = true;
-			lanzamiento.Location = new Point(363, 287);
+			lanzamiento.Location = new Point(318, 227);
 			lanzamiento.Name = "lanzamiento";
-			lanzamiento.Size = new Size(90, 19);
+			lanzamiento.Size = new Size(78, 15);
 			lanzamiento.TabIndex = 17;
 			lanzamiento.Text = "Lanzamiento:";
 			// 
 			// txtDesarrollador
 			// 
-			txtDesarrollador.Location = new Point(303, 215);
-			txtDesarrollador.Margin = new Padding(3, 4, 3, 4);
+			txtDesarrollador.Location = new Point(265, 170);
 			txtDesarrollador.Name = "txtDesarrollador";
 			txtDesarrollador.PlaceholderText = "Nombre del desarrollador";
-			txtDesarrollador.Size = new Size(195, 26);
+			txtDesarrollador.Size = new Size(171, 23);
 			txtDesarrollador.TabIndex = 16;
 			// 
 			// cmbTipoVideojuego
 			// 
 			cmbTipoVideojuego.FormattingEnabled = true;
-			cmbTipoVideojuego.Location = new Point(303, 103);
-			cmbTipoVideojuego.Margin = new Padding(3, 4, 3, 4);
+			cmbTipoVideojuego.Location = new Point(265, 81);
 			cmbTipoVideojuego.Name = "cmbTipoVideojuego";
-			cmbTipoVideojuego.Size = new Size(195, 27);
+			cmbTipoVideojuego.Size = new Size(171, 23);
 			cmbTipoVideojuego.TabIndex = 15;
 			// 
 			// desarrollador
 			// 
 			desarrollador.AutoSize = true;
-			desarrollador.Location = new Point(363, 173);
+			desarrollador.Location = new Point(318, 137);
 			desarrollador.Name = "desarrollador";
-			desarrollador.Size = new Size(94, 19);
+			desarrollador.Size = new Size(80, 15);
 			desarrollador.TabIndex = 14;
 			desarrollador.Text = "Desarrollador:";
 			// 
 			// tipo
 			// 
 			tipo.AutoSize = true;
-			tipo.Location = new Point(385, 61);
+			tipo.Location = new Point(337, 48);
 			tipo.Name = "tipo";
-			tipo.Size = new Size(38, 19);
+			tipo.Size = new Size(33, 15);
 			tipo.TabIndex = 13;
 			tipo.Text = "Tipo:";
 			// 
 			// txtNombre
 			// 
-			txtNombre.Location = new Point(303, -6);
-			txtNombre.Margin = new Padding(3, 4, 3, 4);
+			txtNombre.Location = new Point(265, 12);
 			txtNombre.Name = "txtNombre";
 			txtNombre.PlaceholderText = "Nombre del videojuego";
-			txtNombre.Size = new Size(195, 26);
+			txtNombre.Size = new Size(171, 23);
 			txtNombre.TabIndex = 12;
 			// 
 			// nombre
 			// 
 			nombre.AutoSize = true;
-			nombre.Location = new Point(374, -40);
+			nombre.Location = new Point(327, -32);
 			nombre.Name = "nombre";
-			nombre.Size = new Size(62, 19);
+			nombre.Size = new Size(54, 15);
 			nombre.TabIndex = 11;
 			nombre.Text = "Nombre:";
 			// 
 			// button1
 			// 
-			button1.Location = new Point(303, 531);
+			button1.Location = new Point(265, 419);
+			button1.Margin = new Padding(3, 2, 3, 2);
 			button1.Name = "button1";
-			button1.Size = new Size(75, 23);
+			button1.Size = new Size(66, 30);
 			button1.TabIndex = 21;
 			button1.Text = "Guardar";
 			button1.UseVisualStyleBackColor = true;
@@ -145,9 +141,10 @@
 			// 
 			// button2
 			// 
-			button2.Location = new Point(423, 531);
+			button2.Location = new Point(370, 419);
+			button2.Margin = new Padding(3, 2, 3, 2);
 			button2.Name = "button2";
-			button2.Size = new Size(75, 23);
+			button2.Size = new Size(66, 30);
 			button2.TabIndex = 22;
 			button2.Text = "Cancelar";
 			button2.TextAlign = ContentAlignment.MiddleRight;
@@ -156,9 +153,9 @@
 			// 
 			// FrmEditarVideojuego
 			// 
-			AutoScaleDimensions = new SizeF(8F, 19F);
+			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
-			ClientSize = new Size(839, 566);
+			ClientSize = new Size(734, 494);
 			Controls.Add(button2);
 			Controls.Add(button1);
 			Controls.Add(cmbFisico);
@@ -171,8 +168,10 @@
 			Controls.Add(tipo);
 			Controls.Add(txtNombre);
 			Controls.Add(nombre);
+			Margin = new Padding(3, 2, 3, 2);
 			Name = "FrmEditarVideojuego";
 			Text = "EditarVideojuego";
+			Load += FrmEditarVideojuego_Load;
 			ResumeLayout(false);
 			PerformLayout();
 		}

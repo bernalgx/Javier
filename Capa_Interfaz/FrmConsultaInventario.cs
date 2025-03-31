@@ -1,45 +1,40 @@
-﻿//using System;
-//using System.Collections.Generic;
-//using System.ComponentModel;
-//using System.Data;
-//using System.Drawing;
-//using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
-//using Capa_Interfaz;
-//using Capa_Entidades;
+﻿using Capa_Acceso_Datos;
+using Capa_Entidades;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
-//namespace Capa_Interfaz
-//{
-//    public partial class FrmConsultaInventario : Form
-//    {
-//        private VideojuegosXTiendaEntidad[] inventario;
-//        public FrmConsultaInventario()
-//        {
-//            InitializeComponent();
-//            this.inventario = inventario;
-//        }
+namespace Capa_Interfaz
+{
+	// Definición parcial de la clase FrmConsultaInventario, heredando de Form
+	public partial class FrmConsultaInventario : Form
+	{
+		// Constructor de FrmConsultaInventario
+		public FrmConsultaInventario()
+		{
+			// Inicializa los componentes del formulario
+			InitializeComponent();
+		}
 
-//        private void btnCargarDatos_Click(object sender, EventArgs e)
-//        {
-//            try
-//            {
-//                dgvInventario.DataSource = inventario.Where(i => i != null).Select(i => new
-//                {
-//                    TiendaID = i.Tienda.Id,
-//                    TiendaNombre = i.Tienda.Nombre,
-//                    TiendaDireccion = i.Tienda.Direccion,
-//                    VideojuegoID = i.Videojuego.Id,
-//                    VideojuegoNombre = i.Videojuego.Nombre,
-//                    TipoVideojuego = i.Videojuego.TipoVideojuego.Nombre,
-//                    Existencias = i.Existencias
-//                }).ToList();
-//            }
-//            catch (Exception ex)
-//            {
-//                MessageBox.Show("Error al cargar los datos: " + ex.Message);
-//            }
+		// Manejador de eventos para el evento Load del formulario
+		private void FrmConsultaInventario_Load(object sender, EventArgs e)
+		{
+			// Crea una instancia de DatosInventario para acceder a los datos del inventario
+			DatosInventario datos = new DatosInventario();
 
-//        }
-//    }
-//}
+			// Recupera los datos del inventario como una lista de objetos InventarioConsultaEntidad
+			List<InventarioConsultaEntidad> lista = datos.ObtenerInventario();
+
+			// Asigna la lista recuperada al DataGridView para mostrar los datos
+			dgvConsultaInventario.DataSource = lista;
+		}
+	}
+
+
+}

@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "Capa_Interfaz/1.0.0": {
         "dependencies": {
+          "Capa_Acceso_Datos": "1.0.0",
           "Capa_Entidades": "1.0.0",
           "Capa_Log_Negocio": "1.0.0"
         },

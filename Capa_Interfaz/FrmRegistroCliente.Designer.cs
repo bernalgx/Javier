@@ -1,194 +1,193 @@
-﻿//namespace Capa_Interfaz
-//{
-//    partial class FrmRegistroCliente
-//    {
-//        /// <summary>
-//        /// Required designer variable.
-//        /// </summary>
-//        private System.ComponentModel.IContainer components = null;
+﻿namespace Capa_Interfaz
+{
+    partial class FrmRegistroCliente
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
 
-//        /// <summary>
-//        /// Clean up any resources being used.
-//        /// </summary>
-//        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-//        protected override void Dispose(bool disposing)
-//        {
-//            if (disposing && (components != null))
-//            {
-//                components.Dispose();
-//            }
-//            base.Dispose(disposing);
-//        }
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
 
-//        #region Windows Form Designer generated code
+        #region Windows Form Designer generated code
 
-//        /// <summary>
-//        /// Required method for Designer support - do not modify
-//        /// the contents of this method with the code editor.
-//        /// </summary>
-//        private void InitializeComponent()
-//        {
-//            identificacion = new Label();
-//            txtIdentificacion = new TextBox();
-//            nombre = new Label();
-//            txtNombre = new TextBox();
-//            primerApellido = new Label();
-//            txtPrimerApellido = new TextBox();
-//            segundoApellido = new Label();
-//            txtSegundoApellido = new TextBox();
-//            fechaNacimiento = new Label();
-//            dtpFechaNacimiento = new DateTimePicker();
-//            jugadorEnLinea = new Label();
-//            cmbJugadorEnLinea = new ComboBox();
-//            btnRegistrar = new Button();
-//            SuspendLayout();
-//            // 
-//            // identificacion
-//            // 
-//            identificacion.AutoSize = true;
-//            identificacion.Location = new Point(302, 21);
-//            identificacion.Name = "identificacion";
-//            identificacion.Size = new Size(82, 15);
-//            identificacion.TabIndex = 0;
-//            identificacion.Text = "Identificación:";
-//            // 
-//            // txtIdentificacion
-//            // 
-//            txtIdentificacion.Location = new Point(245, 52);
-//            txtIdentificacion.Name = "txtIdentificacion";
-//            txtIdentificacion.Size = new Size(198, 23);
-//            txtIdentificacion.TabIndex = 1;
-//            // 
-//            // nombre
-//            // 
-//            nombre.AutoSize = true;
-//            nombre.Location = new Point(316, 98);
-//            nombre.Name = "nombre";
-//            nombre.Size = new Size(54, 15);
-//            nombre.TabIndex = 2;
-//            nombre.Text = "Nombre:";
-//            // 
-//            // txtNombre
-//            // 
-//            txtNombre.Location = new Point(245, 129);
-//            txtNombre.Name = "txtNombre";
-//            txtNombre.Size = new Size(198, 23);
-//            txtNombre.TabIndex = 3;
-//            // 
-//            // primerApellido
-//            // 
-//            primerApellido.AutoSize = true;
-//            primerApellido.Location = new Point(302, 186);
-//            primerApellido.Name = "primerApellido";
-//            primerApellido.Size = new Size(92, 15);
-//            primerApellido.TabIndex = 4;
-//            primerApellido.Text = "Primer Apellido:";
-//            // 
-//            // txtPrimerApellido
-//            // 
-//            txtPrimerApellido.Location = new Point(245, 224);
-//            txtPrimerApellido.Name = "txtPrimerApellido";
-//            txtPrimerApellido.Size = new Size(198, 23);
-//            txtPrimerApellido.TabIndex = 5;
-//            // 
-//            // segundoApellido
-//            // 
-//            segundoApellido.AutoSize = true;
-//            segundoApellido.Location = new Point(290, 288);
-//            segundoApellido.Name = "segundoApellido";
-//            segundoApellido.Size = new Size(104, 15);
-//            segundoApellido.TabIndex = 6;
-//            segundoApellido.Text = "Segundo Apellido:";
-//            // 
-//            // txtSegundoApellido
-//            // 
-//            txtSegundoApellido.Location = new Point(245, 325);
-//            txtSegundoApellido.Name = "txtSegundoApellido";
-//            txtSegundoApellido.Size = new Size(198, 23);
-//            txtSegundoApellido.TabIndex = 7;
-//            // 
-//            // fechaNacimiento
-//            // 
-//            fechaNacimiento.AutoSize = true;
-//            fechaNacimiento.Location = new Point(290, 386);
-//            fechaNacimiento.Name = "fechaNacimiento";
-//            fechaNacimiento.Size = new Size(122, 15);
-//            fechaNacimiento.TabIndex = 8;
-//            fechaNacimiento.Text = "Fecha de Nacimiento:";
-//            // 
-//            // dtpFechaNacimiento
-//            // 
-//            dtpFechaNacimiento.Location = new Point(245, 426);
-//            dtpFechaNacimiento.Name = "dtpFechaNacimiento";
-//            dtpFechaNacimiento.Size = new Size(200, 23);
-//            dtpFechaNacimiento.TabIndex = 9;
-//            // 
-//            // jugadorEnLinea
-//            // 
-//            jugadorEnLinea.AutoSize = true;
-//            jugadorEnLinea.Location = new Point(295, 484);
-//            jugadorEnLinea.Name = "jugadorEnLinea";
-//            jugadorEnLinea.Size = new Size(99, 15);
-//            jugadorEnLinea.TabIndex = 10;
-//            jugadorEnLinea.Text = "Jugador en Línea:";
-//            // 
-//            // cmbJugadorEnLinea
-//            // 
-//            cmbJugadorEnLinea.FormattingEnabled = true;
-//            cmbJugadorEnLinea.Items.AddRange(new object[] { "\"Si\"", "", "\"No\"" });
-//            cmbJugadorEnLinea.Location = new Point(245, 519);
-//            cmbJugadorEnLinea.Name = "cmbJugadorEnLinea";
-//            cmbJugadorEnLinea.Size = new Size(198, 23);
-//            cmbJugadorEnLinea.TabIndex = 11;
-//            // 
-//            // btnRegistrar
-//            // 
-//            btnRegistrar.Location = new Point(281, 592);
-//            btnRegistrar.Name = "btnRegistrar";
-//            btnRegistrar.Size = new Size(131, 63);
-//            btnRegistrar.TabIndex = 12;
-//            btnRegistrar.Text = "Registrar";
-//            btnRegistrar.UseVisualStyleBackColor = true;
-//            btnRegistrar.Click += btnRegistrar_Click;
-//            // 
-//            // FrmRegistroCliente
-//            // 
-//            AutoScaleDimensions = new SizeF(7F, 15F);
-//            AutoScaleMode = AutoScaleMode.Font;
-//            ClientSize = new Size(684, 707);
-//            Controls.Add(btnRegistrar);
-//            Controls.Add(cmbJugadorEnLinea);
-//            Controls.Add(jugadorEnLinea);
-//            Controls.Add(dtpFechaNacimiento);
-//            Controls.Add(fechaNacimiento);
-//            Controls.Add(txtSegundoApellido);
-//            Controls.Add(segundoApellido);
-//            Controls.Add(txtPrimerApellido);
-//            Controls.Add(primerApellido);
-//            Controls.Add(txtNombre);
-//            Controls.Add(nombre);
-//            Controls.Add(txtIdentificacion);
-//            Controls.Add(identificacion);
-//            Name = "FrmRegistroCliente";
-//            Text = "FrmRegistrarCliente";
-//            ResumeLayout(false);
-//            PerformLayout();
-//        }
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            lblIdentificacion = new Label();
+            txtIdentificacion = new TextBox();
+            lblNombre = new Label();
+            txtNombre = new TextBox();
+            lblPrimerApellido = new Label();
+            txtPrimerApellido = new TextBox();
+            lblSegundoApellido = new Label();
+            txtSegundoApellido = new TextBox();
+            lblFechaNacimiento = new Label();
+            dtpFechaNacimiento = new DateTimePicker();
+            lblJugadorEnLinea = new Label();
+            cmbJugadorEnLinea = new ComboBox();
+            btnRegistrar = new Button();
+            SuspendLayout();
+            // 
+            // lblIdentificacion
+            // 
+            lblIdentificacion.AutoSize = true;
+            lblIdentificacion.Location = new Point(151, 41);
+            lblIdentificacion.Name = "lblIdentificacion";
+            lblIdentificacion.Size = new Size(82, 15);
+            lblIdentificacion.TabIndex = 0;
+            lblIdentificacion.Text = "Identificacion:";
+            // 
+            // txtIdentificacion
+            // 
+            txtIdentificacion.Location = new Point(112, 71);
+            txtIdentificacion.Name = "txtIdentificacion";
+            txtIdentificacion.Size = new Size(158, 23);
+            txtIdentificacion.TabIndex = 1;
+            // 
+            // lblNombre
+            // 
+            lblNombre.AutoSize = true;
+            lblNombre.Location = new Point(161, 128);
+            lblNombre.Name = "lblNombre";
+            lblNombre.Size = new Size(51, 15);
+            lblNombre.TabIndex = 2;
+            lblNombre.Text = "Nombre";
+            // 
+            // txtNombre
+            // 
+            txtNombre.Location = new Point(112, 170);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(158, 23);
+            txtNombre.TabIndex = 3;
+            // 
+            // lblPrimerApellido
+            // 
+            lblPrimerApellido.AutoSize = true;
+            lblPrimerApellido.Location = new Point(141, 241);
+            lblPrimerApellido.Name = "lblPrimerApellido";
+            lblPrimerApellido.Size = new Size(92, 15);
+            lblPrimerApellido.TabIndex = 4;
+            lblPrimerApellido.Text = "Primer Apellido:";
+            // 
+            // txtPrimerApellido
+            // 
+            txtPrimerApellido.Location = new Point(112, 276);
+            txtPrimerApellido.Name = "txtPrimerApellido";
+            txtPrimerApellido.Size = new Size(158, 23);
+            txtPrimerApellido.TabIndex = 5;
+            // 
+            // lblSegundoApellido
+            // 
+            lblSegundoApellido.AutoSize = true;
+            lblSegundoApellido.Location = new Point(141, 338);
+            lblSegundoApellido.Name = "lblSegundoApellido";
+            lblSegundoApellido.Size = new Size(101, 15);
+            lblSegundoApellido.TabIndex = 6;
+            lblSegundoApellido.Text = "SegundoApellido:";
+            // 
+            // txtSegundoApellido
+            // 
+            txtSegundoApellido.Location = new Point(112, 376);
+            txtSegundoApellido.Name = "txtSegundoApellido";
+            txtSegundoApellido.Size = new Size(158, 23);
+            txtSegundoApellido.TabIndex = 7;
+            // 
+            // lblFechaNacimiento
+            // 
+            lblFechaNacimiento.AutoSize = true;
+            lblFechaNacimiento.Location = new Point(131, 427);
+            lblFechaNacimiento.Name = "lblFechaNacimiento";
+            lblFechaNacimiento.Size = new Size(122, 15);
+            lblFechaNacimiento.TabIndex = 8;
+            lblFechaNacimiento.Text = "Fecha de Nacimiento:";
+            // 
+            // dtpFechaNacimiento
+            // 
+            dtpFechaNacimiento.Location = new Point(100, 460);
+            dtpFechaNacimiento.Name = "dtpFechaNacimiento";
+            dtpFechaNacimiento.Size = new Size(200, 23);
+            dtpFechaNacimiento.TabIndex = 9;
+            // 
+            // lblJugadorEnLinea
+            // 
+            lblJugadorEnLinea.AutoSize = true;
+            lblJugadorEnLinea.Location = new Point(141, 516);
+            lblJugadorEnLinea.Name = "lblJugadorEnLinea";
+            lblJugadorEnLinea.Size = new Size(99, 15);
+            lblJugadorEnLinea.TabIndex = 10;
+            lblJugadorEnLinea.Text = "Jugador en Linea:";
+            // 
+            // cmbJugadorEnLinea
+            // 
+            cmbJugadorEnLinea.FormattingEnabled = true;
+            cmbJugadorEnLinea.Location = new Point(131, 560);
+            cmbJugadorEnLinea.Name = "cmbJugadorEnLinea";
+            cmbJugadorEnLinea.Size = new Size(121, 23);
+            cmbJugadorEnLinea.TabIndex = 11;
+            // 
+            // btnRegistrar
+            // 
+            btnRegistrar.Location = new Point(149, 626);
+            btnRegistrar.Name = "btnRegistrar";
+            btnRegistrar.Size = new Size(91, 44);
+            btnRegistrar.TabIndex = 12;
+            btnRegistrar.Text = "Registrar";
+            btnRegistrar.UseVisualStyleBackColor = true;
+            btnRegistrar.Click += btnRegistrar_Click;
+            // 
+            // FrmRegistroCliente
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(409, 704);
+            Controls.Add(btnRegistrar);
+            Controls.Add(cmbJugadorEnLinea);
+            Controls.Add(lblJugadorEnLinea);
+            Controls.Add(dtpFechaNacimiento);
+            Controls.Add(lblFechaNacimiento);
+            Controls.Add(txtSegundoApellido);
+            Controls.Add(lblSegundoApellido);
+            Controls.Add(txtPrimerApellido);
+            Controls.Add(lblPrimerApellido);
+            Controls.Add(txtNombre);
+            Controls.Add(lblNombre);
+            Controls.Add(txtIdentificacion);
+            Controls.Add(lblIdentificacion);
+            Name = "FrmRegistroCliente";
+            Text = "FrmRegistroCliente";
+            ResumeLayout(false);
+            PerformLayout();
+        }
 
-//        #endregion
+        #endregion
 
-//        private Label identificacion;
-//        private TextBox txtIdentificacion;
-//        private Label nombre;
-//        private TextBox txtNombre;
-//        private Label primerApellido;
-//        private TextBox txtPrimerApellido;
-//        private Label segundoApellido;
-//        private TextBox txtSegundoApellido;
-//        private Label fechaNacimiento;
-//        private DateTimePicker dtpFechaNacimiento;
-//        private Label jugadorEnLinea;
-//        private ComboBox cmbJugadorEnLinea;
-//        private Button btnRegistrar;
-//    }
-//}
+        private Label lblIdentificacion;
+        private TextBox txtIdentificacion;
+        private Label lblNombre;
+        private TextBox txtNombre;
+        private Label lblPrimerApellido;
+        private TextBox txtPrimerApellido;
+        private Label lblSegundoApellido;
+        private TextBox txtSegundoApellido;
+        private Label lblFechaNacimiento;
+        private DateTimePicker dtpFechaNacimiento;
+        private Label lblJugadorEnLinea;
+        private ComboBox cmbJugadorEnLinea;
+        private Button btnRegistrar;
+    }
+}

@@ -1,47 +1,25 @@
-C:\Users\Javier\Desktop\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Javier\Desktop\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.AssemblyInfoInputs.cache
-C:\Users\Javier\Desktop\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.AssemblyInfo.cs
-C:\Users\Javier\Desktop\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.csproj.CoreCompileInputs.cache
-C:\Users\Javier\Desktop\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Entidades\bin\Debug\net8.0-windows\Capa_Entidades.deps.json
-C:\Users\Javier\Desktop\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Entidades\bin\Debug\net8.0-windows\Capa_Entidades.dll
-C:\Users\Javier\Desktop\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Entidades\bin\Debug\net8.0-windows\Capa_Entidades.pdb
-C:\Users\Javier\Desktop\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.dll
-C:\Users\Javier\Desktop\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Entidades\obj\Debug\net8.0-windows\refint\Capa_Entidades.dll
-C:\Users\Javier\Desktop\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.pdb
-C:\Users\Javier\Desktop\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Entidades\obj\Debug\net8.0-windows\ref\Capa_Entidades.dll
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Entidades\bin\Debug\net8.0-windows\Capa_Entidades.deps.json
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Entidades\bin\Debug\net8.0-windows\Capa_Entidades.dll
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Entidades\bin\Debug\net8.0-windows\Capa_Entidades.pdb
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.AssemblyInfoInputs.cache
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.AssemblyInfo.cs
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.csproj.CoreCompileInputs.cache
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.dll
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Entidades\obj\Debug\net8.0-windows\refint\Capa_Entidades.dll
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.pdb
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier_Rojas_Cordero_PY1_Progra_Avanzada\Capa_Entidades\obj\Debug\net8.0-windows\ref\Capa_Entidades.dll
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Capa_Entidades\bin\Debug\net8.0-windows\Capa_Entidades.deps.json
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Capa_Entidades\bin\Debug\net8.0-windows\Capa_Entidades.dll
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Capa_Entidades\bin\Debug\net8.0-windows\Capa_Entidades.pdb
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.AssemblyInfoInputs.cache
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.AssemblyInfo.cs
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.csproj.CoreCompileInputs.cache
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.dll
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Capa_Entidades\obj\Debug\net8.0-windows\refint\Capa_Entidades.dll
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.pdb
-C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Capa_Entidades\obj\Debug\net8.0-windows\ref\Capa_Entidades.dll
-C:\Users\Javier\Downloads\Javier-main\Capa_Entidades\bin\Debug\net8.0-windows\Capa_Entidades.deps.json
-C:\Users\Javier\Downloads\Javier-main\Capa_Entidades\bin\Debug\net8.0-windows\Capa_Entidades.dll
-C:\Users\Javier\Downloads\Javier-main\Capa_Entidades\bin\Debug\net8.0-windows\Capa_Entidades.pdb
-C:\Users\Javier\Downloads\Javier-main\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Javier\Downloads\Javier-main\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.AssemblyInfoInputs.cache
-C:\Users\Javier\Downloads\Javier-main\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.AssemblyInfo.cs
-C:\Users\Javier\Downloads\Javier-main\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.csproj.CoreCompileInputs.cache
-C:\Users\Javier\Downloads\Javier-main\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.dll
-C:\Users\Javier\Downloads\Javier-main\Capa_Entidades\obj\Debug\net8.0-windows\refint\Capa_Entidades.dll
-C:\Users\Javier\Downloads\Javier-main\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.pdb
-C:\Users\Javier\Downloads\Javier-main\Capa_Entidades\obj\Debug\net8.0-windows\ref\Capa_Entidades.dll
+C:\Users\mau\Downloads\Javier-main V1\Capa_Entidades\bin\Debug\net8.0-windows\Capa_Entidades.deps.json
+C:\Users\mau\Downloads\Javier-main V1\Capa_Entidades\bin\Debug\net8.0-windows\Capa_Entidades.dll
+C:\Users\mau\Downloads\Javier-main V1\Capa_Entidades\bin\Debug\net8.0-windows\Capa_Entidades.pdb
+C:\Users\mau\Downloads\Javier-main V1\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mau\Downloads\Javier-main V1\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.AssemblyInfoInputs.cache
+C:\Users\mau\Downloads\Javier-main V1\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.AssemblyInfo.cs
+C:\Users\mau\Downloads\Javier-main V1\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.csproj.CoreCompileInputs.cache
+C:\Users\mau\Downloads\Javier-main V1\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.dll
+C:\Users\mau\Downloads\Javier-main V1\Capa_Entidades\obj\Debug\net8.0-windows\refint\Capa_Entidades.dll
+C:\Users\mau\Downloads\Javier-main V1\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.pdb
+C:\Users\mau\Downloads\Javier-main V1\Capa_Entidades\obj\Debug\net8.0-windows\ref\Capa_Entidades.dll
+C:\Users\mau\Documents\Javier proyecto\Javier-main V1\Capa_Entidades\bin\Debug\net8.0-windows\Capa_Entidades.deps.json
+C:\Users\mau\Documents\Javier proyecto\Javier-main V1\Capa_Entidades\bin\Debug\net8.0-windows\Capa_Entidades.dll
+C:\Users\mau\Documents\Javier proyecto\Javier-main V1\Capa_Entidades\bin\Debug\net8.0-windows\Capa_Entidades.pdb
+C:\Users\mau\Documents\Javier proyecto\Javier-main V1\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mau\Documents\Javier proyecto\Javier-main V1\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.AssemblyInfoInputs.cache
+C:\Users\mau\Documents\Javier proyecto\Javier-main V1\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.AssemblyInfo.cs
+C:\Users\mau\Documents\Javier proyecto\Javier-main V1\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.csproj.CoreCompileInputs.cache
+C:\Users\mau\Documents\Javier proyecto\Javier-main V1\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.dll
+C:\Users\mau\Documents\Javier proyecto\Javier-main V1\Capa_Entidades\obj\Debug\net8.0-windows\refint\Capa_Entidades.dll
+C:\Users\mau\Documents\Javier proyecto\Javier-main V1\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.pdb
+C:\Users\mau\Documents\Javier proyecto\Javier-main V1\Capa_Entidades\obj\Debug\net8.0-windows\ref\Capa_Entidades.dll
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Entidades\bin\Debug\net8.0-windows\Capa_Entidades.deps.json
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Entidades\bin\Debug\net8.0-windows\Capa_Entidades.dll
 C:\Users\mau\Documents\Gosve c sharp\Nueva\PY1\Javier\Capa_Entidades\bin\Debug\net8.0-windows\Capa_Entidades.pdb

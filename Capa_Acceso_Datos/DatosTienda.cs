@@ -1,133 +1,163 @@
 ﻿//AQUI TODO ES NUEVO////////////////
 
 
-//using System;
-//using Microsoft.Data.SqlClient;
-//using Capa_Acceso_Datos;
-//using Capa_Entidades;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using Microsoft.Data.SqlClient;
+using Capa_Entidades;
 
-//namespace Capa_Acceso_Datos
-//{
-//    public class DatosTienda
-//    {
-//        private readonly ConexionBD _conexion;
+namespace Capa_Acceso_Datos
+{
+    public class DatosTienda
+    {
+        private readonly ConexionBD _conexion;
 
-//        public DatosTienda()
-//        {
-//            _conexion = new ConexionBD();
-//        }
+        public DatosTienda()
+        {
+            _conexion = new ConexionBD();
+        }
 
-//        public string Crear(TiendaEntidad tienda)
-//        {
-//            try
-//            {
-//                using (var conn = _conexion.ObtenerConexion())
-//                {
-//                    conn.Open();
+        public string Crear(TiendaEntidad tienda)
+        {
+            try
+            {
+                using (var conn = _conexion.ObtenerConexion())
+                {
+                    conn.Open();
+                    string sql = @"
+                    INSERT INTO Tienda 
+                    (Nombre, Direccion, Telefono, Activa, AdministradorId)
+                    VALUES 
+                    (@Nombre, @Direccion, @Telefono, @Activa, @AdministradorId)";
 
-//                    string sql = @"
-//                    INSERT INTO Tienda 
-//                    (Id, Nombre, AdministradorId, Direccion, Telefono, Activa)
-//                    VALUES 
-//                    (@Id, @Nombre, @AdministradorId, @Direccion, @Telefono, @Activa)";
+                    using (var cmd = new SqlCommand(sql, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@Nombre", tienda.Nombre);
+                        cmd.Parameters.AddWithValue("@Direccion", tienda.Direccion);
+                        cmd.Parameters.AddWithValue("@Telefono", tienda.Telefono);
+                        cmd.Parameters.AddWithValue("@Activa", tienda.Activa);
+                        cmd.Parameters.AddWithValue("@AdministradorId", tienda.AdministradorId);
 
-//                    using (var cmd = new SqlCommand(sql, conn))
-//                    {
-//                        cmd.Parameters.AddWithValue("@Id", tienda.Id);
-//                        cmd.Parameters.AddWithValue("@Nombre", tienda.Nombre);
-//                        cmd.Parameters.AddWithValue("@AdministradorId", tienda.Administrador.Identificacion);
-//                        cmd.Parameters.AddWithValue("@Direccion", tienda.Direccion);
-//                        cmd.Parameters.AddWithValue("@Telefono", tienda.Telefono);
-//                        cmd.Parameters.AddWithValue("@Activa", tienda.Activa);
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                return "Tienda insertada correctamente.";
+            }
+            catch (Exception ex)
+            {
+                return "Error al insertar tienda: " + ex.Message;
+            }
+        }
 
-//                        cmd.ExecuteNonQuery();
-//                    }
-//                }
-//                return "Tienda registrada correctamente.";
-//            }
-//            catch (Exception ex)
-//            {
-//                return "Error al insertar tienda: " + ex.Message;
-//            }
-//        }
+        public List<TiendaEntidad> ObtenerTiendas()
+        {
+            List<TiendaEntidad> lista = new List<TiendaEntidad>();
 
-//        public TiendaEntidad ObtenerPorId(int id)
-//        {
-//            try
-//            {
-//                using (var conn = _conexion.ObtenerConexion())
-//                {
-//                   conn.Open();
+            try
+            {
+                using (var conn = _conexion.ObtenerConexion())
+                {
+                    conn.Open();
+                    string sql = @"
+                    SELECT 
+                    t.Id, 
+                    t.Nombre, 
+                    t.Direccion, 
+                    t.Telefono, 
+                    t.Activa, 
+                    t.AdministradorId,
+                    a.Nombre + ' ' + a.PrimerApellido + ' ' + a.SegundoApellido AS NombreAdministrador
+                    FROM Tienda t
+                    INNER JOIN Administrador a ON t.AdministradorId = a.Identificacion";
 
-//                    string sql = "SELECT Id, Nombre, AdministradorId, Direccion, Telefono, Activa FROM Tienda WHERE Id = @Id";
+                    using (var cmd = new SqlCommand(sql, conn))
+                    {
+                        using (var dr = cmd.ExecuteReader())
+                        {
+                            while (dr.Read())
+                            {
+                                TiendaEntidad tienda = new TiendaEntidad
+                                {
+                                    Id = dr.GetInt32(0),
+                                    Nombre = dr.GetString(1),
+                                    Direccion = dr.GetString(2),
+                                    Telefono = dr.GetString(3),
+                                    Activa = dr.GetBoolean(4),
+                                    AdministradorId = dr.GetInt32(5),
+                                    NombreAdministrador = dr.GetString(6)
+                                };
 
-//                    using (var cmd = new SqlCommand(sql, conn))
-//                    {
-//                        cmd.Parameters.AddWithValue("@Id", id);
+                                lista.Add(tienda);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al obtener tiendas: " + ex.Message);
+            }
 
-//                        using (SqlDataReader reader = cmd.ExecuteReader())
-//                        {
-//                            if (reader.Read())
-//                            {
-//                                return new TiendaEntidad
-//                                {
-//                                    Id = reader.GetInt32(0),
-//                                    Nombre = reader.GetString(1),
-//                                    Administrador = new AdministradorEntidad { Identificacion = reader.GetInt32(2) },
-//                                    Direccion = reader.GetString(3),
-//                                    Telefono = reader.GetString(4),
-//                                    Activa = reader.GetBoolean(5)
-//                                };
-//                           }
-//                        }
-//                    }
-//                }
-//            }
-//            catch (Exception ex)
-//            {
-//                Console.WriteLine("Error al obtener tienda: " + ex.Message);
-//            }
-//            return null;
-//        }
+            return lista;
+        }
 
-//        public List<TiendaEntidad> ObtenerTodas()
- //       {
-//            List<TiendaEntidad> tiendas = new List<TiendaEntidad>();
+        public bool Eliminar(int id)
+        {
+            try
+            {
+                using (var conn = _conexion.ObtenerConexion())
+                {
+                    conn.Open();
+                    string sql = "DELETE FROM Tienda WHERE Id=@Id";
 
-//            try
-//            {
-//                using (var conn = _conexion.ObtenerConexion())
-//                {
-//                    conn.Open();
+                    using (var cmd = new SqlCommand(sql, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@Id", id);
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al eliminar tienda: " + ex.Message);
+            }
+        }
 
-//                    string sql = "SELECT Id, Nombre, AdministradorId, Direccion, Telefono, Activa FROM Tienda";
+        public bool Actualizar(TiendaEntidad tienda)
+        {
+            try
+            {
+                using (var conn = _conexion.ObtenerConexion())
+                {
+                    conn.Open();
+                    string sql = @"
+                    UPDATE Tienda 
+                    SET Nombre=@Nombre, Direccion=@Direccion, 
+                    Telefono=@Telefono, Activa=@Activa, AdministradorId=@AdministradorId
+                    WHERE Id=@Id";
 
-//                    using (var cmd = new SqlCommand(sql, conn))
-//                    {
-//                        using (SqlDataReader reader = cmd.ExecuteReader())
-//                        {
-//                            while (reader.Read())
-//                            {
-//                                tiendas.Add(new TiendaEntidad
-//                                {
-//                                    Id = reader.GetInt32(0),
-//                                    Nombre = reader.GetString(1),
-//                                    Administrador = new AdministradorEntidad { Identificacion = reader.GetInt32(2) },
-//                                    Direccion = reader.GetString(3),
-//                                    Telefono = reader.GetString(4),
-//                                    Activa = reader.GetBoolean(5)
-//                                });
-//                            }
-//                        }
-//                    }
-//                }
-//            }
-//            catch (Exception ex)
-//            {
-//                Console.WriteLine("Error al obtener tiendas: " + ex.Message);
-//            }
+                    using (var cmd = new SqlCommand(sql, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@Id", tienda.Id);
+                        cmd.Parameters.AddWithValue("@Nombre", tienda.Nombre);
+                        cmd.Parameters.AddWithValue("@Direccion", tienda.Direccion);
+                        cmd.Parameters.AddWithValue("@Telefono", tienda.Telefono);
+                        cmd.Parameters.AddWithValue("@Activa", tienda.Activa);
+                        cmd.Parameters.AddWithValue("@AdministradorId", tienda.AdministradorId);
 
-//            return tiendas;
-//        }
-//    }
-//}
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al actualizar tienda: " + ex.Message);
+            }
+        }
+    }
+}
+
+

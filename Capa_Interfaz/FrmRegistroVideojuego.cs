@@ -26,17 +26,15 @@ namespace Capa_Interfaz
 			var datos = new DatosTipoVideojuego();
 			var lista = datos.ObtenerTodos();
 
-			cmbTipoVideojuego.DataSource = lista;
-			cmbTipoVideojuego.DisplayMember = "Nombre"; // Lo que se muestra en la lista
-			cmbTipoVideojuego.ValueMember = "Id";       // Valor interno (FK)
-			cmbTipoVideojuego.SelectedIndex = -1;       // Para que no seleccione ninguno al inicio
+			// Se agregan los tipos de videojuegos.
+			cmbTipoVideojuego.Items.Add("Accion");
+			cmbTipoVideojuego.Items.Add("Aventura");
+			cmbTipoVideojuego.Items.Add("Deportivo");
+			cmbTipoVideojuego.Items.Add("Estrategia");
 
-
-
-
-			// Configura el ComboBox para mostrar el nombre del tipo de videojuego
-			cmbTipoVideojuego.DisplayMember = "Nombre";
-			cmbTipoVideojuego.ValueMember = "Id";
+			// Se selecciona el primer elemento por defecto (opcional).
+			if (cmbTipoVideojuego.Items.Count > 0)
+				cmbTipoVideojuego.SelectedIndex = 0;
 
 			// Asigna el DataSource al ComboBox con los tipos de videojuegos obtenidos
 			//cmbTipoVideojuego.DataSource = TipoVideoJuego.ObtenerTipos();

@@ -1,17 +1,20 @@
 ﻿//TODO NUEVO /////////////////////
 
 
+using System;
+
 namespace Capa_Entidades
 {
-    public class ClienteEntidad : PersonaEntidad
+    public class ClienteEntidad
     {
+        public int Identificacion { get; set; }
+        public string Nombre { get; set; }
+        public string PrimerApellido { get; set; }
+        public string SegundoApellido { get; set; }
+        public DateTime FechaNacimiento { get; set; }
         public bool JugadorEnLinea { get; set; }
 
-        // Constructor que obliga a inicializar todas las propiedades heredadas
-        public ClienteEntidad(int identificacion, string nombre, string primerApellido, string segundoApellido, DateTime fechaNacimiento, bool jugadorEnLinea)
-            : base(identificacion, nombre, primerApellido, segundoApellido, fechaNacimiento)
-        {
-            JugadorEnLinea = jugadorEnLinea;
-        }
+        // Propiedad para mostrar nombre completo
+        public string NombreCompleto => $"{Nombre} {PrimerApellido} {SegundoApellido}";
     }
 }

@@ -29,118 +29,161 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			btnAdministradores = new Button();
-			btnClientes = new Button();
-			btnTiendas = new Button();
-			btnVideojuegos = new Button();
-			btnInventario = new Button();
-			button1 = new Button();
-			button2 = new Button();
-			button3 = new Button();
+			btnRegistroAdministradores = new Button();
+			btnRegistroClientes = new Button();
+			btnRegistroTienda = new Button();
+			btnRegistroVideojuegos = new Button();
+			btnRegistroInventario = new Button();
+			btnConsultaVideoJuegos = new Button();
+			btnRegistroTipoVideojuego = new Button();
+			btnConsultaTipoVideojuego = new Button();
+			btnConsultaAdministradores = new Button();
+			btnConsultaTiendas = new Button();
+			btnConsultaInventario = new Button();
+			btnConsultaClientes = new Button();
 			SuspendLayout();
 			// 
-			// btnAdministradores
+			// btnRegistroAdministradores
 			// 
-			btnAdministradores.BackColor = SystemColors.ButtonShadow;
-			btnAdministradores.Location = new Point(185, 47);
-			btnAdministradores.Margin = new Padding(3, 4, 3, 4);
-			btnAdministradores.Name = "btnAdministradores";
-			btnAdministradores.Size = new Size(170, 48);
-			btnAdministradores.TabIndex = 0;
-			btnAdministradores.Text = "Administradores";
-			btnAdministradores.UseVisualStyleBackColor = false;
+			btnRegistroAdministradores.BackColor = SystemColors.ButtonHighlight;
+			btnRegistroAdministradores.Location = new Point(47, 191);
+			btnRegistroAdministradores.Name = "btnRegistroAdministradores";
+			btnRegistroAdministradores.Size = new Size(149, 38);
+			btnRegistroAdministradores.TabIndex = 0;
+			btnRegistroAdministradores.Text = "Registrar Administradores";
+			btnRegistroAdministradores.UseVisualStyleBackColor = false;
+			btnRegistroAdministradores.Click += btnRegistroAdministradores_Click;
 			// 
-			// btnClientes
+			// btnRegistroClientes
 			// 
-			btnClientes.BackColor = SystemColors.ButtonShadow;
-			btnClientes.Location = new Point(185, 157);
-			btnClientes.Margin = new Padding(3, 4, 3, 4);
-			btnClientes.Name = "btnClientes";
-			btnClientes.Size = new Size(170, 42);
-			btnClientes.TabIndex = 1;
-			btnClientes.Text = "Clientes";
-			btnClientes.UseVisualStyleBackColor = false;
+			btnRegistroClientes.BackColor = SystemColors.ButtonHighlight;
+			btnRegistroClientes.Location = new Point(47, 556);
+			btnRegistroClientes.Name = "btnRegistroClientes";
+			btnRegistroClientes.Size = new Size(149, 33);
+			btnRegistroClientes.TabIndex = 1;
+			btnRegistroClientes.Text = "Registrar Clientes";
+			btnRegistroClientes.UseVisualStyleBackColor = false;
+			btnRegistroClientes.Click += btnRegistroClientes_Click;
 			// 
-			// btnTiendas
+			// btnRegistroTienda
 			// 
-			btnTiendas.BackColor = SystemColors.ControlDark;
-			btnTiendas.Location = new Point(185, 265);
-			btnTiendas.Margin = new Padding(3, 4, 3, 4);
-			btnTiendas.Name = "btnTiendas";
-			btnTiendas.Size = new Size(170, 37);
-			btnTiendas.TabIndex = 2;
-			btnTiendas.Text = "Tienda";
-			btnTiendas.UseVisualStyleBackColor = false;
+			btnRegistroTienda.BackColor = SystemColors.ButtonHighlight;
+			btnRegistroTienda.Location = new Point(47, 324);
+			btnRegistroTienda.Name = "btnRegistroTienda";
+			btnRegistroTienda.Size = new Size(149, 29);
+			btnRegistroTienda.TabIndex = 2;
+			btnRegistroTienda.Text = "Registrar Tienda";
+			btnRegistroTienda.UseVisualStyleBackColor = false;
+			btnRegistroTienda.Click += btnRegistroTiendas_Click;
 			// 
-			// btnVideojuegos
+			// btnRegistroVideojuegos
 			// 
-			btnVideojuegos.BackColor = SystemColors.ControlDark;
-			btnVideojuegos.Location = new Point(78, 362);
-			btnVideojuegos.Margin = new Padding(3, 4, 3, 4);
-			btnVideojuegos.Name = "btnVideojuegos";
-			btnVideojuegos.Size = new Size(170, 35);
-			btnVideojuegos.TabIndex = 3;
-			btnVideojuegos.Text = "Registrar Video Juego";
-			btnVideojuegos.UseVisualStyleBackColor = false;
-			btnVideojuegos.Click += VideoJuego_Click;
+			btnRegistroVideojuegos.BackColor = SystemColors.ButtonHighlight;
+			btnRegistroVideojuegos.Location = new Point(50, 116);
+			btnRegistroVideojuegos.Name = "btnRegistroVideojuegos";
+			btnRegistroVideojuegos.Size = new Size(146, 28);
+			btnRegistroVideojuegos.TabIndex = 3;
+			btnRegistroVideojuegos.Text = "Registrar VideoJuego";
+			btnRegistroVideojuegos.UseVisualStyleBackColor = false;
+			btnRegistroVideojuegos.Click += VideoJuego_Click;
 			// 
-			// btnInventario
+			// btnRegistroInventario
 			// 
-			btnInventario.BackColor = SystemColors.ControlDark;
-			btnInventario.Location = new Point(185, 486);
-			btnInventario.Margin = new Padding(3, 4, 3, 4);
-			btnInventario.Name = "btnInventario";
-			btnInventario.Size = new Size(170, 37);
-			btnInventario.TabIndex = 4;
-			btnInventario.Text = "Inventario";
-			btnInventario.UseVisualStyleBackColor = false;
+			btnRegistroInventario.BackColor = SystemColors.ButtonHighlight;
+			btnRegistroInventario.Location = new Point(47, 438);
+			btnRegistroInventario.Name = "btnRegistroInventario";
+			btnRegistroInventario.Size = new Size(149, 29);
+			btnRegistroInventario.TabIndex = 4;
+			btnRegistroInventario.Text = "Registrar Inventario";
+			btnRegistroInventario.UseVisualStyleBackColor = false;
+			btnRegistroInventario.Click += btnRegistroInventario_Click;
 			// 
-			// button1
+			// btnConsultaVideoJuegos
 			// 
-			button1.BackColor = SystemColors.ControlDark;
-			button1.Location = new Point(303, 362);
-			button1.Margin = new Padding(3, 4, 3, 4);
-			button1.Name = "button1";
-			button1.Size = new Size(170, 35);
-			button1.TabIndex = 5;
-			button1.Text = "Consultar Video Juegos";
-			button1.UseVisualStyleBackColor = false;
-			button1.Click += button1_Click;
+			btnConsultaVideoJuegos.BackColor = SystemColors.ButtonFace;
+			btnConsultaVideoJuegos.Location = new Point(264, 116);
+			btnConsultaVideoJuegos.Name = "btnConsultaVideoJuegos";
+			btnConsultaVideoJuegos.Size = new Size(149, 28);
+			btnConsultaVideoJuegos.TabIndex = 5;
+			btnConsultaVideoJuegos.Text = "Consultar VideoJuego";
+			btnConsultaVideoJuegos.UseVisualStyleBackColor = false;
+			btnConsultaVideoJuegos.Click += button1_Click;
 			// 
-			// button2
+			// btnRegistroTipoVideojuego
 			// 
-			button2.Location = new Point(303, 404);
-			button2.Name = "button2";
-			button2.Size = new Size(170, 35);
-			button2.TabIndex = 6;
-			button2.Text = "Consultar Tipo de Video Juego";
-			button2.UseVisualStyleBackColor = true;
-			button2.Click += button2_Click;
+			btnRegistroTipoVideojuego.Location = new Point(47, 41);
+			btnRegistroTipoVideojuego.Name = "btnRegistroTipoVideojuego";
+			btnRegistroTipoVideojuego.Size = new Size(149, 42);
+			btnRegistroTipoVideojuego.TabIndex = 13;
+			btnRegistroTipoVideojuego.Text = "Registrar Tipo Videojuego:";
+			btnRegistroTipoVideojuego.Click += btnRegistroTipoVideojuego_Click;
 			// 
-			// button3
+			// btnConsultaTipoVideojuego
 			// 
-			button3.Location = new Point(78, 405);
-			button3.Name = "button3";
-			button3.Size = new Size(170, 34);
-			button3.TabIndex = 7;
-			button3.Text = "Registrar Tipo de Video Juego";
-			button3.UseVisualStyleBackColor = true;
-			button3.Click += button3_Click;
+			btnConsultaTipoVideojuego.Location = new Point(264, 41);
+			btnConsultaTipoVideojuego.Name = "btnConsultaTipoVideojuego";
+			btnConsultaTipoVideojuego.Size = new Size(149, 42);
+			btnConsultaTipoVideojuego.TabIndex = 12;
+			btnConsultaTipoVideojuego.Text = "Consultar Tipo Videojuego:";
+			btnConsultaTipoVideojuego.Click += btnConsultaTipoVideojuego_Click;
+			// 
+			// btnConsultaAdministradores
+			// 
+			btnConsultaAdministradores.Location = new Point(264, 191);
+			btnConsultaAdministradores.Name = "btnConsultaAdministradores";
+			btnConsultaAdministradores.Size = new Size(149, 38);
+			btnConsultaAdministradores.TabIndex = 8;
+			btnConsultaAdministradores.Text = "Consultar Administradores";
+			btnConsultaAdministradores.UseVisualStyleBackColor = true;
+			btnConsultaAdministradores.Click += btnConsultaAdministradores_Click;
+			// 
+			// btnConsultaTiendas
+			// 
+			btnConsultaTiendas.Location = new Point(264, 324);
+			btnConsultaTiendas.Name = "btnConsultaTiendas";
+			btnConsultaTiendas.Size = new Size(149, 29);
+			btnConsultaTiendas.TabIndex = 9;
+			btnConsultaTiendas.Text = "Consultar Tienda";
+			btnConsultaTiendas.UseVisualStyleBackColor = true;
+			btnConsultaTiendas.Click += btnConsultaTienda_Click;
+			// 
+			// btnConsultaInventario
+			// 
+			btnConsultaInventario.Location = new Point(264, 438);
+			btnConsultaInventario.Name = "btnConsultaInventario";
+			btnConsultaInventario.Size = new Size(149, 29);
+			btnConsultaInventario.TabIndex = 10;
+			btnConsultaInventario.Text = "Consultar Inventario";
+			btnConsultaInventario.UseVisualStyleBackColor = true;
+			btnConsultaInventario.Click += btnConsultaInventario_Click;
+			// 
+			// btnConsultaClientes
+			// 
+			btnConsultaClientes.Location = new Point(264, 556);
+			btnConsultaClientes.Name = "btnConsultaClientes";
+			btnConsultaClientes.Size = new Size(149, 33);
+			btnConsultaClientes.TabIndex = 11;
+			btnConsultaClientes.Text = "Consultar Clientes";
+			btnConsultaClientes.UseVisualStyleBackColor = true;
+			btnConsultaClientes.Click += btnConsultaClientes_Click;
 			// 
 			// MenuPrincipal
 			// 
-			AutoScaleDimensions = new SizeF(8F, 19F);
+			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
-			ClientSize = new Size(523, 570);
-			Controls.Add(button3);
-			Controls.Add(button2);
-			Controls.Add(button1);
-			Controls.Add(btnInventario);
-			Controls.Add(btnVideojuegos);
-			Controls.Add(btnTiendas);
-			Controls.Add(btnClientes);
-			Controls.Add(btnAdministradores);
-			Margin = new Padding(3, 4, 3, 4);
+			ClientSize = new Size(458, 734);
+			Controls.Add(btnConsultaClientes);
+			Controls.Add(btnConsultaInventario);
+			Controls.Add(btnConsultaTiendas);
+			Controls.Add(btnConsultaAdministradores);
+			Controls.Add(btnConsultaTipoVideojuego);
+			Controls.Add(btnRegistroTipoVideojuego);
+			Controls.Add(btnConsultaVideoJuegos);
+			Controls.Add(btnRegistroInventario);
+			Controls.Add(btnRegistroVideojuegos);
+			Controls.Add(btnRegistroTienda);
+			Controls.Add(btnRegistroClientes);
+			Controls.Add(btnRegistroAdministradores);
 			Name = "MenuPrincipal";
 			Text = "Form1";
 			ResumeLayout(false);
@@ -148,13 +191,17 @@
 
 		#endregion
 
-		private Button btnAdministradores;
-		private Button btnClientes;
-		private Button btnTiendas;
-		private Button btnVideojuegos;
-		private Button btnInventario;
-		private Button button1;
-		private Button button2;
-		private Button button3;
+		private Button btnRegistroAdministradores;
+		private Button btnRegistroClientes;
+		private Button btnRegistroTienda;
+		private Button btnRegistroVideojuegos;
+		private Button btnRegistroInventario;
+		private Button btnConsultaVideoJuegos;
+		private Button btnRegistroTipoVideojuego;
+		private Button btnConsultaTipoVideojuego;
+		private Button btnConsultaAdministradores;
+		private Button btnConsultaTiendas;
+		private Button btnConsultaInventario;
+		private Button btnConsultaClientes;
 	}
 }

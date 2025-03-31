@@ -1,49 +1,82 @@
 ﻿//TODO NUEVO/////////////
 
-//using Capa_Entidades;
+using Capa_Acceso_Datos;
+using Capa_Entidades;
+
+namespace Capa_Log_Negocio
+{
+	public class LogTienda
+	{
+		private TiendaEntidad[] tiendas = new TiendaEntidad[20];
+		private int indice = 0;
 
 
-//namespace Capa_Log_Negocio
-//{
-//    public class LogTienda
-//    {
-//        private TiendaEntidad[] tiendas = new TiendaEntidad[5]; // Arreglo con 5 espacios
-//        private int indice = 0;
 
-//        public string RegistroTienda(int id, string nombre, AdministradorEntidad administrador, string direccion, string telefono, bool activa)
-//        {
-//            if (string.IsNullOrWhiteSpace(nombre) || string.IsNullOrWhiteSpace(direccion) || string.IsNullOrWhiteSpace(telefono))
-//                return "Todos los campos son requeridos.";
 
-//            if (administrador == null)
-//                return "Debe seleccionar un administrador.";
+		public string RegistroTienda(int id, string nombre, string direccion, string telefono, bool activa, int administradorId)
+		{
+			// Validación de campos requeridos
+			if (string.IsNullOrWhiteSpace(nombre) || string.IsNullOrWhiteSpace(direccion) || string.IsNullOrWhiteSpace(telefono))
+				return "Todos los campos son requeridos.";
 
-//            for (int i = 0; i < indice; i++)
-//            {
-//                if (tiendas[i].Id == id)
-//                    return "El ID ya existe.";
-//            }
+			// Validar que el Id sea unico
+			for (int i = 0; i < indice; i++)
+			{
+				if (tiendas[i].Id == id)
+					return "El ID ya existe.";
+			}
 
-//            if (indice >= tiendas.Length)
-//                return "No se pueden agregar más tiendas.";
+			// Validar espacio en el arreglo
+			if (indice >= tiendas.Length)
+				return "No se pueden agregar más tiendas.";
 
-//            tiendas[indice] = new TiendaEntidad
-//            {
-//                Id = id,
-//                Nombre = nombre,
-//                Administrador = administrador,
-//                Direccion = direccion,
-//                Telefono = telefono,
-//                Activa = activa
-//            };
-//            indice++;
+			// Registrar la tienda
+			tiendas[indice] = new TiendaEntidad
+			{
+				Id = id,
+				Nombre = nombre,
+				Direccion = direccion,
+				Telefono = telefono,
+				Activa = activa,
+				AdministradorId = administradorId
+			};
+			indice++;
 
-//            return "Tienda registrada correctamente.";
-//        }
+			return "Tienda registrada correctamente.";
+		}
 
-//        public TiendaEntidad[] ObtenerTiendas()
-//        {
-//            return tiendas.Take(indice).ToArray();
-//        }
-//    }
-//}
+		public List<TiendaEntidad> ObtenerTiendasDesdeBD()
+		{
+			DatosTienda datos = new DatosTienda();
+			return datos.ObtenerTiendas();
+		}
+
+		public string EliminarTienda(int id)
+		{
+			try
+			{
+				DatosTienda datos = new DatosTienda();
+				bool resultado = datos.Eliminar(id);
+				return resultado ? "Tienda eliminada correctamente." : "No se pudo eliminar la tienda.";
+			}
+			catch (Exception ex)
+			{
+				return ex.Message;
+			}
+		}
+
+		public string EditarTienda(TiendaEntidad tienda)
+		{
+			try
+			{
+				DatosTienda datos = new DatosTienda();
+				bool resultado = datos.Actualizar(tienda);
+				return resultado ? "Tienda actualizada correctamente." : "No se pudo actualizar la tienda.";
+			}
+			catch (Exception ex)
+			{
+				return ex.Message;
+			}
+		}
+	}
+}
