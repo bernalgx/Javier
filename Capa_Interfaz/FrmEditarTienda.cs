@@ -31,7 +31,7 @@ namespace Capa_Interfaz
             txtDireccion.Text = Tienda.Direccion;
             txtTelefono.Text = Tienda.Telefono;
             cmbActiva.SelectedItem = Tienda.Activa ? "Si" : "No";
-            cmbAdministrador.SelectedValue = Tienda.AdministradorId;
+            cmbAdministrador.SelectedValue = Tienda.Id_Administrador;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -51,7 +51,7 @@ namespace Capa_Interfaz
             Tienda.Direccion = txtDireccion.Text;
             Tienda.Telefono = txtTelefono.Text;
             Tienda.Activa = cmbActiva.SelectedItem.ToString() == "Si";
-            Tienda.AdministradorId = (int)cmbAdministrador.SelectedValue;
+            Tienda.Id_Administrador = (int)cmbAdministrador.SelectedValue;
 
             // Si todo es correcto, se indica que la edición fue exitosa
             DialogResult = DialogResult.OK;

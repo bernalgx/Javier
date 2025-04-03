@@ -41,6 +41,7 @@
 			btnConsultaTiendas = new Button();
 			btnConsultaInventario = new Button();
 			btnConsultaClientes = new Button();
+			button1 = new Button();
 			SuspendLayout();
 			// 
 			// btnRegistroAdministradores
@@ -167,11 +168,22 @@
 			btnConsultaClientes.UseVisualStyleBackColor = true;
 			btnConsultaClientes.Click += btnConsultaClientes_Click;
 			// 
+			// button1
+			// 
+			button1.Location = new Point(50, 641);
+			button1.Name = "button1";
+			button1.Size = new Size(146, 33);
+			button1.TabIndex = 14;
+			button1.Text = "Registrar Reserva";
+			button1.UseVisualStyleBackColor = true;
+			button1.Click += button1_Click_1;
+			// 
 			// MenuPrincipal
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(458, 734);
+			Controls.Add(button1);
 			Controls.Add(btnConsultaClientes);
 			Controls.Add(btnConsultaInventario);
 			Controls.Add(btnConsultaTiendas);
@@ -203,5 +215,6 @@
 		private Button btnConsultaTiendas;
 		private Button btnConsultaInventario;
 		private Button btnConsultaClientes;
+		private Button button1;
 	}
 }

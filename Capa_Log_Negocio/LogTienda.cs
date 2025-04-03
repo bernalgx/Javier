@@ -38,7 +38,7 @@ namespace Capa_Log_Negocio
 				Direccion = direccion,
 				Telefono = telefono,
 				Activa = activa,
-				AdministradorId = administradorId
+				Id_Administrador = administradorId
 			};
 			indice++;
 

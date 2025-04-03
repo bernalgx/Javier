@@ -43,7 +43,7 @@ namespace Capa_Interfaz
 
 			// Seleccionar el valor actual del videojuego
 			cmbFisico.SelectedValue = Videojuego.Fisico;
-			cmbTipoVideojuego.SelectedValue = Videojuego.TipoVideojuegoId;
+			cmbTipoVideojuego.SelectedValue = Videojuego.Id_TipoVideojuego;
 		}
 
 
@@ -82,7 +82,7 @@ namespace Capa_Interfaz
 			// Actualizar el tipo de videojuego
 			if (cmbTipoVideojuego.SelectedValue != null)
 			{
-				Videojuego.TipoVideojuegoId = Convert.ToInt32(cmbTipoVideojuego.SelectedValue);
+				Videojuego.Id_TipoVideojuego = Convert.ToInt32(cmbTipoVideojuego.SelectedValue);
 			}
 			else
 			{

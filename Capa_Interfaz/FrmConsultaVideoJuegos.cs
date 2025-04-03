@@ -29,7 +29,7 @@ namespace Capa_Interfaz
 					Desarrollador = dataGridView1.SelectedRows[0].Cells["Desarrollador"].Value.ToString(),
 					Lanzamiento = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["Lanzamiento"].Value),
 					Fisico = Convert.ToBoolean(dataGridView1.SelectedRows[0].Cells["Fisico"].Value),
-					TipoVideojuegoId = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["TipoVideojuegoId"].Value)
+					Id_TipoVideojuego = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["Id_TipoVideojuego"].Value)
 				};
 
 				// Abrir un formulario de edicion, pasandole el objeto

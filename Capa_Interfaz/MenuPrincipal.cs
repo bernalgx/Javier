@@ -95,6 +95,12 @@ namespace Capa_Interfaz
 			FrmRegistroInventario form = new FrmRegistroInventario();
 			form.ShowDialog();
 		}
+
+		private void button1_Click_1(object sender, EventArgs e)
+		{
+			FrmReserva form = new FrmReserva();
+			form.ShowDialog();
+		}
 	}
 
 }

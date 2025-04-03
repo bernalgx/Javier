@@ -1,67 +1,83 @@
 ﻿////TODO NUEVO//////////////
 
-//using Capa_Acceso_Datos;
-//using Capa_Entidades;
-//using Microsoft.Data.SqlClient;
+using Capa_Acceso_Datos;
+using Capa_Entidades;
+using Microsoft.Data.SqlClient;
 
-//public class DatosReserva
-//{
-//	private readonly ConexionBD _conexion;
+public class DatosReserva
+{
+	private readonly ConexionBD _conexion;
 
-//	public DatosReserva()
-//	{
-//		_conexion = new ConexionBD();
-//	}
+	public DatosReserva()
+	{
+		_conexion = new ConexionBD();
+	}
 
-//	public string CrearReserva(ReservaEntidad reserva)
-//	{
-//		using (var conn = _conexion.ObtenerConexion())
-//		{
-//			conn.Open();
-//			using (var transaction = conn.BeginTransaction())
-//			{
-//				try
-//				{
-//					// 1. Insertar reserva
-//					string sqlReserva = @"INSERT INTO Reserva 
-//                                       (ClienteId, VideojuegoId, TiendaId, FechaReserva, Cantidad)
-//                                       VALUES (@ClienteId, @VideojuegoId, @TiendaId, @Fecha, @Cantidad)";
+	public string CrearReserva(ReservaEntidad reserva)
+	{
+		// Validar que ninguno de los objetos críticos sea nulo
+		if (reserva == null)
+			throw new ArgumentNullException(nameof(reserva));
+		if (reserva.Cliente == null)
+			throw new Exception("El cliente en la reserva es nulo.");
+		if (reserva.VideojuegoTienda == null)
+			throw new Exception("El objeto VideojuegoTienda en la reserva es nulo.");
+		if (reserva.VideojuegoTienda.Videojuego == null)
+			throw new Exception("El videojuego en la reserva es nulo.");
+		if (reserva.VideojuegoTienda.Tienda == null)
+			throw new Exception("La tienda en la reserva es nula.");
 
-//					using (var cmd = new SqlCommand(sqlReserva, conn, transaction))
-//					{
-//						cmd.Parameters.AddWithValue("@ClienteId", reserva.Cliente.Identificacion);
-//						cmd.Parameters.AddWithValue("@VideojuegoId", reserva.VideojuegoTienda.Videojuego.Id);
-//						cmd.Parameters.AddWithValue("@TiendaId", reserva.VideojuegoTienda.Tienda.Id);
-//						cmd.Parameters.AddWithValue("@Fecha", reserva.FechaReserva);
-//						cmd.Parameters.AddWithValue("@Cantidad", reserva.Cantidad);
-//						cmd.ExecuteNonQuery();
-//					}
+		using (var conn = _conexion.ObtenerConexion())
+		{
+			conn.Open();
+			using (var transaction = conn.BeginTransaction())
+			{
+				try
+				{
+					// 1. Insertar reserva usando los nombres de columna correctos según el esquema
+					string sqlReserva = @"
+        INSERT INTO Reserva (Id_Cliente, Id_Videojuego, Id_Tienda, FechaReserva, Cantidad)
+        VALUES (@ClienteId, @VideojuegoId, @TiendaId, @Fecha, @Cantidad)";
 
-//					// 2. Actualizar existencias
-//					string sqlInventario = @"UPDATE VideojuegosXTienda 
-//                                          SET Existencias = Existencias - @Cantidad 
-//                                          WHERE TiendaId = @TiendaId AND VideojuegoId = @VideojuegoId";
+					using (var cmd = new SqlCommand(sqlReserva, conn, transaction))
+					{
+						cmd.Parameters.AddWithValue("@ClienteId", reserva.Cliente.Identificacion);
+						cmd.Parameters.AddWithValue("@VideojuegoId", reserva.VideojuegoTienda.Videojuego.Id);
+						cmd.Parameters.AddWithValue("@TiendaId", reserva.VideojuegoTienda.Tienda.Id);
+						cmd.Parameters.AddWithValue("@Fecha", reserva.FechaReserva);
+						cmd.Parameters.AddWithValue("@Cantidad", reserva.Cantidad);
+						cmd.ExecuteNonQuery();
+					}
 
-//					using (var cmd = new SqlCommand(sqlInventario, conn, transaction))
-//					{
-//						cmd.Parameters.AddWithValue("@Cantidad", reserva.Cantidad);
-//						cmd.Parameters.AddWithValue("@TiendaId", reserva.VideojuegoTienda.Tienda.Id);
-//						cmd.Parameters.AddWithValue("@VideojuegoId", reserva.VideojuegoTienda.Videojuego.Id);
-//						cmd.ExecuteNonQuery();
-//					}
+					// 2. Actualizar existencias en la tabla VideojuegosXTienda
+					string sqlInventario = @"
+        UPDATE VideojuegosXTienda 
+        SET Existencias = Existencias - @Cantidad 
+        WHERE Id_Tienda = @TiendaId AND Id_Videojuego = @VideojuegoId";
 
-//					transaction.Commit();
-//					return "Reserva realizada exitosamente";
-//				}
-//				catch (Exception ex)
-//				{
-//					transaction.Rollback();
-//					return "Error al procesar reserva: " + ex.Message;
-//				}
-//			}
-//		}
-//	}
-//}
+					using (var cmd = new SqlCommand(sqlInventario, conn, transaction))
+					{
+						cmd.Parameters.AddWithValue("@Cantidad", reserva.Cantidad);
+						cmd.Parameters.AddWithValue("@TiendaId", reserva.VideojuegoTienda.Tienda.Id);
+						cmd.Parameters.AddWithValue("@VideojuegoId", reserva.VideojuegoTienda.Videojuego.Id);
+						cmd.ExecuteNonQuery();
+					}
+
+					transaction.Commit();
+					return "Reserva realizada exitosamente";
+				}
+				catch (Exception ex)
+				{
+					transaction.Rollback();
+					return "Error al procesar reserva: " + ex.Message;
+				}
+
+
+			}
+		}
+	}
+
+}
 
 
 ////using System;

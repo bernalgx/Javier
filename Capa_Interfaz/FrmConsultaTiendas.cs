@@ -43,7 +43,7 @@ namespace Capa_Interfaz
 			dataGridView1.Columns["Activa"].DefaultCellStyle.Format = "Si;No";
 
 			// Ocultar columnas no necesarias
-			dataGridView1.Columns["AdministradorId"].Visible = false;
+			dataGridView1.Columns["Id_Administrador"].Visible = false;
 		}
 		private void btnEditar_Click(object sender, EventArgs e)
 		{
@@ -74,7 +74,7 @@ namespace Capa_Interfaz
 				Direccion = dataGridView1.SelectedRows[0].Cells["Direccion"].Value.ToString(),
 				Telefono = dataGridView1.SelectedRows[0].Cells["Telefono"].Value.ToString(),
 				Activa = Convert.ToBoolean(dataGridView1.SelectedRows[0].Cells["Activa"].Value),
-				AdministradorId = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["AdministradorId"].Value)
+				Id_Administrador = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["AdministradorId"].Value)
 			};
 		}
 

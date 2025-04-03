@@ -1,20 +1,22 @@
-using System.Windows.Forms;
+using Capa_Entidades;
+using Capa_Interfaz;
 
-namespace Capa_Interfaz
+static class Program
 {
-	internal static class Program
+	// Propiedad para almacenar el cliente que está usando la aplicación.
+	public static ClienteEntidad ClienteActual { get; set; }
+
+	[STAThread]
+	static void Main()
 	{
-		/// <summary>
-		///  The main entry point for the application.
-		/// </summary>
-		[STAThread]
-		static void Main()
-		{
-			// To customize application configuration such as set high DPI settings or default font,
-			// see https://aka.ms/applicationconfiguration.
-			ApplicationConfiguration.Initialize();
-			Application.Run(new MenuPrincipal());
-			//Application.Run(new FrmVideoJuegos());
-		}
+		Application.EnableVisualStyles();
+		Application.SetCompatibleTextRenderingDefault(false);
+
+		// Aquí se debería realizar el proceso de autenticación y asignar el cliente.
+		// Por ejemplo, si logueas al usuario y obtienes un objeto ClienteEntidad, lo asignas:
+		ClienteActual = new ClienteEntidad { Identificacion = 1, Nombre = "Pepe" };
+
+		//Application.Run(new FrmReserva());
+		Application.Run(new MenuPrincipal());
 	}
 }

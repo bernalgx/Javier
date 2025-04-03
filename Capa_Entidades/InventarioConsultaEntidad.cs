@@ -8,20 +8,16 @@ using System.Threading.Tasks;
 namespace Capa_Entidades
 {
 	public class InventarioConsultaEntidad
-
 	{
-		// Datos de la Tienda
-		public int TiendaId { get; set; }
+		public int Id_Tienda { get; set; }
 		public string TiendaNombre { get; set; }
 		public string TiendaDireccion { get; set; }
-
-		// Datos del Videojuego
-		public int VideojuegoId { get; set; }
+		public decimal Id_VideoJuego { get; set; }  // ← Cambia de int a decimal
 		public string VideojuegoNombre { get; set; }
 		public string TipoVideojuegoNombre { get; set; }
-
-		// Existencias
 		public int Existencias { get; set; }
 	}
+
+
 }
 

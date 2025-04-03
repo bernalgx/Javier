@@ -24,7 +24,19 @@ namespace Capa_Acceso_Datos
 				{
 					conn.Open();
 
-					string sql = @"SELECT T.[Id] AS TiendaId, T.[Nombre] AS TiendaNombre, T.[Direccion] AS TiendaDireccion, V.[Id] AS VideojuegoId, V.[Nombre] AS VideojuegoNombre, TV.[Nombre] AS TipoVideojuegoNombre, VT.[Existencias] FROM [VideojuegosXTienda] VT JOIN [Tienda] T ON VT.[TiendaId] = T.[Id] JOIN [Videojuego] V ON VT.[VideojuegoId] = V.[Id] JOIN [TipoVideojuego] TV ON V.[TipoVideojuegoId] = TV.[Id]";
+					string sql = @"SELECT 
+                            T.[Id] AS Id_Tienda, 
+                            T.[Nombre] AS TiendaNombre, 
+                            T.[Direccion] AS TiendaDireccion, 
+                            V.[Id] AS Id_Videojuego, 
+                            V.[Nombre] AS VideojuegoNombre, 
+                            TV.[Nombre] AS TipoVideojuegoNombre, 
+                            VT.[Existencias] 
+                          FROM [VideojuegosXTienda] VT 
+                          JOIN [Tienda] T ON VT.[Id_Tienda] = T.[Id] 
+                          JOIN [Videojuego] V ON VT.[Id_Videojuego] = V.[Id] 
+                          JOIN [TipoVideojuego] TV ON V.[Id_TipoVideojuego] = TV.[Id]";
+
 					using (var cmd = new SqlCommand(sql, conn))
 					{
 						using (var dr = cmd.ExecuteReader())
@@ -33,10 +45,11 @@ namespace Capa_Acceso_Datos
 							{
 								InventarioConsultaEntidad item = new InventarioConsultaEntidad
 								{
-									TiendaId = dr.GetInt32(0),
+									Id_Tienda = dr.GetInt32(0),
 									TiendaNombre = dr.GetString(1),
 									TiendaDireccion = dr.GetString(2),
-									VideojuegoId = dr.GetInt32(3),
+									Id_VideoJuego = Convert.ToInt32(dr.GetDecimal(3)), // ← Convierte decimal a int
+
 									VideojuegoNombre = dr.GetString(4),
 									TipoVideojuegoNombre = dr.GetString(5),
 									Existencias = dr.GetInt32(6)
@@ -56,6 +69,7 @@ namespace Capa_Acceso_Datos
 		}
 
 
+
 		public string Crear(VideojuegosXTiendaEntidad nuevoRegistro)
 		{
 			try
@@ -63,13 +77,12 @@ namespace Capa_Acceso_Datos
 				using (var conn = _conexion.ObtenerConexion())
 				{
 					conn.Open();
-					string sql = @"INSERT INTO VideojuegosXTienda (TiendaId, VideojuegoId, Existencias)
-                           VALUES (@TiendaId, @VideojuegoId, @Existencias)";
+					string sql = @"INSERT INTO VideojuegosXTienda (Id_Tienda, Id_Videojuego, Existencias) VALUES (@Id_Tienda, @Id_Videojuego, @Existencias)";
 
 					using (var cmd = new SqlCommand(sql, conn))
 					{
-						cmd.Parameters.AddWithValue("@TiendaId", nuevoRegistro.Tienda.Id);
-						cmd.Parameters.AddWithValue("@VideojuegoId", nuevoRegistro.Videojuego.Id);
+						cmd.Parameters.AddWithValue("@Id_Tienda", nuevoRegistro.Tienda.Id);
+						cmd.Parameters.AddWithValue("@Id_Videojuego", nuevoRegistro.Videojuego.Id);
 						cmd.Parameters.AddWithValue("@Existencias", nuevoRegistro.Existencias);
 
 						int filasAfectadas = cmd.ExecuteNonQuery();
@@ -90,7 +103,7 @@ namespace Capa_Acceso_Datos
 			}
 		}
 
-		public List<InventarioConsultaEntidad> ObtenerInventarioPorTienda(int tiendaId)
+		public List<InventarioConsultaEntidad> ObtenerInventarioPorTienda(int Id_Tienda)
 		{
 			List<InventarioConsultaEntidad> lista = new List<InventarioConsultaEntidad>();
 
@@ -99,32 +112,35 @@ namespace Capa_Acceso_Datos
 				using (var conn = _conexion.ObtenerConexion())
 				{
 					conn.Open();
+					//sql
 					string sql = @"SELECT T.Id, T.Nombre, T.Direccion, 
 		                        V.Id, V.Nombre, TV.Nombre, VT.Existencias
 		                        FROM VideojuegosXTienda VT
-		                        JOIN Tienda T ON VT.TiendaId = T.Id
-		                        JOIN Videojuego V ON VT.VideojuegoId = V.Id
-		                        JOIN TipoVideojuego TV ON V.TipoVideojuegoId = TV.Id
-		                        WHERE T.Id = @TiendaId AND VT.Existencias > 0";
+		                        JOIN Tienda T ON VT.Id_Tienda = T.Id
+		                        JOIN Videojuego V ON VT.Id_Videojuego = V.Id
+		                        JOIN TipoVideojuego TV ON V.Id_TipoVideojuego = TV.Id
+		                        WHERE T.Id = @Id_Tienda AND VT.Existencias > 0";
 
 					using (var cmd = new SqlCommand(sql, conn))
 					{
-						cmd.Parameters.AddWithValue("@TiendaId", tiendaId);
+						cmd.Parameters.AddWithValue("@Id_Tienda", Id_Tienda);
 						using (var dr = cmd.ExecuteReader())
 						{
 							while (dr.Read())
 							{
-								lista.Add(new InventarioConsultaEntidad
+								InventarioConsultaEntidad item = new InventarioConsultaEntidad
 								{
-									TiendaId = dr.GetInt32(0),
+									Id_Tienda = dr.GetInt32(0),
 									TiendaNombre = dr.GetString(1),
 									TiendaDireccion = dr.GetString(2),
-									VideojuegoId = dr.GetInt32(3),
+									Id_VideoJuego = dr.GetDecimal(3),  // ← Leer como decimal directamente
 									VideojuegoNombre = dr.GetString(4),
 									TipoVideojuegoNombre = dr.GetString(5),
 									Existencias = dr.GetInt32(6)
-								});
+								};
+								lista.Add(item);
 							}
+
 						}
 					}
 				}
@@ -136,57 +152,6 @@ namespace Capa_Acceso_Datos
 			return lista;
 		}
 
-		//public VideojuegosXTiendaEntidad ObtenerVideojuegoTienda(int tiendaId, int videojuegoId)
-		//{
-		//	try
-		//	{
-		//		using (var conn = _conexion.ObtenerConexion())
-		//		{
-		//			conn.Open();
-		//			string sql = @"SELECT VT.TiendaId, VT.VideojuegoId, VT.Existencias,
-		//                        T.Id, T.Nombre, T.Direccion, T.Activa,
-		//                        V.Id, V.Nombre, V.Fisico
-		//                        FROM VideojuegosXTienda VT
-		//                        JOIN Tienda T ON VT.TiendaId = T.Id
-		//                        JOIN Videojuego V ON VT.VideojuegoId = V.Id
-		//                        WHERE VT.TiendaId = @TiendaId AND VT.VideojuegoId = @VideojuegoId";
 
-		//			using (var cmd = new SqlCommand(sql, conn))
-		//			{
-		//				cmd.Parameters.AddWithValue("@TiendaId", tiendaId);
-		//				cmd.Parameters.AddWithValue("@VideojuegoId", videojuegoId);
-
-		//				using (var dr = cmd.ExecuteReader())
-		//				{
-		//					if (dr.Read())
-		//					{
-		//						return new VideojuegosXTiendaEntidad
-		//						{
-		//							Tienda = new TiendaEntidad
-		//							{
-		//								Id = dr.GetInt32(3),
-		//								Nombre = dr.GetString(4),
-		//								Direccion = dr.GetString(5),
-		//								Activa = dr.GetBoolean(6)
-		//							},
-		//							Videojuego = new VideojuegoEntidad
-		//							{
-		//								Id = dr.GetInt32(7),
-		//								Nombre = dr.GetString(8),
-		//								Fisico = dr.GetBoolean(9)
-		//							},
-		//							Existencias = dr.GetInt32(2)
-		//						};
-		//					}
-		//				}
-		//			}
-		//		}
-		//	}
-		//	catch (Exception ex)
-		//	{
-		//		throw new Exception("Error obteniendo videojuego por tienda: " + ex.Message);
-		//	}
-		//	return null;
-		//}
 	}
 }

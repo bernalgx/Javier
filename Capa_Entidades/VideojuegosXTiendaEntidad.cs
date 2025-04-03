@@ -5,9 +5,9 @@ public class VideojuegosXTiendaEntidad
 {
 	public TiendaEntidad Tienda { get; set; }
 	public VideojuegoEntidad Videojuego { get; set; }
-	public int Existencias { get; set; }
+	public decimal Existencias { get; set; }
 
-	public VideojuegosXTiendaEntidad(TiendaEntidad tienda, VideojuegoEntidad videojuego, int existencias)
+	public VideojuegosXTiendaEntidad(TiendaEntidad tienda, VideojuegoEntidad videojuego, decimal existencias)
 	{
 		Tienda = tienda;
 		Videojuego = videojuego;

@@ -23,28 +23,32 @@ namespace Capa_Interfaz
 		// Evento que se ejecuta al cargar el formulario
 		private void FrmRegistroVideojuego_Load(object sender, EventArgs e)
 		{
-			var datos = new DatosTipoVideojuego();
-			var lista = datos.ObtenerTodos();
+			try
+			{
+				var datos = new DatosTipoVideojuego();
 
-			// Se agregan los tipos de videojuegos.
-			cmbTipoVideojuego.Items.Add("Accion");
-			cmbTipoVideojuego.Items.Add("Aventura");
-			cmbTipoVideojuego.Items.Add("Deportivo");
-			cmbTipoVideojuego.Items.Add("Estrategia");
+				// Obtener los tipos de videojuegos desde la base de datos
+				var listaTipos = datos.ObtenerTodos();
 
-			// Se selecciona el primer elemento por defecto (opcional).
-			if (cmbTipoVideojuego.Items.Count > 0)
-				cmbTipoVideojuego.SelectedIndex = 0;
+				// Configurar el ComboBox de tipos de videojuegos
+				cmbTipoVideojuego.DataSource = listaTipos;
+				cmbTipoVideojuego.DisplayMember = "Nombre";  // Nombre de la propiedad a mostrar
+				cmbTipoVideojuego.ValueMember = "Id";       // Propiedad para el valor (si es necesario)
 
-			// Asigna el DataSource al ComboBox con los tipos de videojuegos obtenidos
-			//cmbTipoVideojuego.DataSource = TipoVideoJuego.ObtenerTipos();
+				// Seleccionar primer item (opcional)
+				if (cmbTipoVideojuego.Items.Count > 0)
+					cmbTipoVideojuego.SelectedIndex = 0;
 
-			// Limpia y agrega opciones al ComboBox de formato físico/virtual
-			cmbFisico.Items.Clear();
-			cmbFisico.Items.Add("Físico");
-			cmbFisico.Items.Add("Virtual");
+				// Configurar ComboBox de formato físico/virtual (se mantiene igual)
+				cmbFisico.Items.Clear();
+				cmbFisico.Items.Add("Físico");
+				cmbFisico.Items.Add("Virtual");
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show($"Error cargando datos: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			}
 		}
-
 		// Evento que se ejecuta al hacer clic en el botón de registrar
 		private void btnRegistrar_Click(object sender, EventArgs e)
 		{
@@ -61,7 +65,7 @@ namespace Capa_Interfaz
 				}
 
 				// Toma el valor (int) que se configuró en ValueMember del ComboBox
-				int tipo = (int)cmbTipoVideojuego.SelectedValue;
+				int tipo = Convert.ToInt32(cmbTipoVideojuego.SelectedValue);
 
 				string desarrollador = txtDesarrollador.Text;
 				int lanzamiento = int.Parse(txtLanzamiento.Text);
@@ -76,7 +80,7 @@ namespace Capa_Interfaz
 					Desarrollador = desarrollador,
 					Lanzamiento = lanzamiento,
 					Fisico = fisico,
-					TipoVideojuegoId = tipo
+					Id_TipoVideojuego = tipo
 				};
 
 				// Llama al método Crear de la clase de acceso a datos

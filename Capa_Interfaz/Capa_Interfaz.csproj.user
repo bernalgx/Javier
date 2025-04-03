@@ -52,6 +52,9 @@
     <Compile Update="FrmRegistroVideojuego.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
