@@ -4,6 +4,9 @@
     <Compile Update="FrmConsultaInventario.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmConsultarReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FrmRegistroInventario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -52,7 +55,7 @@
     <Compile Update="FrmRegistroVideojuego.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FrmReserva.cs">
+    <Compile Update="FrmRegistroReserva.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="MenuPrincipal.cs">

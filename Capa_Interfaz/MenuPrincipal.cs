@@ -98,7 +98,13 @@ namespace Capa_Interfaz
 
 		private void button1_Click_1(object sender, EventArgs e)
 		{
-			FrmReserva form = new FrmReserva();
+			FrmRegistroReserva form = new FrmRegistroReserva();
+			form.ShowDialog();
+		}
+
+		private void button2_Click(object sender, EventArgs e)
+		{
+			FrmConsultarReserva form = new FrmConsultarReserva();
 			form.ShowDialog();
 		}
 	}

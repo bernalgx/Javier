@@ -42,6 +42,7 @@
 			btnConsultaInventario = new Button();
 			btnConsultaClientes = new Button();
 			button1 = new Button();
+			button2 = new Button();
 			SuspendLayout();
 			// 
 			// btnRegistroAdministradores
@@ -178,11 +179,22 @@
 			button1.UseVisualStyleBackColor = true;
 			button1.Click += button1_Click_1;
 			// 
+			// button2
+			// 
+			button2.Location = new Point(264, 641);
+			button2.Name = "button2";
+			button2.Size = new Size(149, 33);
+			button2.TabIndex = 15;
+			button2.Text = "Consultar Reservas";
+			button2.UseVisualStyleBackColor = true;
+			button2.Click += button2_Click;
+			// 
 			// MenuPrincipal
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(458, 734);
+			Controls.Add(button2);
 			Controls.Add(button1);
 			Controls.Add(btnConsultaClientes);
 			Controls.Add(btnConsultaInventario);
@@ -216,5 +228,6 @@
 		private Button btnConsultaInventario;
 		private Button btnConsultaClientes;
 		private Button button1;
+		private Button button2;
 	}
 }

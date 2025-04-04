@@ -55,6 +55,7 @@ namespace Capa_Acceso_Datos
 
         public List<ClienteEntidad> ObtenerClientes()
         {
+
             List<ClienteEntidad> lista = new List<ClienteEntidad>();
 
             try
@@ -80,7 +81,7 @@ namespace Capa_Acceso_Datos
                             {
                                 ClienteEntidad cliente = new ClienteEntidad
                                 {
-                                    Identificacion = dr.GetInt32(0),
+                                    Identificacion = Convert.ToInt32(dr.GetDecimal(0)),
                                     Nombre = dr.GetString(1),
                                     PrimerApellido = dr.GetString(2),
                                     SegundoApellido = dr.GetString(3),

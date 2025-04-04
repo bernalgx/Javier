@@ -77,56 +77,101 @@ public class DatosReserva
 		}
 	}
 
+	// Consulta todas las reservas de un cliente
+	public List<ReservaEntidad> ConsultarReservasPorCliente(int clienteId)
+	{
+		List<ReservaEntidad> reservas = new List<ReservaEntidad>();
+
+		using (var conn = _conexion.ObtenerConexion())
+		{
+			conn.Open();
+			string sql = @"
+            SELECT 
+                r.Id AS IdReserva, 
+                t.Nombre AS Tienda, 
+                v.Nombre AS Videojuego, 
+                r.FechaReserva, 
+                r.Cantidad 
+            FROM Reserva r 
+            INNER JOIN Tienda t ON r.Id_Tienda = t.Id 
+            INNER JOIN Videojuego v ON r.Id_Videojuego = v.Id 
+            WHERE r.Id_Cliente = @clienteId";
+
+			using (var cmd = new SqlCommand(sql, conn))
+			{
+				cmd.Parameters.AddWithValue("@clienteId", clienteId);
+				using (var reader = cmd.ExecuteReader())
+				{
+					while (reader.Read())
+					{
+						var reserva = new ReservaEntidad(
+							Convert.ToInt32(reader["IdReserva"]), // Convertir de decimal a int
+							new VideojuegosXTiendaEntidad(
+								new TiendaEntidad { Nombre = reader.GetString(reader.GetOrdinal("Tienda")) },
+								new VideojuegoEntidad { Nombre = reader.GetString(reader.GetOrdinal("Videojuego")) },
+								0 // Existencias no se usa aquí
+							),
+							null, // ClienteEntidad no es necesario aquí
+							reader.GetDateTime(reader.GetOrdinal("FechaReserva")),
+							Convert.ToInt32(reader["Cantidad"]) // Convertir de decimal a int
+						);
+						reservas.Add(reserva);
+					}
+				}
+			}
+		}
+		return reservas;
+	}
+
+
+
+
+	// Consulta una reserva específica del cliente por ID
+	public List<ReservaEntidad> ConsultarReservaPorId(int clienteId, int idReserva)
+	{
+		List<ReservaEntidad> reservas = new List<ReservaEntidad>();
+
+		using (var conn = _conexion.ObtenerConexion())
+		{
+			conn.Open();
+			string sql = @"
+            SELECT 
+                r.Id AS IdReserva, 
+                t.Nombre AS Tienda, 
+                v.Nombre AS Videojuego, 
+                r.FechaReserva, 
+                r.Cantidad
+            FROM Reserva r
+            INNER JOIN Tienda t ON r.Id_Tienda = t.Id
+            INNER JOIN Videojuego v ON r.Id_Videojuego = v.Id
+            WHERE r.Id_Cliente = @clienteId AND r.Id = @idReserva";
+
+			using (var cmd = new SqlCommand(sql, conn))
+			{
+				cmd.Parameters.AddWithValue("@clienteId", clienteId);
+				cmd.Parameters.AddWithValue("@idReserva", idReserva);
+				using (var reader = cmd.ExecuteReader())
+				{
+					while (reader.Read())
+					{
+						var reserva = new ReservaEntidad(
+							Convert.ToInt32(reader["IdReserva"]), // Conversión de decimal a int
+							new VideojuegosXTiendaEntidad(
+								new TiendaEntidad { Nombre = reader.GetString(reader.GetOrdinal("Tienda")) },
+								new VideojuegoEntidad { Nombre = reader.GetString(reader.GetOrdinal("Videojuego")) },
+								0 // Existencias no es relevante para el display
+							),
+							null, // ClienteEntidad no es necesario en este contexto
+							reader.GetDateTime(reader.GetOrdinal("FechaReserva")),
+							Convert.ToInt32(reader["Cantidad"]) // Conversión de decimal a int
+						);
+						reservas.Add(reserva);
+					}
+				}
+			}
+		}
+		return reservas;
+	}
+
+
 }
-
-
-////using System;
-////using Microsoft.Data.SqlClient;
-////using Capa_Acceso_Datos;
-
-////namespace Capa_Acceso_Datos
-////{
-////    public class DatosReserva
-////    {
-////        private readonly ConexionBD _conexion;
-
-////        public DatosReserva()
-////       {
-////            _conexion = new ConexionBD();
-////        }
-
-////        public string Crear(ReservaEntidad reserva)
-////        {
-////            try
-////            {
-////                using (var conn = _conexion.ObtenerConexion())
-////                {
-////                    conn.Open();
-
-////                    string sql = @"
-////                    INSERT INTO Reserva 
-////                    (Id, ClienteId, VideojuegoId, TiendaId, FechaReserva, FechaRetiro)
-////                    VALUES 
-////                    (@Id, @ClienteId, @VideojuegoId, @TiendaId, @FechaReserva, @FechaRetiro)";
-
-////                    using (var cmd = new SqlCommand(sql, conn))
-////                    {
-////                        cmd.Parameters.AddWithValue("@Id", reserva.Id);
-////                        cmd.Parameters.AddWithValue("@ClienteId", reserva.Cliente.Identificacion);
-////                        cmd.Parameters.AddWithValue("@VideojuegoId", reserva.Videojuego.Id);
-////                        cmd.Parameters.AddWithValue("@TiendaId", reserva.Tienda.Id);
-////                        cmd.Parameters.AddWithValue("@FechaReserva", reserva.FechaReserva);
-////                        cmd.Parameters.AddWithValue("@FechaRetiro", reserva.FechaRetiro);
-
-////                        cmd.ExecuteNonQuery();
-////                    }
-////               }
-////                return "Reserva registrada correctamente.";
-////            }
-////            catch (Exception ex)
-////            {
-////                return "Error al insertar reserva: " + ex.Message;
-////            }
-////        }
-////    }
-////}

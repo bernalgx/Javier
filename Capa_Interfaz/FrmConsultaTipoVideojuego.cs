@@ -1,6 +1,7 @@
 ﻿using Capa_Entidades;
 using Capa_Log_Negocio;
 using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace Capa_Interfaz
@@ -14,6 +15,7 @@ namespace Capa_Interfaz
         public FrmConsultaTipoVideojuego()
         {
             InitializeComponent();
+            logicaTipo = new LogTipoVideojuego();
             CargarTiposVideojuego();
         }
 
@@ -21,7 +23,14 @@ namespace Capa_Interfaz
         {
             try
             {
-                dgvTiposVideojuego.DataSource = logicaTipo.ObtenerTiposVideojuego();
+                List<TipoVideojuegoEntidad> lista = logicaTipo.ObtenerTiposVideojuego();
+                dgvTiposVideojuego.DataSource = lista;
+
+                if (lista.Count == 0)
+                {
+                    MessageBox.Show("No hay tipos de videojuegos registrados.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
                 ConfigurarDataGridView();
             }
             catch (Exception ex)
@@ -42,22 +51,18 @@ namespace Capa_Interfaz
         {
             if (dgvTiposVideojuego.SelectedRows.Count > 0)
             {
-                // Obtener el tipo de videojuego seleccionado
                 TipoVideojuegoEntidad tipoVideojuego = new TipoVideojuegoEntidad
                 {
-                    Id = Convert.ToInt32(dgvTiposVideojuego.SelectedRows[0].Cells["Id"].Value),
+                    Id = Convert.ToDecimal(dgvTiposVideojuego.SelectedRows[0].Cells["Id"].Value),
                     Nombre = dgvTiposVideojuego.SelectedRows[0].Cells["Nombre"].Value.ToString(),
                     Descripcion = dgvTiposVideojuego.SelectedRows[0].Cells["Descripcion"].Value.ToString()
                 };
 
-                // Abrir formulario de edición
                 FrmEditarTipoVideojuego frmEditar = new FrmEditarTipoVideojuego(tipoVideojuego);
                 if (frmEditar.ShowDialog() == DialogResult.OK)
                 {
-                    // Después de la edición, actualizar la lista
-                    TipoVideojuegoEntidad tipoEditado = frmEditar.TipoVideojuego;
                     LogTipoVideojuego log = new LogTipoVideojuego();
-                    string resultado = log.EditarTipoVideojuego(tipoEditado);
+                    string resultado = log.EditarTipoVideojuego(frmEditar.TipoVideojuego);
                     MessageBox.Show(resultado);
                     CargarTiposVideojuego();
                 }
@@ -72,13 +77,13 @@ namespace Capa_Interfaz
         {
             if (dgvTiposVideojuego.SelectedRows.Count > 0)
             {
-                int id = Convert.ToInt32(dgvTiposVideojuego.SelectedRows[0].Cells["Id"].Value);
+                decimal id = Convert.ToDecimal(dgvTiposVideojuego.SelectedRows[0].Cells["Id"].Value);
 
                 if (MessageBox.Show("¿Estás seguro de eliminar este tipo de videojuego?", "Confirmar",
                     MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     LogTipoVideojuego log = new LogTipoVideojuego();
-                    string resultado = log.EliminarTipoVideojuego(id);
+                    string resultado = log.EliminarTipoVideojuego((int)id);
                     MessageBox.Show(resultado);
                     CargarTiposVideojuego();
                 }
