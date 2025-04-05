@@ -1,4 +1,12 @@
-﻿using System;
+﻿// ==========================================
+// Universidad Estatal a Distancia
+// I Cuatrimestre 2025
+// 45GAMES4U - Sistema de Inventario de Videojuegos
+// Javier Rojas Cordero
+// Proyecto 2
+// ==========================================
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,104 +20,106 @@ using Capa_Log_Negocio;
 
 namespace Capa_Interfaz
 {
-    public partial class FrmConsultaClientes : Form
+    public partial class FrmConsultaClientes : Form // Define la clase FrmConsultaClientes que hereda de Form
     {
-        private LogCliente logicaCliente = new LogCliente();
+        private LogCliente logicaCliente = new LogCliente(); // Declara una variable privada de tipo LogCliente e inicializa una nueva instancia
 
-        public FrmConsultaClientes()
+        public FrmConsultaClientes() // Constructor de la clase FrmConsultaClientes
         {
-            InitializeComponent();
-            CargarClientes();
-            ConfigurarDataGridView();
+            InitializeComponent(); // Inicializa los componentes del formulario
+            CargarClientes(); // Llama al metodo CargarClientes
+            ConfigurarDataGridView(); // Llama al metodo ConfigurarDataGridView
         }
 
-        private void CargarClientes()
+        private void CargarClientes() // Metodo para cargar los clientes en el DataGridView
         {
             try
             {
-                var clientes = logicaCliente.ObtenerClientesDesdeBD();
-                dgvClientes.DataSource = clientes;
+                var clientes = logicaCliente.ObtenerClientesDesdeBD(); // Obtiene la lista de clientes desde la base de datos
+                dgvClientes.DataSource = clientes; // Asigna la lista de clientes al DataSource del DataGridView
             }
-            catch (Exception ex)
+            catch (Exception ex) // Captura cualquier excepcion que ocurra
             {
-                MessageBox.Show("Error al cargar clientes: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error al cargar clientes: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); // Muestra un mensaje de error
             }
         }
 
-        private void ConfigurarDataGridView()
+        private void ConfigurarDataGridView() // Metodo para configurar el DataGridView
         {
             // Configurar columnas
-            dgvClientes.Columns["Identificacion"].HeaderText = "Identificación";
-            dgvClientes.Columns["Nombre"].HeaderText = "Nombre";
-            dgvClientes.Columns["PrimerApellido"].HeaderText = "Primer Apellido";
-            dgvClientes.Columns["SegundoApellido"].HeaderText = "Segundo Apellido";
-            dgvClientes.Columns["FechaNacimiento"].HeaderText = "Fecha Nacimiento";
-            dgvClientes.Columns["JugadorEnLinea"].HeaderText = "Jugador en Línea";
+            dgvClientes.Columns["Identificacion"].HeaderText = "Identificacion"; // Configura el encabezado de la columna Identificacion
+            dgvClientes.Columns["Nombre"].HeaderText = "Nombre"; // Configura el encabezado de la columna Nombre
+            dgvClientes.Columns["PrimerApellido"].HeaderText = "Primer Apellido"; // Configura el encabezado de la columna PrimerApellido
+            dgvClientes.Columns["SegundoApellido"].HeaderText = "Segundo Apellido"; // Configura el encabezado de la columna SegundoApellido
+            dgvClientes.Columns["FechaNacimiento"].HeaderText = "Fecha Nacimiento"; // Configura el encabezado de la columna FechaNacimiento
+            dgvClientes.Columns["JugadorEnLinea"].HeaderText = "Jugador en Linea"; // Configura el encabezado de la columna JugadorEnLinea
 
             // Formato de columnas
-            dgvClientes.Columns["FechaNacimiento"].DefaultCellStyle.Format = "d"; // Formato corto de fecha
-            dgvClientes.Columns["JugadorEnLinea"].DefaultCellStyle.Format = "Si;No"; // Mostrar Si/No para booleanos
+            dgvClientes.Columns["FechaNacimiento"].DefaultCellStyle.Format = "d"; // Formato corto de fecha para la columna FechaNacimiento
+            dgvClientes.Columns["JugadorEnLinea"].DefaultCellStyle.Format = "Si;No"; // Mostrar Si/No para booleanos en la columna JugadorEnLinea
 
             // Hacer que el DataGridView sea de solo lectura
-            dgvClientes.ReadOnly = true;
-            dgvClientes.AllowUserToAddRows = false;
-            dgvClientes.AllowUserToDeleteRows = false;
+            dgvClientes.ReadOnly = true; // Configura el DataGridView como solo lectura
+            dgvClientes.AllowUserToAddRows = false; // Deshabilita la adicion de filas por el usuario
+            dgvClientes.AllowUserToDeleteRows = false; // Deshabilita la eliminacion de filas por el usuario
 
-            // Selección de fila completa
-            dgvClientes.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            // Seleccion de fila completa
+            dgvClientes.SelectionMode = DataGridViewSelectionMode.FullRowSelect; // Configura el modo de seleccion de fila completa
         }
 
-        private void btnEditar_Click(object sender, EventArgs e)
+        private void btnEditar_Click(object sender, EventArgs e) // Evento que se ejecuta al hacer clic en el boton Editar
         {
-            if (dgvClientes.SelectedRows.Count > 0)
+            if (dgvClientes.SelectedRows.Count > 0) // Verifica si hay filas seleccionadas en el DataGridView
             {
-                var clienteSeleccionado = ObtenerClienteSeleccionado();
-                var frmEditar = new FrmEditarCliente(clienteSeleccionado);
+                var clienteSeleccionado = ObtenerClienteSeleccionado(); // Obtiene el cliente seleccionado
+                var frmEditar = new FrmEditarCliente(clienteSeleccionado); // Crea una nueva instancia de FrmEditarCliente
 
-                if (frmEditar.ShowDialog() == DialogResult.OK)
+                if (frmEditar.ShowDialog() == DialogResult.OK) // Muestra el formulario FrmEditarCliente y verifica si el resultado es OK
                 {
-                    string resultado = logicaCliente.EditarCliente(frmEditar.Cliente);
-                    MessageBox.Show(resultado, "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    CargarClientes();
+                    string resultado = logicaCliente.EditarCliente(frmEditar.Cliente); // Llama al metodo EditarCliente y almacena el resultado
+                    MessageBox.Show(resultado, "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information); // Muestra el resultado en un MessageBox
+                    CargarClientes(); // Llama al metodo CargarClientes
                 }
             }
             else
             {
-                MessageBox.Show("Seleccione un cliente para editar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Seleccione un cliente para editar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning); // Muestra un mensaje si no hay filas seleccionadas
             }
         }
 
-        private ClienteEntidad ObtenerClienteSeleccionado()
+        private ClienteEntidad ObtenerClienteSeleccionado() // Metodo para obtener el cliente seleccionado
         {
-            DataGridViewRow fila = dgvClientes.SelectedRows[0];
-            return new ClienteEntidad
+            DataGridViewRow fila = dgvClientes.SelectedRows[0]; // Obtiene la fila seleccionada
+            return new ClienteEntidad // Crea una nueva instancia de ClienteEntidad
             {
-                Identificacion = Convert.ToInt32(fila.Cells["Identificacion"].Value),
-                Nombre = fila.Cells["Nombre"].Value.ToString(),
-                PrimerApellido = fila.Cells["PrimerApellido"].Value.ToString(),
-                SegundoApellido = fila.Cells["SegundoApellido"].Value.ToString(),
-                FechaNacimiento = Convert.ToDateTime(fila.Cells["FechaNacimiento"].Value),
-                JugadorEnLinea = Convert.ToBoolean(fila.Cells["JugadorEnLinea"].Value)
+                Identificacion = Convert.ToInt32(fila.Cells["Identificacion"].Value), // Asigna el valor de la celda Identificacion
+                Nombre = fila.Cells["Nombre"].Value.ToString(), // Asigna el valor de la celda Nombre
+                PrimerApellido = fila.Cells["PrimerApellido"].Value.ToString(), // Asigna el valor de la celda PrimerApellido
+                SegundoApellido = fila.Cells["SegundoApellido"].Value.ToString(), // Asigna el valor de la celda SegundoApellido
+                FechaNacimiento = Convert.ToDateTime(fila.Cells["FechaNacimiento"].Value), // Asigna el valor de la celda FechaNacimiento
+                JugadorEnLinea = Convert.ToBoolean(fila.Cells["JugadorEnLinea"].Value) // Asigna el valor de la celda JugadorEnLinea
             };
         }
 
-        private void btnEliminar_Click(object sender, EventArgs e)
+        private void btnEliminar_Click(object sender, EventArgs e) // Evento que se ejecuta al hacer clic en el boton Eliminar
         {
-            if (dgvClientes.SelectedRows.Count > 0)
+            if (dgvClientes.SelectedRows.Count > 0) // Verifica si hay filas seleccionadas en el DataGridView
             {
-                if (MessageBox.Show("¿Está seguro que desea eliminar este cliente?", "Confirmar",
-                    MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("¿Esta seguro que desea eliminar este cliente?", "Confirmar",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) // Muestra un mensaje de confirmacion
                 {
-                    int identificacion = Convert.ToInt32(dgvClientes.SelectedRows[0].Cells["Identificacion"].Value);
-                    string resultado = logicaCliente.EliminarCliente(identificacion);
-                    MessageBox.Show(resultado, "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    CargarClientes();
+                    int identificacion = Convert.ToInt32(dgvClientes.SelectedRows[0].Cells["Identificacion"].Value); // Obtiene el valor de la celda Identificacion
+                    string resultado = logicaCliente.EliminarCliente(identificacion); // Llama al metodo EliminarCliente y almacena el resultado
+                    MessageBox.Show(resultado, "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information); // Muestra el resultado en un MessageBox
+                    CargarClientes(); // Llama al metodo CargarClientes
                 }
             }
             else
             {
-                MessageBox.Show("Seleccione un cliente para eliminar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Seleccione un cliente para eliminar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning); // Muestra un mensaje si no hay filas seleccionadas
             }
         }
     }
 }
+
+//Como referencias se utilizaron los libros (Como programar en C#, Harvey M. Deitel), (Guia de Estudio, Programacion Avanzada, Carlos H. Hernandez Alvarado, como tambien las tutorias del curso)

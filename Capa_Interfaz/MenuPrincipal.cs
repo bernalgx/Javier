@@ -1,4 +1,12 @@
-﻿using Capa_Log_Negocio;
+﻿// ==========================================
+// Universidad Estatal a Distancia
+// I Cuatrimestre 2025
+// 45GAMES4U - Sistema de Inventario de Videojuegos
+// Javier Rojas Cordero
+// Proyecto 2
+// ==========================================
+
+using Capa_Log_Negocio;
 
 namespace Capa_Interfaz
 {
@@ -73,7 +81,7 @@ namespace Capa_Interfaz
 
 		private void btnConsultaTipoVideojuego_Click(object sender, EventArgs e)
 		{
-			FrmConsultaVideoJuegos form = new FrmConsultaVideoJuegos();
+            FrmConsultaTipoVideojuego form = new FrmConsultaTipoVideojuego();
 			form.ShowDialog();
 		}
 
@@ -111,3 +119,4 @@ namespace Capa_Interfaz
 
 }
 
+//Como referencias se utilizaron los libros (Como programar en C#, Harvey M. Deitel), (Guia de Estudio, Programacion Avanzada, Carlos H. Hernandez Alvarado, como tambien las tutorias del curso)

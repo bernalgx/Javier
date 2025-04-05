@@ -43,3 +43,14 @@ C:\Users\Javier\Downloads\Javier-main\Capa_Entidades\obj\Debug\net8.0-windows\Ca
 C:\Users\Javier\Downloads\Javier-main\Capa_Entidades\obj\Debug\net8.0-windows\refint\Capa_Entidades.dll
 C:\Users\Javier\Downloads\Javier-main\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.pdb
 C:\Users\Javier\Downloads\Javier-main\Capa_Entidades\obj\Debug\net8.0-windows\ref\Capa_Entidades.dll
+C:\Users\Javier\Downloads\PY DEF\Capa_Entidades\bin\Debug\net8.0-windows\Capa_Entidades.deps.json
+C:\Users\Javier\Downloads\PY DEF\Capa_Entidades\bin\Debug\net8.0-windows\Capa_Entidades.dll
+C:\Users\Javier\Downloads\PY DEF\Capa_Entidades\bin\Debug\net8.0-windows\Capa_Entidades.pdb
+C:\Users\Javier\Downloads\PY DEF\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Javier\Downloads\PY DEF\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.AssemblyInfoInputs.cache
+C:\Users\Javier\Downloads\PY DEF\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.AssemblyInfo.cs
+C:\Users\Javier\Downloads\PY DEF\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Javier\Downloads\PY DEF\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.dll
+C:\Users\Javier\Downloads\PY DEF\Capa_Entidades\obj\Debug\net8.0-windows\refint\Capa_Entidades.dll
+C:\Users\Javier\Downloads\PY DEF\Capa_Entidades\obj\Debug\net8.0-windows\Capa_Entidades.pdb
+C:\Users\Javier\Downloads\PY DEF\Capa_Entidades\obj\Debug\net8.0-windows\ref\Capa_Entidades.dll

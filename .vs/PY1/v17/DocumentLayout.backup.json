@@ -3,16 +3,88 @@
   "WorkspaceRootPath": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E8AB2ED0-A94A-48EB-8582-8FE4A59F781A}|ServidorApp\\ServidorApp.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\servidorapp\\servidor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8AB2ED0-A94A-48EB-8582-8FE4A59F781A}|ServidorApp\\ServidorApp.csproj|solutionrelative:servidorapp\\servidor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8AB2ED0-A94A-48EB-8582-8FE4A59F781A}|ServidorApp\\ServidorApp.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\servidorapp\\frmservidor.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8AB2ED0-A94A-48EB-8582-8FE4A59F781A}|ServidorApp\\ServidorApp.csproj|solutionrelative:servidorapp\\frmservidor.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8AB2ED0-A94A-48EB-8582-8FE4A59F781A}|ServidorApp\\ServidorApp.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\servidorapp\\frmservidor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E8AB2ED0-A94A-48EB-8582-8FE4A59F781A}|ServidorApp\\ServidorApp.csproj|solutionrelative:servidorapp\\frmservidor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8AB2ED0-A94A-48EB-8582-8FE4A59F781A}|ServidorApp\\ServidorApp.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\servidorapp\\servidorapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E8AB2ED0-A94A-48EB-8582-8FE4A59F781A}|ServidorApp\\ServidorApp.csproj|solutionrelative:servidorapp\\servidorapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8AB2ED0-A94A-48EB-8582-8FE4A59F781A}|ServidorApp\\ServidorApp.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\servidorapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8AB2ED0-A94A-48EB-8582-8FE4A59F781A}|ServidorApp\\ServidorApp.csproj|solutionrelative:servidorapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\capa_interfaz\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|solutionrelative:capa_interfaz\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F822436-D666-4C75-AD3C-CBEB1F5BD9F0}|Capa_Entidades\\Capa_Entidades.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_entidades\\videojuegosxtiendaentidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F822436-D666-4C75-AD3C-CBEB1F5BD9F0}|Capa_Entidades\\Capa_Entidades.csproj|solutionrelative:capa_entidades\\videojuegosxtiendaentidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F822436-D666-4C75-AD3C-CBEB1F5BD9F0}|Capa_Entidades\\Capa_Entidades.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_entidades\\capa_entidades.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3F822436-D666-4C75-AD3C-CBEB1F5BD9F0}|Capa_Entidades\\Capa_Entidades.csproj|solutionrelative:capa_entidades\\capa_entidades.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45CC3A1E-7EF2-4987-A670-BFFE6EF2B3B5}|Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_acceso_datos\\datosvideojuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45CC3A1E-7EF2-4987-A670-BFFE6EF2B3B5}|Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj|solutionrelative:capa_acceso_datos\\datosvideojuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45CC3A1E-7EF2-4987-A670-BFFE6EF2B3B5}|Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_acceso_datos\\datostipovideojuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45CC3A1E-7EF2-4987-A670-BFFE6EF2B3B5}|Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj|solutionrelative:capa_acceso_datos\\datostipovideojuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45CC3A1E-7EF2-4987-A670-BFFE6EF2B3B5}|Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_acceso_datos\\datostienda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45CC3A1E-7EF2-4987-A670-BFFE6EF2B3B5}|Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj|solutionrelative:capa_acceso_datos\\datostienda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45CC3A1E-7EF2-4987-A670-BFFE6EF2B3B5}|Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_acceso_datos\\datosreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45CC3A1E-7EF2-4987-A670-BFFE6EF2B3B5}|Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj|solutionrelative:capa_acceso_datos\\datosreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45CC3A1E-7EF2-4987-A670-BFFE6EF2B3B5}|Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_acceso_datos\\datosinventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45CC3A1E-7EF2-4987-A670-BFFE6EF2B3B5}|Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj|solutionrelative:capa_acceso_datos\\datosinventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45CC3A1E-7EF2-4987-A670-BFFE6EF2B3B5}|Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_acceso_datos\\datoscliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45CC3A1E-7EF2-4987-A670-BFFE6EF2B3B5}|Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj|solutionrelative:capa_acceso_datos\\datoscliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45CC3A1E-7EF2-4987-A670-BFFE6EF2B3B5}|Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_acceso_datos\\datosadministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45CC3A1E-7EF2-4987-A670-BFFE6EF2B3B5}|Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj|solutionrelative:capa_acceso_datos\\datosadministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_interfaz\\frmconsultaadministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|solutionrelative:capa_interfaz\\frmconsultaadministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_interfaz\\frmconsultarreserva.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|solutionrelative:capa_interfaz\\frmconsultarreserva.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_interfaz\\frmconsultaadministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|solutionrelative:capa_interfaz\\frmconsultaadministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45CC3A1E-7EF2-4987-A670-BFFE6EF2B3B5}|Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_acceso_datos\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45CC3A1E-7EF2-4987-A670-BFFE6EF2B3B5}|Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj|solutionrelative:capa_acceso_datos\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_interfaz\\frmconsultarreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|solutionrelative:capa_interfaz\\frmconsultarreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_interfaz\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|solutionrelative:capa_interfaz\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_interfaz\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|solutionrelative:capa_interfaz\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_interfaz\\frmconsultarreserva.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,24 +99,16 @@
       "RelativeMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|solutionrelative:capa_interfaz\\frmregistroreserva.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_interfaz\\frmconsultarreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\capa_interfaz\\frmconsultarreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|solutionrelative:capa_interfaz\\frmconsultarreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_interfaz\\frmconsultarreserva.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|solutionrelative:capa_interfaz\\frmconsultarreserva.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_interfaz\\frmregistroreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\capa_interfaz\\frmregistroreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|solutionrelative:capa_interfaz\\frmregistroreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F7CD2FFE-BB49-46FA-88D2-E161035B2ADB}|Capa_Log_Negocio\\Capa_Log_Negocio.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_log_negocio\\logreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7CD2FFE-BB49-46FA-88D2-E161035B2ADB}|Capa_Log_Negocio\\Capa_Log_Negocio.csproj|solutionrelative:capa_log_negocio\\logreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45CC3A1E-7EF2-4987-A670-BFFE6EF2B3B5}|Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_acceso_datos\\datosreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45CC3A1E-7EF2-4987-A670-BFFE6EF2B3B5}|Capa_Acceso_Datos\\Capa_Acceso_Datos.csproj|solutionrelative:capa_acceso_datos\\datosreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74DC0B0A-7940-48B4-84E0-E7C84D611C5E}|Capa_Interfaz\\Capa_Interfaz.csproj|c:\\users\\mau\\documents\\gosve c sharp\\nueva\\py1\\javier\\capa_interfaz\\capa_interfaz.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -61,33 +125,41 @@
           "SelectedChildIndex": 6,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FrmConsultarReserva.resx",
-              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\FrmConsultarReserva.resx",
-              "RelativeDocumentMoniker": "Capa_Interfaz\\FrmConsultarReserva.resx",
-              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\FrmConsultarReserva.resx",
-              "RelativeToolTip": "Capa_Interfaz\\FrmConsultarReserva.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-04-04T07:06:11.988Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FrmRegistroReserva.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\FrmRegistroReserva.Designer.cs",
-              "RelativeDocumentMoniker": "Capa_Interfaz\\FrmRegistroReserva.Designer.cs",
-              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\FrmRegistroReserva.Designer.cs",
-              "RelativeToolTip": "Capa_Interfaz\\FrmRegistroReserva.Designer.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAQwEIAAAAVAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "FrmServidor.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\ServidorApp\\FrmServidor.Designer.cs",
+              "RelativeDocumentMoniker": "ServidorApp\\FrmServidor.Designer.cs",
+              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\ServidorApp\\FrmServidor.Designer.cs",
+              "RelativeToolTip": "ServidorApp\\FrmServidor.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T07:02:44.1Z",
+              "WhenOpened": "2025-04-05T05:36:21.564Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "FrmServidor.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\ServidorApp\\FrmServidor.cs",
+              "RelativeDocumentMoniker": "ServidorApp\\FrmServidor.cs",
+              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\ServidorApp\\FrmServidor.cs [Design]",
+              "RelativeToolTip": "ServidorApp\\FrmServidor.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T05:34:43.643Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "MenuPrincipal.cs [Design]",
               "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\MenuPrincipal.cs",
               "RelativeDocumentMoniker": "Capa_Interfaz\\MenuPrincipal.cs",
@@ -99,7 +171,213 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ServidorApp",
+              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\ServidorApp\\ServidorApp.csproj",
+              "RelativeDocumentMoniker": "ServidorApp\\ServidorApp.csproj",
+              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\ServidorApp\\ServidorApp.csproj",
+              "RelativeToolTip": "ServidorApp\\ServidorApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-05T05:28:31.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Servidor.cs",
+              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\ServidorApp\\Servidor.cs",
+              "RelativeDocumentMoniker": "ServidorApp\\Servidor.cs",
+              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\ServidorApp\\Servidor.cs",
+              "RelativeToolTip": "ServidorApp\\Servidor.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAgwIsAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T05:28:48.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\ServidorApp\\Program.cs",
+              "RelativeDocumentMoniker": "ServidorApp\\Program.cs",
+              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\ServidorApp\\Program.cs",
+              "RelativeToolTip": "ServidorApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T05:32:11.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VideojuegosXTiendaEntidad.cs",
+              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Entidades\\VideojuegosXTiendaEntidad.cs",
+              "RelativeDocumentMoniker": "Capa_Entidades\\VideojuegosXTiendaEntidad.cs",
+              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Entidades\\VideojuegosXTiendaEntidad.cs",
+              "RelativeToolTip": "Capa_Entidades\\VideojuegosXTiendaEntidad.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T05:32:24.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Capa_Entidades",
+              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Entidades\\Capa_Entidades.csproj",
+              "RelativeDocumentMoniker": "Capa_Entidades\\Capa_Entidades.csproj",
+              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Entidades\\Capa_Entidades.csproj",
+              "RelativeToolTip": "Capa_Entidades\\Capa_Entidades.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-05T05:32:23.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DatosVideojuego.cs",
+              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\DatosVideojuego.cs",
+              "RelativeDocumentMoniker": "Capa_Acceso_Datos\\DatosVideojuego.cs",
+              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\DatosVideojuego.cs",
+              "RelativeToolTip": "Capa_Acceso_Datos\\DatosVideojuego.cs",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAswJQAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T05:06:04.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DatosTipoVideojuego.cs",
+              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\DatosTipoVideojuego.cs",
+              "RelativeDocumentMoniker": "Capa_Acceso_Datos\\DatosTipoVideojuego.cs",
+              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\DatosTipoVideojuego.cs",
+              "RelativeToolTip": "Capa_Acceso_Datos\\DatosTipoVideojuego.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAADwv4cAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T05:00:51.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DatosTienda.cs",
+              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\DatosTienda.cs",
+              "RelativeDocumentMoniker": "Capa_Acceso_Datos\\DatosTienda.cs",
+              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\DatosTienda.cs",
+              "RelativeToolTip": "Capa_Acceso_Datos\\DatosTienda.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAADwv6MAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T05:00:40.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DatosInventario.cs",
+              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\DatosInventario.cs",
+              "RelativeDocumentMoniker": "Capa_Acceso_Datos\\DatosInventario.cs",
+              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\DatosInventario.cs",
+              "RelativeToolTip": "Capa_Acceso_Datos\\DatosInventario.cs",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAQwKIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T05:00:11.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DatosCliente.cs",
+              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\DatosCliente.cs",
+              "RelativeDocumentMoniker": "Capa_Acceso_Datos\\DatosCliente.cs",
+              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\DatosCliente.cs",
+              "RelativeToolTip": "Capa_Acceso_Datos\\DatosCliente.cs",
+              "ViewState": "AgIAAJcAAAAAAAAAAADwv8UAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T04:59:31.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DatosAdministrador.cs",
+              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\DatosAdministrador.cs",
+              "RelativeDocumentMoniker": "Capa_Acceso_Datos\\DatosAdministrador.cs",
+              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\DatosAdministrador.cs",
+              "RelativeToolTip": "Capa_Acceso_Datos\\DatosAdministrador.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAAKMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T04:59:22.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ConexionBD.cs",
+              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\ConexionBD.cs",
+              "RelativeDocumentMoniker": "Capa_Acceso_Datos\\ConexionBD.cs",
+              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\ConexionBD.cs",
+              "RelativeToolTip": "Capa_Acceso_Datos\\ConexionBD.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T04:28:24.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FrmConsultaAdministrador.cs",
+              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\FrmConsultaAdministrador.cs",
+              "RelativeDocumentMoniker": "Capa_Interfaz\\FrmConsultaAdministrador.cs",
+              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\FrmConsultaAdministrador.cs",
+              "RelativeToolTip": "Capa_Interfaz\\FrmConsultaAdministrador.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAcwFYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T04:27:43.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FrmConsultaAdministrador.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\FrmConsultaAdministrador.cs",
+              "RelativeDocumentMoniker": "Capa_Interfaz\\FrmConsultaAdministrador.cs",
+              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\FrmConsultaAdministrador.cs [Design]",
+              "RelativeToolTip": "Capa_Interfaz\\FrmConsultaAdministrador.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T04:27:35.316Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DatosReserva.cs",
+              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\DatosReserva.cs",
+              "RelativeDocumentMoniker": "Capa_Acceso_Datos\\DatosReserva.cs",
+              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\DatosReserva.cs",
+              "RelativeToolTip": "Capa_Acceso_Datos\\DatosReserva.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAUwLQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T06:17:14.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FrmConsultarReserva.resx",
+              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\FrmConsultarReserva.resx",
+              "RelativeDocumentMoniker": "Capa_Interfaz\\FrmConsultarReserva.resx",
+              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\FrmConsultarReserva.resx",
+              "RelativeToolTip": "Capa_Interfaz\\FrmConsultarReserva.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-04-04T07:06:11.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "FrmRegistroReserva.cs",
               "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\FrmRegistroReserva.cs",
               "RelativeDocumentMoniker": "Capa_Interfaz\\FrmRegistroReserva.cs",
@@ -112,8 +390,8 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Capa_Interfaz",
+              "DocumentIndex": 27,
+              "Title": "Capa_Interfaz.csproj",
               "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\Capa_Interfaz.csproj",
               "RelativeDocumentMoniker": "Capa_Interfaz\\Capa_Interfaz.csproj",
               "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\Capa_Interfaz.csproj",
@@ -125,7 +403,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 23,
+              "Title": "FrmRegistroReserva.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\FrmRegistroReserva.Designer.cs",
+              "RelativeDocumentMoniker": "Capa_Interfaz\\FrmRegistroReserva.Designer.cs",
+              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\FrmRegistroReserva.Designer.cs",
+              "RelativeToolTip": "Capa_Interfaz\\FrmRegistroReserva.Designer.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAQwEIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T07:02:44.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "FrmConsultarReserva.Designer.cs",
               "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\FrmConsultarReserva.Designer.cs",
               "RelativeDocumentMoniker": "Capa_Interfaz\\FrmConsultarReserva.Designer.cs",
@@ -138,20 +429,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 19,
               "Title": "FrmConsultarReserva.cs",
               "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\FrmConsultarReserva.cs",
               "RelativeDocumentMoniker": "Capa_Interfaz\\FrmConsultarReserva.cs",
               "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\FrmConsultarReserva.cs",
               "RelativeToolTip": "Capa_Interfaz\\FrmConsultarReserva.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAgwEsAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-04T06:18:45.959Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 24,
               "Title": "FrmConsultarReserva.cs [Design]",
               "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\FrmConsultarReserva.cs",
               "RelativeDocumentMoniker": "Capa_Interfaz\\FrmConsultarReserva.cs",
@@ -163,7 +454,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 20,
               "Title": "MenuPrincipal.cs",
               "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\MenuPrincipal.cs",
               "RelativeDocumentMoniker": "Capa_Interfaz\\MenuPrincipal.cs",
@@ -171,12 +462,11 @@
               "RelativeToolTip": "Capa_Interfaz\\MenuPrincipal.cs",
               "ViewState": "AgIAAFUAAAAAAAAAAAArwGoAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T06:51:58.144Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T06:51:58.144Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 25,
               "Title": "FrmRegistroReserva.cs [Design]",
               "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Interfaz\\FrmRegistroReserva.cs",
               "RelativeDocumentMoniker": "Capa_Interfaz\\FrmRegistroReserva.cs",
@@ -188,7 +478,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 26,
               "Title": "LogReserva.cs",
               "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Log_Negocio\\LogReserva.cs",
               "RelativeDocumentMoniker": "Capa_Log_Negocio\\LogReserva.cs",
@@ -196,21 +486,17 @@
               "RelativeToolTip": "Capa_Log_Negocio\\LogReserva.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T06:18:23.22Z",
-              "EditorCaption": ""
-            },
+              "WhenOpened": "2025-04-04T06:18:23.22Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 610,
+          "SelectedChildIndex": -1,
+          "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DatosReserva.cs",
-              "DocumentMoniker": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\DatosReserva.cs",
-              "RelativeDocumentMoniker": "Capa_Acceso_Datos\\DatosReserva.cs",
-              "ToolTip": "C:\\Users\\mau\\Documents\\Gosve c sharp\\Nueva\\PY1\\Javier\\Capa_Acceso_Datos\\DatosReserva.cs",
-              "RelativeToolTip": "Capa_Acceso_Datos\\DatosReserva.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAFoAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T06:17:14.844Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }
